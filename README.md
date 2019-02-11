@@ -30,7 +30,7 @@ On `Windows` remove `anaconda` with `Control Panel`. On `Linux` `rm -rf ~/anacon
 :one: Install `python` extention
 
 :two: Select `python` interpreter
-- ctrl+shift+p (go to debugging tab)
+- ctrl+shift+p
 - type `python: select interpreter`
 - select `python` interpreter from the list of available interpreters
 
@@ -39,6 +39,6 @@ As result `.vscode` folder will be created with `settings.json` file.  Inside of
 ## Configure and run debugger
 
 - Set breakpoint
-- ctrl+shift+d
+- ctrl+shift+d (go to debugging tab)
 - Select `python: current file`
 - Run debugging by pressing `F5`
