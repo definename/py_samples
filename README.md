@@ -1,6 +1,6 @@
 # `anaconda`
 
-## Update [`anaconda`](https://www.anaconda.com/) from older version:
+## Update [anaconda](https://www.anaconda.com/) from older version:
 ```
 conda update conda
 conda update anaconda
