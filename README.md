@@ -1,4 +1,4 @@
-# `anaconda`
+# Install python with `anaconda`
 
 ## Update [anaconda](https://www.anaconda.com/) from older version:
 ```
@@ -23,3 +23,13 @@ anaconda-clean --yes
 :three:
 On `Windows` remove `anaconda` with `Control Panel`. On `Linux` `rm -rf ~/anaconda`
 
+# Configure Visual Studio Code to work with `python`
+
+:one: Install `python` extention
+
+:two: Select `python` interpreter
+- ctrl+shift+p
+- type `python: select interpreter`
+- select `python` interpreter from the list of available interpreters
+
+As result `.vscode` folder will be created with `settings.json` file.  Inside of `setting.json` file `python.pythonPath` variable will point to the `python` interpreter.
