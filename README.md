@@ -21,7 +21,7 @@ anaconda-clean --yes
 ```
 
 :three:
-On `Windows` remove `anaconda` with `Control Panel`. On `Linux` `rm -rf ~/anaconda`
+On `Windows` remove `anaconda` with `Control Panel`. On `Linux` with command `rm -rf ~/anaconda`
 
 # [Visual Studio Code](https://code.visualstudio.com/docs/python/python-tutorial#_prerequisites) configuration
 
