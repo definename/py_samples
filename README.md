@@ -21,5 +21,4 @@ anaconda-clean --yes
 ```
 
 :three:
-- On windows remove `anaconda` with `Control Panel`
-- On Linux `rm -rf ~/anaconda`
+On `Windows` remove `anaconda` with `Control Panel`. On `Linux` `rm -rf ~/anaconda`
