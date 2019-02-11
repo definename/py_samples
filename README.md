@@ -1,6 +1,6 @@
 # `anaconda`
 
-## Update `anaconda` from older version:
+## Update [`anaconda`](https://www.anaconda.com/) from older version:
 ```
 conda update conda
 conda update anaconda
@@ -22,3 +22,4 @@ anaconda-clean --yes
 
 :three:
 On `Windows` remove `anaconda` with `Control Panel`. On `Linux` `rm -rf ~/anaconda`
+
