@@ -1,6 +1,6 @@
-# Install python with `anaconda`
+# Install python with [anaconda](https://www.anaconda.com/)
 
-## Update [anaconda](https://www.anaconda.com/) from older version:
+## Update `anaconda` from older version:
 ```
 conda update conda
 conda update anaconda
