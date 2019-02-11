@@ -1,1 +1,2 @@
-print(61)
+msg = 61
+print(msg)
