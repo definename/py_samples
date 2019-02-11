@@ -23,7 +23,7 @@ anaconda-clean --yes
 :three:
 On `Windows` remove `anaconda` with `Control Panel`. On `Linux` `rm -rf ~/anaconda`
 
-# Configure Visual Studio Code to work with `python`
+## Configure Visual Studio Code to work with `python`
 
 :one: Install `python` extention
 
@@ -33,3 +33,10 @@ On `Windows` remove `anaconda` with `Control Panel`. On `Linux` `rm -rf ~/anacon
 - select `python` interpreter from the list of available interpreters
 
 As result `.vscode` folder will be created with `settings.json` file.  Inside of `setting.json` file `python.pythonPath` variable will point to the `python` interpreter.
+
+## Configure debugging with Visual Studio Code
+
+- Set breakpoint
+- ctrl+shift+d
+- Select `python: current file`
+- Run debugging by pressing `F5`
