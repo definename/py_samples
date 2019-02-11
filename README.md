@@ -8,18 +8,18 @@ conda update anaconda
 
 ## Uninstall `anaconda`:
 
-1.
+:one:
 Install clean up tool:
 ```
 conda install anaconda-clean
 ```
 
-2.
+:two:
 Remove all Anaconda-related files and directories without being prompted to delete each one
 ```
 anaconda-clean --yes
 ```
 
-3.
+:three:
 - On windows remove `anaconda` with `Control Panel`
 - On Linux `rm -rf ~/anaconda`
