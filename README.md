@@ -30,7 +30,7 @@ On `Windows` remove `anaconda` with `Control Panel`. On `Linux` `rm -rf ~/anacon
 :one: Install `python` extention
 
 :two: Select `python` interpreter
-- ctrl+shift+p
+- ctrl+shift+p (go to debugging tab)
 - type `python: select interpreter`
 - select `python` interpreter from the list of available interpreters
 
