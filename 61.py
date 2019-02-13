@@ -1,3 +1,5 @@
+import math
+
 msg = 61
 print(msg)
 
@@ -16,3 +18,8 @@ googol = 10**100
 print(googol)
 
 print(float("1.1"))
+
+# Math library
+
+print(math.pi)
+print(math.pow(8, 2))
