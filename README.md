@@ -42,3 +42,7 @@ As result `.vscode` folder will be created with `settings.json` file.  Inside of
 - ctrl+shift+d (go to debugging tab)
 - Select `python: current file`
 - Run debugging by pressing `F5`
+
+## [jupyter nbviewer](https://nbviewer.jupyter.org/)
+
+Create `*.ipynb` file and share it via `nbviewer` service
