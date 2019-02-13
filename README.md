@@ -6,7 +6,7 @@ conda update conda
 conda update anaconda
 ```
 
-## Uninstall `anaconda`:
+## [Uninstall](https://docs.anaconda.com/anaconda/install/uninstall/) `anaconda`:
 
 :one:
 Install clean up tool:
