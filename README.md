@@ -1,9 +1,21 @@
-# Install python with [anaconda](https://www.anaconda.com/)
+# [anaconda](https://www.anaconda.com/) environment
 
-## Update `anaconda` from older version:
+Update `anaconda` from older version:
 ```
 conda update conda
 conda update anaconda
+```
+
+Lists available environments:
+
+```
+conda info --envs
+```
+
+Switch to particular environment:
+
+```
+conda activate base
 ```
 
 ## [Uninstall](https://docs.anaconda.com/anaconda/install/uninstall/) `anaconda`:
