@@ -15,7 +15,13 @@ conda info --envs
 Switch to particular environment:
 
 ```
-conda activate base
+conda activate custom
+```
+
+Install specific package into specific environment (by default package is installed into active environment):
+
+```
+conda install --name custom spyder=3.3.3
 ```
 
 ## [Uninstall](https://docs.anaconda.com/anaconda/install/uninstall/) `anaconda`:
