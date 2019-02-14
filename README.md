@@ -1,4 +1,4 @@
-> Pip is a package manager + Virtualenv is an environment manager = Conda is both :bangbang:
+> Pip is a package manager + Virtualenv is an environment manager = Conda is both
 
 # [anaconda](https://www.anaconda.com/) environment:
 
