@@ -1,3 +1,5 @@
+> Pip is a package manager + Virtualenv is an environment manager = Conda is both :bangbang:
+
 # [anaconda](https://www.anaconda.com/) environment:
 
 Update `anaconda` from older version:
