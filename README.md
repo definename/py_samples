@@ -18,6 +18,12 @@ Switch to particular environment:
 conda activate custom
 ```
 
+Search for particular package
+
+```
+conda search spyder
+```
+
 Install specific package into specific environment (by default package is installed into active environment):
 
 ```
