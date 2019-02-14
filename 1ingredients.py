@@ -48,10 +48,10 @@ print(letters[-1:])
 print(letters[::2])
 print(letters[-1::-1])
 
-print("Len is:", len(letters))
+print("Here is lenght of the string:", len(letters))
 
 verbs = "get, got, gotten"
-print(verbs.split(","))
+print("Here is result list:", verbs.split(","))
 
 verbStr = "; ".join(verbs.split(","))
-print(verbStr)
+print("Here is list joined into the string:", verbStr)
