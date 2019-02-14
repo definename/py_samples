@@ -1,4 +1,4 @@
-# [anaconda](https://www.anaconda.com/) environment
+# [anaconda](https://www.anaconda.com/) environment:
 
 Update `anaconda` from older version:
 ```
