@@ -1,5 +1,3 @@
-# list
-
 weekdayList = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday']
 print(weekdayList[0])
 
