@@ -79,11 +79,4 @@ List - `[1, 2, 3, "one", "two", "three"]`
 
 Tuple - `(1, 2, 3, 4, 5)`
 
-Dictionary = `{
-    "seconds": "1",
-    "minutes": "2",
-    "hour": "3",
-    "day": "4",
-    "month": "5",
-    "year": "5"
-}`
+Dictionary - `{ "seconds": "1", "minutes": "2", "hour": "3", "day": "4", "month": "5", "year": "5" }`
