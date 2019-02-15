@@ -72,3 +72,7 @@ As result `.vscode` folder will be created with `settings.json` file.  Inside of
 # [jupyter nbviewer](https://nbviewer.jupyter.org/)
 
 Create `*.ipynb` file and share it via `nbviewer` service
+
+# Containers
+[1, 2, 3, "one", "two", "three"] - list
+(1, 2, 3, 4, 5) - tuple
