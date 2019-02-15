@@ -74,5 +74,7 @@ As result `.vscode` folder will be created with `settings.json` file.  Inside of
 Create `*.ipynb` file and share it via `nbviewer` service
 
 # Containers
-[1, 2, 3, "one", "two", "three"] - list
-(1, 2, 3, 4, 5) - tuple
+
+List - `[1, 2, 3, "one", "two", "three"]`
+
+Tuple - `(1, 2, 3, 4, 5)`
