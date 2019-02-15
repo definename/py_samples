@@ -73,7 +73,7 @@ As result `.vscode` folder will be created with `settings.json` file.  Inside of
 
 Create `*.ipynb` file and share it via `nbviewer` service
 
-# Containers
+# Containers:
 
 List - `[1, 2, 3, "one", "two", "three"]`
 
