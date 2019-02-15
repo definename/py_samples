@@ -1,3 +1,6 @@
+empty_list = []
+print(empty_list)
+
 weekdayList = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday']
 print(weekdayList[0])
 
