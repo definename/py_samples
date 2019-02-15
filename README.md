@@ -78,3 +78,5 @@ Create `*.ipynb` file and share it via `nbviewer` service
 List - `[1, 2, 3, "one", "two", "three"]`
 
 Tuple - `(1, 2, 3, 4, 5)`
+
+Dictionality = `{1, 2, 3, 4, 5}`
