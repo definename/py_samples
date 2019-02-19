@@ -21,4 +21,4 @@ while count <= 5:
     print(count, end='-')
     count += 1
 else:
-    print("\nStrange python else was reached")
+    print("\nThis string will be printed in case if `while` cycle is not interupted by `break`")
