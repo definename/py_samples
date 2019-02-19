@@ -29,3 +29,18 @@ print("English version of 'chien':", f2e["chien"])
 
 eset = set(e2f.keys())
 print("Set of english words:", eset)
+
+lifeDict = {
+	"plants": {},
+	"others": {},
+	"animals": {
+		"cats": ["Henri", "Grumpy", "Lucy"],
+		"octopi": {},
+		"emus": {}
+	}
+}
+
+print(lifeDict)
+print("Hight level keys:", lifeDict.keys())
+print("Animals keys:", lifeDict["animals"].keys())
+print("Cats value: ", lifeDict["animals"]["cats"])
