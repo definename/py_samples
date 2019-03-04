@@ -108,3 +108,7 @@ set - { выражение for выражение in итерабельный о
 :boom: В Python используются `исключения`: код, который выполняется, когда происходит связанная с ним ошибка.
 
 :boom: `Модуль` — это всего лишь файл, содержащий код Python
+
+# Packages:
+
+In order to create `python` package we need to create directory and put all `*.py` files into that folder. Also `__init__.py` file should be created inside that folder to tell python is it should interpret that folder as package.
