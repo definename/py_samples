@@ -42,17 +42,21 @@ for first, second in zip(list1, list2):
 for val in range(1, 4, 2):
     print("range value:", val)
 
+# list inclusion
 mylist = [number for number in range(1, 5) if number % 2 == 0]
 print("List created via inclusion:", mylist)
 
+# dict inclusion
 mydict = { letter: word.count(letter) for letter in word }
 print("Dictionary created via inclusion:", mydict)
 
+# set inclusion
 myset = { number for number in range(1, 5) if number % 2 > 0 }
 print("Set created via inclusion:", myset)
 
 print("Tuples do not have inclusions!!")
 
+# generator inclusion
 mygen = (number for number in range(1, 5))
 print("Generator inclusion type:", type(mygen))
 
