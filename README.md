@@ -107,8 +107,19 @@ set - { выражение for выражение in итерабельный о
 
 :boom: В Python используются `исключения`: код, который выполняется, когда происходит связанная с ним ошибка.
 
+
+# Module:
+
 :boom: `Модуль` — это всего лишь файл, содержащий код Python
 
-# Packages:
+To create python module it is enough to create file `modulename.py`
+
+In order to import python `module` we need to do the following: `import modulename`
+It is also possible to import module and create alias for it in this way: `import modulename as mn`
+
+To be able to import only specific function from python module we need to do the following: `from modulename import functionname`
+To do the same with alias: `from modulename import functionname as fn`
+
+# Package:
 
 In order to create `python` package we need to create directory and put all `*.py` files into that folder. Also `__init__.py` file should be created inside that folder to tell python is it should interpret that folder as package.
