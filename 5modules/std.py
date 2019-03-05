@@ -65,3 +65,19 @@ def another_palindrome(word):
     return word == word[::-1]
 
 print(another_palindrome("radar"))
+
+# itertools module
+
+from itertools import accumulate as ac
+
+multiply = lambda a, b : a * b
+for item in ac([1, 2, 3, 4], multiply):
+    print(item, end=" ")
+print()
+
+# pprint module
+
+import pprint
+
+pp = pprint.PrettyPrinter(1, 30)
+pp.pprint(quotes)
