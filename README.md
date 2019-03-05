@@ -125,3 +125,6 @@ To do the same with alias: `from modulename import functionname as fn`
 :boom: Модули организованные в иерархии файлов называются `пакетами`
 
 In order to create `python` package we need to create directory and put all `*.py` files into that folder. Also `__init__.py` file should be created inside that folder to tell python is it should interpret that folder as package.
+
+# class:
+`наследование` — создание нового класса из уже существующего, который при этом содержит какие-то дополнения и изменения
