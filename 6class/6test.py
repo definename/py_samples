@@ -26,3 +26,56 @@ class EmailPerson(Person):
 
 e_person = EmailPerson("Name", "name@gmail.com")
 print("EmailPerson name:", e_person.name, "email:", e_person.email)
+print()
+
+class Duck():
+    def __init__(self, name):
+        self.hidden_name = name
+
+    def get_name(self):
+        print("inside get_name")
+        return self.hidden_name
+
+    def set_name(self, name):
+        print("inside set_name")
+        self.hidden_name = name
+
+    name = property(get_name, set_name)
+
+duck = Duck("Name")
+duck.name = "Donald Duck"
+print("Duck name:", duck.name)
+print()
+
+class Carrot():
+    def __init__(self, hidden_name):
+        self.hidden_name = hidden_name
+
+    @property
+    def name(self):
+        print("inside get_name")
+        return self.hidden_name
+
+    @name.setter
+    def name(self, hidden_name):
+        print("inside set_name")
+        self.hidden_name = hidden_name
+
+carrot = Carrot("Name")
+carrot.name = "Green Carrot"
+print("Carrot name:", carrot.name)
+print()
+
+
+# Properties can be calculated at runtime.
+class Circle:
+    def __init__(self, radius):
+        self.radius = radius
+
+    @property
+    def diameter(self):
+        print("inside diameter")
+        return self.radius * 2
+
+circle = Circle(10)
+print("Diameter: ", circle.diameter)
