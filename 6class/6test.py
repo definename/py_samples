@@ -30,36 +30,38 @@ print()
 
 class Duck():
     def __init__(self, name):
-        self.hidden_name = name
+        self.__name = name
 
     def get_name(self):
         print("inside get_name")
-        return self.hidden_name
+        return self.__name
 
     def set_name(self, name):
         print("inside set_name")
-        self.hidden_name = name
+        self.__name = name
 
     name = property(get_name, set_name)
 
 duck = Duck("Name")
 duck.name = "Donald Duck"
 print("Duck name:", duck.name)
+# print("Failed to retrieve name:", duck.__name)
+print("Duck name lifehack:", duck._Duck__name)
 print()
 
 class Carrot():
-    def __init__(self, hidden_name):
-        self.hidden_name = hidden_name
+    def __init__(self, name):
+        self.__name = name
 
     @property
     def name(self):
         print("inside get_name")
-        return self.hidden_name
+        return self.__name
 
     @name.setter
-    def name(self, hidden_name):
+    def name(self, name):
         print("inside set_name")
-        self.hidden_name = hidden_name
+        self.__name = name
 
 carrot = Carrot("Name")
 carrot.name = "Green Carrot"
@@ -68,14 +70,17 @@ print()
 
 
 # Properties can be calculated at runtime.
+# In order to make class attributes private we need to decorate their names with "__" e.g "__name"
 class Circle:
     def __init__(self, radius):
-        self.radius = radius
+        self.__radius = radius
 
     @property
     def diameter(self):
         print("inside diameter")
-        return self.radius * 2
+        return self.__radius * 2
 
 circle = Circle(10)
-print("Diameter: ", circle.diameter)
+# print("Failed to retrieve radius:", circle.__radius)
+print("Radius lifehack:", circle._Circle__radius)
+print("Diameter:", circle.diameter)
