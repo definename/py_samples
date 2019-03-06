@@ -130,3 +130,5 @@ In order to create `python` package we need to create directory and put all `*.p
 :boom: `наследование` — создание нового класса из уже существующего, который при этом содержит какие-то дополнения и изменения
 
 В Python *геттеры* и *сеттеры* не нужны, поскольку все атрибуты и методы являются открытыми, а от вас ожидается примерное поведение!
+
+In order to make class attributes private we need to decorate their names with `__` e.g `__name`
