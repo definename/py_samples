@@ -112,6 +112,8 @@ set - { выражение for выражение in итерабельный о
 
 :boom: `Модуль` — это всего лишь файл, содержащий код Python
 
+> Eсли вы знакомы с книгой Gamma E. Design Patterns: Elements of Reusable Object-Oriented Software, можете использовать модули в Python как синглтоны
+
 To create python module it is enough to create file `modulename.py`
 
 In order to import python `module` we need to do the following: `import modulename`
