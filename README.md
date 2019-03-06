@@ -108,7 +108,7 @@ set - { выражение for выражение in итерабельный о
 :boom: В Python используются `исключения`: код, который выполняется, когда происходит связанная с ним ошибка.
 
 
-# Module:
+# module:
 
 :boom: `Модуль` — это всего лишь файл, содержащий код Python
 
@@ -122,7 +122,7 @@ It is also possible to import module and create alias for it in this way: `impor
 To be able to import only specific function from python module we need to do the following: `from modulename import functionname`
 To do the same with alias: `from modulename import functionname as fn`
 
-# Package:
+# package:
 
 :boom: Модули организованные в иерархии файлов называются `пакетами`
 
