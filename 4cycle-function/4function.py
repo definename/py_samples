@@ -27,6 +27,10 @@ def do_it(one, two, three=10):
 
 print(do_it(1, two=2))
 
+argDict = { "one": 11, "two": 22, "three": 33 }
+print(do_it(**argDict))
+
+
 # container as function argument
 
 def buggy(arg, result=[]):
@@ -50,7 +54,7 @@ print("Python no buggy:", no_buggy("no-c"))
 # positional args
 
 def do_args(*args):
-    print("Here is list of params passed to the function:", args)
+    print("Here is", type(args), "of params with len", len(args), "passed to the function:", args)
 
 do_args(1, 2, 3, 4, 5, 123, "sdfdfg")
 
