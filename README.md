@@ -148,3 +148,4 @@ In order to make class attributes private we need to decorate their names with `
 
 # format:
 
+Python предлагает два способа форматирования строк, их часто называют `старым` стилем и `новым` стилем.
