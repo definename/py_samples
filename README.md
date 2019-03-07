@@ -145,3 +145,6 @@ In order to make class attributes private we need to decorate their names with `
 :boom: `unicode` — это действующий международный стандарт, определяющий символы всех языков мира плюс математические и другие символы.
 
 :boom: `UTF-8` — динамическую схему кодирования, oна использует для символа Unicode от одного до четырех байтов.
+
+# format:
+
