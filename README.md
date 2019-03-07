@@ -136,3 +136,8 @@ In order to create `python` package we need to create directory and put all `*.p
 In order to make class attributes private we need to decorate their names with `__` e.g `__name`
 
 :boom: `полиморфизм` — это значит, что одна операция может быть произведена над разными объектами независимо от их класса.
+
+# data:
+:boom: `cтроки` — последовательности символов в кодировке Unicode, используемые для представления текстовых данных.
+
+:boom: `байты и массивы байтов` — последовательности восьмибитных целых чисел, используемые для представления двоичных данных.
