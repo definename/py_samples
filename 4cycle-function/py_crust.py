@@ -23,30 +23,12 @@ while count <= 5:
 else:
     print("\nThis string will be printed in case if `while` cycle is not interupted by `break`")
 
-rabbits = ['Flopsy', 'Mopsy', 'Cottontail', 'Peter']
-for rabbit in rabbits:
-    print(rabbit, end=";\n")
-
-word = "cat"
-for letter in word:
-    print(letter, end=";\n")
-    break
-else:
-    print("This string will be printed in case if `for` cycle is not interupted by `break`")
-
-list1 = [1, 2, 3, 4]
-list2 = ["1", "2", "3"]
-for first, second in zip(list1, list2):
-    print(first, "+", second, "=", first + int(second))
-
-for val in range(1, 4, 2):
-    print("range value:", val)
-
 # list inclusion
 mylist = [number for number in range(1, 5) if number % 2 == 0]
 print("List created via inclusion:", mylist)
 
 # dict inclusion
+word = "cat"
 mydict = { letter: word.count(letter) for letter in word }
 print("Dictionary created via inclusion:", mydict)
 

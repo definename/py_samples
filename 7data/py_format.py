@@ -32,3 +32,8 @@ except Exception as e:
     print("Fromatting error occurred: {}".format(e))
 
 print("{0:=^100s}".format("BIG SALE"))
+
+# string interpolation interpolation
+name = "Oleh"
+age = 21
+print(f"Name: {name}, age: {age}")

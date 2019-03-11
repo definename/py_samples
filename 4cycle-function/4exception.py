@@ -28,7 +28,16 @@ while True:
 class InvalidLenghtException(Exception):
     pass
 
-if (len(short_list) > 0):
-    raise InvalidLenghtException(len(short_list))
+try:
+    if (len(short_list) > 0):
+        raise InvalidLenghtException("Short list length {}".format(len(short_list)))
+except KeyboardInterrupt as e:
+    print("KeyboardInterrupt occured: {}".format(e))
+except Exception as e:
+    print("Exception occured: {}".format(e))
+else:
+    print("else...")
+finally:
+    print("The end...")
 
-
+print("The end after the end...")

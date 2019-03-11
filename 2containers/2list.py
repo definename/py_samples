@@ -41,10 +41,12 @@ print("Sorted copy:", sorted(numList))
 numList.sort()
 print("Sort in place numeric list:", numList)
 
+# create list copy (uses the same data via reference)
 origin = [1, 2, 3]
 copy0 = origin
 origin[0] = "surprise"
 
+# create one level copy of the given list (creates complete copy of the first level)
 copy1 = origin.copy()
 copy1[0] = 11
 copy2 = list(origin)
@@ -57,3 +59,19 @@ print(copy0)
 print(copy1)
 print(copy2)
 print(copy3)
+
+print()
+
+# use copy module to create deeepcopy of the given list (copies all list levels)
+import copy
+l1 = [1, 2, [3, 4]]
+l2 = l1.copy()
+
+l1[2][0] = "copy"
+print("l1 {} l2 {}".format(l1, l2))
+
+l2 = copy.deepcopy(l1)
+l1[2][0] = "nocopy"
+
+print("l1 {} l2 {}".format(l1, l2))
+

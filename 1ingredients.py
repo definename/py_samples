@@ -40,13 +40,18 @@ stop = start.replace("-", "+", 2)
 print(stop)
 print(start)
 
+print()
+
 letters = '0123456789'
-print(letters[:])
-print(letters[2:])
-print(letters[2:5])
-print(letters[-1:])
-print(letters[::2])
-print(letters[-1::-1])
+print("origin: {}".format(letters))
+print("[:] {}".format(letters[:]))
+print("[2:] {}".format(letters[2:]))
+print("[2:5] {}".format(letters[2:5]))
+print("[-1:] {}".format(letters[-1:]))
+print("[::2] {}".format(letters[::2]))
+print("[-1::-1] {}".format(letters[-1::-1]))
+
+print()
 
 print("Here is lenght of the string:", len(letters))
 
@@ -55,3 +60,29 @@ print("Here is result list:", verbs.split(","))
 
 verbStr = "; ".join(verbs.split(","))
 print("Here is list joined into the string:", verbStr)
+
+a = 1
+b = 1
+print(a is b)
+
+a = 100000
+b = 100000
+print(a is b)
+
+import sys
+print("Reference count for 'a': {}".format(sys.getrefcount(a)))
+
+import gc
+print("Garbage collector has just destroyed: {} objects".format(gc.collect()))
+
+print(1 < 3 < 5 > 99)
+
+if 0.1 + 0.2 == 0.3:
+    print("Equal")
+else:
+    print("Not equal")
+
+print(r"c:\new\files\rawstring.py")
+
+print("ab" not in "abc")
+print(not "ab" in "abc")
