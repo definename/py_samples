@@ -172,9 +172,10 @@ Python предлагает два способа форматирования �
 
 Library to serialize data as binary:
 
-[msgpack](https://msgpack.org/)
-[protobuf](https://github.com/protocolbuffers/protobuf)
-[avro](http://avro.apache.org/docs/current/)
-[thrift](http://thrift.apache.org/)
+- [msgpack](https://msgpack.org/)
+- [protobuf](https://github.com/protocolbuffers/protobuf)
+- [avro](http://avro.apache.org/docs/current/)
+- [thrift](http://thrift.apache.org/)
 
 Поскольку они бинарные, ни один из них не может быть изменен человеком, вооружившимся текстовым редактором.
+`pickled` — это обработанная pickle бинарная строка, созданная из объекта obj1
