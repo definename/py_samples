@@ -33,7 +33,7 @@ except Exception as e:
 
 print("{0:=^100s}".format("BIG SALE"))
 
-# string interpolation interpolation
+# string interpolation
 name = "Oleh"
 age = 21
 print(f"Name: {name}, age: {age}")
