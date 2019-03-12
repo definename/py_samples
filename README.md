@@ -191,4 +191,4 @@ Library to serialize data as binary:
 
 Основные операции DML реляционной базы данных можно запомнить с помощью акронима `CRUD` - Create, Read, Update, Delete.
 
-[DB-API](https://legacy.python.org/dev/peps/pep-0249/)
+[DB-API](https://legacy.python.org/dev/peps/pep-0249/) - это стандартный API в Python, предназначенный для получения доступа к реляционным базам данных. 
