@@ -207,3 +207,7 @@ Library to serialize data as binary:
 [SQLAlchemy](http://www.sqlalchemy.org/) - самая популярная библиотека для работы с разными базами данных.
 
 [dataset](https://dataset.readthedocs.org/) - database for lazy people.
+
+# NoSQL database
+
+> Они были созданы для работы с очень крупными наборами данных, позволяют более гибко определять данные и поддерживают пользовательские операции с данными.
