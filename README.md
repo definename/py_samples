@@ -141,6 +141,11 @@ In order to make class attributes private we need to decorate their names with `
 
 :boom: `полиморфизм` — это значит, что одна операция может быть произведена над разными объектами независимо от их класса.
 
+
+# namespace
+
+It owrk according to the given rule - `LEGB`
+
 # data:
 :boom: `cтроки` — последовательности символов в кодировке Unicode, используемые для представления текстовых данных.
 
