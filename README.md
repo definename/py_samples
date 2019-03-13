@@ -221,7 +221,7 @@ Library to serialize data as binary:
 - [PostgreSQL](http://www.postgresql.org/)
   The most popular PostgreSQL drivers for python:
   - [psycopg2](http://initd.org/psycopg/)
-  - [py-postgresql](pgfoundry.org/)
+  - [py-postgresql](https://github.com/python-postgres/fe)
 - [SQLAlchemy](http://www.sqlalchemy.org/) - самая популярная библиотека для работы с разными базами данных.
 - [dataset](https://dataset.readthedocs.org/) - database for lazy people.
 
