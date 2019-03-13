@@ -218,4 +218,4 @@ NoSQL database example:
 - [memcached](http://memcached.org/) - это быстрый сервер кэширования, располагающийся в памяти и работающий по принципу "ключ-значение"
 - `redis` — это сервер структур данных. Как и в случае с memcached, все данные сервера Redis должны поместиться в память (хотя у нас имеется возможность сохранить все данные на диск).
   - [redis-py](https://github.com/andymccurdy/redis-py) driver
-  - [http://bit.ly/redis-py-docs]() documentation
+  - [redis-py](http://bit.ly/redis-py-docs) documentation
