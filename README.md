@@ -207,15 +207,23 @@ Library to serialize data as binary:
 
 Основные операции DML реляционной базы данных можно запомнить с помощью акронима `CRUD` - Create, Read, Update, Delete.
 
+## DB-API
 [DB-API](https://legacy.python.org/dev/peps/pep-0249/) - это стандартный API в Python, предназначенный для получения доступа к реляционным базам данных. 
 
 Примеры реляционный баз данных:
 
-- 
-
-[SQLAlchemy](http://www.sqlalchemy.org/) - самая популярная библиотека для работы с разными базами данных.
-
-[dataset](https://dataset.readthedocs.org/) - database for lazy people.
+- [SQLite](http://www.sqlite.org/)
+- [MySQL](http://www.mysql.com/)
+  The most popular MySQL drivers for python:
+  - [MySQL Connector](https://dev.mysql.com/doc/connector-python/en/)
+  - [PYMySQL](https://github.com/petehunt/PyMySQL/)
+  - [oursql](http://pythonhosted.org/oursql/)
+- [PostgreSQL](http://www.postgresql.org/)
+  The most popular PostgreSQL drivers for python:
+  - [psycopg2](http://initd.org/psycopg/)
+  - [py-postgresql](pgfoundry.org/)
+- [SQLAlchemy](http://www.sqlalchemy.org/) - самая популярная библиотека для работы с разными базами данных.
+- [dataset](https://dataset.readthedocs.org/) - database for lazy people.
 
 # NoSQL database
 
