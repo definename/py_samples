@@ -76,12 +76,16 @@ Create `*.ipynb` file and share it via `nbviewer` service
 # containers:
 
 List(Список) - `[1, 2, 3, "one", "two", "three"]`
+- Изменяемый контейнер
 
 Tuple(Кортеж) - `(1, 2, 3, 4, 5)`
+- Неизменяемый контейнер(только на первом уровне), если в `tuple` добавить `list` его мдно будет изменить
 
 Dictionary(Словарь) - `{ "seconds": "1", "minutes": "2", "hour": "3", "day": "4", "month": "5", "year": "5" }`
+- Получение структуры данных в виде `ключ`: `значение`
 
 Set(Множество) - `{1, 2, 3, 4, 5, 6, 0}`
+- Решение задачи получения уникальных элементов
 
 # concepts:
 
@@ -136,6 +140,11 @@ In order to create `python` package we need to create directory and put all `*.p
 In order to make class attributes private we need to decorate their names with `__` e.g `__name`
 
 :boom: `полиморфизм` — это значит, что одна операция может быть произведена над разными объектами независимо от их класса.
+
+
+# namespace
+
+It works according to the given rule - `LEGB`
 
 # data:
 :boom: `cтроки` — последовательности символов в кодировке Unicode, используемые для представления текстовых данных.
