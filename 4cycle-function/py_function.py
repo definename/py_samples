@@ -123,5 +123,5 @@ def fff():
 
 fff()
 fff.x = 1
-print("-- Python magic: {}".format(ff.x))
+print("-- Python magic: {}".format(fff.x))
 
