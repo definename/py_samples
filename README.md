@@ -190,7 +190,7 @@ Library to serialize data as binary:
 
 [HDF5](http://www.hdfgroup.org/why_hdf) — это бинарный формат данных, предназначенный для хранения многомерных или иерархических числовых данных.
 
-# Relational Databases
+# Relational Database
 
 > Relational Databases (pеляционная база данных) представляет собой множество взаимосвязанных таблиц, каждая из которых содержит информацию об объектах определенного вида.
 
