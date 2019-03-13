@@ -20,7 +20,11 @@ is_none(True)
 is_none(False)
 is_none({})
 
-# function default value
+# default params
+def f(x, y = 2):
+    return x *y
+
+print("call function with def params: {}".format(f(2)))
 
 def do_it(one, two, three=10):
     return {"one": one, "two": two, "three": three}
@@ -28,8 +32,16 @@ def do_it(one, two, three=10):
 print(do_it(1, two=2))
 
 argDict = { "one": 11, "two": 22, "three": 33 }
-print(do_it(**argDict))
+print(do_it(**argDict), end="\n\n")
 
+# default 
+a = 5
+def ff(i, b = a):
+    return i * b
+
+print("mult {}".format(ff(2)))
+a = 10
+print("mult {}".format(ff(2)), end="\n\n")
 
 # container as function argument
 
@@ -54,14 +66,14 @@ print("Python no buggy:", no_buggy("no-c"))
 # positional args
 
 def do_args(*args):
-    print("Here is", type(args), "of params with len", len(args), "passed to the function:", args)
+    print("Here is", type(args), "of params with len", len(args), "passed to the function:", args, end="\n\n")
 
 do_args(1, 2, 3, 4, 5, 123, "sdfdfg")
 
 # keyword args
 
 def do_kwargs(**kwargs):
-    print("Keyword args (aka dictionary):", kwargs)
+    print("Keyword args (aka dictionary):", kwargs, end="\n\n")
 
 do_kwargs(qwe1="asd", qwe2="sdf", qwe3="qwe")
 
@@ -99,26 +111,17 @@ def outer(say):
 
 print(outer("MatherFucka"))
 
-# closure
+# return several params
+def addmul(x, y):
+    return x + y, x * y
 
-def talk(subject):
-    def inner():
-        print("We are talking on '%s'" % subject)
-    return inner
+print("-- Return several params: {}".format(addmul(2, 3)), end="\n\n")
 
-a = talk("Subject1")
-b = talk("Subject2")
+# Python magic
+def ff():
+    pass
 
-print(type(a))
-print(type(b))
-a()
-b()
+ff()
+ff.x = 1
+print("-- Python magic: {}".format(ff.x))
 
-# lambda
-words = ["word1", "word2", "word3"]
-
-def edit_story(to_edit, func):
-    for word in to_edit:
-        print(func(word))
-
-edit_story(words, lambda word: word.capitalize() + "!")

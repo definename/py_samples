@@ -41,10 +41,19 @@ print("Current month:", dictOrigin.get("month", "January"))
 
 print(dictOrigin.keys())
 print(dictOrigin.values())
-print(dictOrigin.items())
+print(dictOrigin.items(), end="\n\n")
 
 dictCopy = dictOrigin.copy()
 dictCopy["minutes"] = "47"
 dictCopy["hours"] = "17"
 print("Origin:", dictOrigin)
-print("Copy:", dictCopy)
+print("Copy:", dictCopy, end="\n\n")
+
+# iterate dict
+for k in dictOrigin:
+    print("dict key: {} dict value: {}".format(k, dictOrigin[k]))
+    break
+
+for k, v in dictOrigin.items():
+    print("dict key: {} dict value: {}".format(k, v))
+    break
