@@ -144,7 +144,7 @@ In order to make class attributes private we need to decorate their names with `
 
 # namespace
 
-It owrk according to the given rule - `LEGB`
+It works according to the given rule - `LEGB`
 
 # data:
 :boom: `cтроки` — последовательности символов в кодировке Unicode, используемые для представления текстовых данных.
