@@ -118,10 +118,10 @@ def addmul(x, y):
 print("-- Return several params: {}".format(addmul(2, 3)), end="\n\n")
 
 # Python magic
-def ff():
+def fff():
     pass
 
-ff()
-ff.x = 1
+fff()
+fff.x = 1
 print("-- Python magic: {}".format(ff.x))
 
