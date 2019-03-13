@@ -34,7 +34,7 @@ print(do_it(1, two=2))
 argDict = { "one": 11, "two": 22, "three": 33 }
 print(do_it(**argDict), end="\n\n")
 
-# default 
+# default params
 a = 5
 def ff(i, b = a):
     return i * b
