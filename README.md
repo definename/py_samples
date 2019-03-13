@@ -1,6 +1,6 @@
 > Pip is a package manager + Virtualenv is an environment manager = [Conda](https://conda.io/en/latest/) is both
 
-# [anaconda](https://www.anaconda.com/) environment:
+# [Anaconda](https://www.anaconda.com/) environment:
 
 Update `anaconda` from older version:
 ```
@@ -190,20 +190,49 @@ Library to serialize data as binary:
 
 [HDF5](http://www.hdfgroup.org/why_hdf) — это бинарный формат данных, предназначенный для хранения многомерных или иерархических числовых данных.
 
-# Реляционные базы данных
+# Relational Databases
 
-`DDL` (Data Definition Language, язык определения данных) который обрабатывает создание, удаление,
+> Relational Databases (pеляционная база данных) представляет собой множество взаимосвязанных таблиц, каждая из которых содержит информацию об объектах определенного вида.
+
+## SQL
+> SQL (Structured Query Language, структурированный язык запросов) не является API или протоколом. Это декларативный язык: вы говорите, что вам нужно, вместо того, как это сделать. Это универсальный язык реляционных баз данных.
+
+## DDL
+> DDL (Data Definition Language, язык определения данных) который обрабатывает создание, удаление,
 ограничения и разрешения для таблиц, баз данных.
 
-`DML` (Data Manipulation Language, язык манипулирования данными), который обрабатывает
+## DML
+> DML (Data Manipulation Language, язык манипулирования данными), который обрабатывает
 добавление данных, их выборку, обновление и удаление.
 
 Основные операции DML реляционной базы данных можно запомнить с помощью акронима `CRUD` - Create, Read, Update, Delete.
 
+## DB-API
 [DB-API](https://legacy.python.org/dev/peps/pep-0249/) - это стандартный API в Python, предназначенный для получения доступа к реляционным базам данных. 
 
-## Библиотеки и драйверы:
+Примеры реляционный баз данных:
 
-[SQLAlchemy](http://www.sqlalchemy.org/) - самая популярная библиотека для работы с разными базами данных.
+- [SQLite](http://www.sqlite.org/)
+- [MySQL](http://www.mysql.com/)
+  The most popular MySQL drivers for python:
+  - [MySQL Connector](https://dev.mysql.com/doc/connector-python/en/)
+  - [PYMySQL](https://github.com/petehunt/PyMySQL/)
+  - [oursql](http://pythonhosted.org/oursql/)
+- [PostgreSQL](http://www.postgresql.org/)
+  The most popular PostgreSQL drivers for python:
+  - [psycopg2](http://initd.org/psycopg/)
+  - [py-postgresql](https://github.com/python-postgres/fe)
+- [SQLAlchemy](http://www.sqlalchemy.org/) - самая популярная библиотека для работы с разными базами данных.
+- [dataset](https://dataset.readthedocs.org/) - database for lazy people.
 
-[dataset](https://dataset.readthedocs.org/) - database for lazy people.
+# NoSQL database
+
+> Они были созданы для работы с очень крупными наборами данных, позволяют более гибко определять данные и поддерживают пользовательские операции с данными.
+
+NoSQL database example:
+
+- Семейство `dbm` - они представляют собой хранилища, работающие по принципу «ключ — значение»
+- [memcached](http://memcached.org/) - это быстрый сервер кэширования, располагающийся в памяти и работающий по принципу "ключ-значение"
+- [redis](http://redis.io/) — это сервер структур данных. Как и в случае с memcached, все данные сервера Redis должны поместиться в память (хотя у нас имеется возможность сохранить все данные на диск).
+  - [redis-py](https://github.com/andymccurdy/redis-py) driver
+  - [redis-py](http://bit.ly/redis-py-docs) documentation
