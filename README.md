@@ -282,3 +282,5 @@ sudo service redis-server restart
 ```
 
 PS: Follow this guide to clarify more details: [Windows Subsystem for Linux (WSL)](https://redislabs.com/blog/redis-on-windows-10/)
+
+Ключ, имеющий одно значение, является `строкой` Redis.
