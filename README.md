@@ -1,4 +1,16 @@
-[Databases](#databases)
+# Table of contents
+
+- [Databases](#databases)
+- [Containers](#containers)
+- [Concepts](#concepts)
+- [Module](#module)
+- [Package](#package)
+- [Class](#class)
+- [Namespace](#namespace)
+- [Format](#format)
+- [Regex](#regex)
+- [Serialization](#serialization)
+
 
 > Pip is a package manager + Virtualenv is an environment manager = [Conda](https://conda.io/en/latest/) is both
 
