@@ -1,3 +1,5 @@
+[here is](#Fulltext-databases)
+
 > Pip is a package manager + Virtualenv is an environment manager = [Conda](https://conda.io/en/latest/) is both
 
 # [Anaconda](https://www.anaconda.com/) environment:
@@ -291,7 +293,7 @@ PS: Follow this guide to clarify more details: [Windows Subsystem for Linux (WSL
 
 ---
 
-# Full-Text Databases
+#Fulltext databases
 
 - Lucene
 - Solr
