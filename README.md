@@ -264,6 +264,12 @@ NoSQL database example:
 - [redis](http://redis.io/) — это сервер структур данных. Как и в случае с memcached, все данные сервера Redis должны поместиться в память (хотя у нас имеется возможность сохранить все данные на диск).
   - [redis-py](https://github.com/andymccurdy/redis-py) driver
   - [redis-py](http://bit.ly/redis-py-docs) documentation
+- Cassandra
+- CouchDB
+- HBase
+- Kyoto
+- MongoDB
+- Riak
   
 ### Redis How to
 Windows:
@@ -283,4 +289,13 @@ sudo service redis-server restart
 
 PS: Follow this guide to clarify more details: [Windows Subsystem for Linux (WSL)](https://redislabs.com/blog/redis-on-windows-10/)
 
-Ключ, имеющий одно значение, является `строкой` Redis.
+---
+
+# Full-Text Databases
+
+- Lucene
+- Solr
+- ElasticSearch
+- Sphinx
+- Xapian
+- Whoosh
