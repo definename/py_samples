@@ -1,4 +1,4 @@
-[here is](#fulltext-databases)
+[Databases](#databases)
 
 > Pip is a package manager + Virtualenv is an environment manager = [Conda](https://conda.io/en/latest/) is both
 
@@ -218,24 +218,26 @@ Library to serialize data as binary:
 
 ---
 
-# Relational Database
+# Databases
+
+## Relational Database
 
 > Relational Databases (pеляционная база данных) представляет собой множество взаимосвязанных таблиц, каждая из которых содержит информацию об объектах определенного вида.
 
-## SQL
+### SQL
 > SQL (Structured Query Language, структурированный язык запросов) не является API или протоколом. Это декларативный язык: вы говорите, что вам нужно, вместо того, как это сделать. Это универсальный язык реляционных баз данных.
 
-## DDL
+### DDL
 > DDL (Data Definition Language, язык определения данных) который обрабатывает создание, удаление,
 ограничения и разрешения для таблиц, баз данных.
 
-## DML
+### DML
 > DML (Data Manipulation Language, язык манипулирования данными), который обрабатывает
 добавление данных, их выборку, обновление и удаление.
 
 Основные операции DML реляционной базы данных можно запомнить с помощью акронима `CRUD` - Create, Read, Update, Delete.
 
-## DB-API
+### DB-API
 [DB-API](https://legacy.python.org/dev/peps/pep-0249/) - это стандартный API в Python, предназначенный для получения доступа к реляционным базам данных. 
 
 Примеры реляционный баз данных:
@@ -255,7 +257,7 @@ Library to serialize data as binary:
 
 ---
 
-# NoSQL database
+## NoSQL database
 
 > Они были созданы для работы с очень крупными наборами данных, позволяют более гибко определять данные и поддерживают пользовательские операции с данными.
 
@@ -273,7 +275,7 @@ NoSQL database example:
 - MongoDB
 - Riak
   
-### Redis How to
+#### Redis How to
 Windows:
 
 - First of all in order to deploy `redis` on Windows we need enable `WSL` (Windows Subsystem for Linux), follow the instructions on [Microsoft Docs](https://docs.microsoft.com/en-us/windows/wsl/install-win10#install-the-windows-subsystem-for-linux)
@@ -293,7 +295,7 @@ PS: Follow this guide to clarify more details: [Windows Subsystem for Linux (WSL
 
 ---
 
-# Fulltext databases
+## Fulltext databases
 
 - Lucene
 - Solr
