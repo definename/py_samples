@@ -281,6 +281,8 @@ redis-cli -v
 sudo service redis-server restart
 ```
 
+PS: Follow this to clarify more details: [Windows Subsystem for Linux (WSL)](https://redislabs.com/blog/redis-on-windows-10/)
+
 Linux:
 ```
   Todo
