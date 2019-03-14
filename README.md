@@ -267,10 +267,20 @@ NoSQL database example:
   
 ### Redis How to
 Windows:
+
+- First of all in order to deploy `redis` on Windows we need enable `WSL` (Windows Subsystem for Linux), follow the instructions on [Microsoft Docs](https://docs.microsoft.com/en-us/windows/wsl/install-win10#install-the-windows-subsystem-for-linux)
+
+- If `WSL` was deployed run these commands, from `bash`, to install `redis-server`
+
 ```
-  Todo
+sudo apt-get update
+sudo apt-get upgrade
+sudo apt-get install redis-server
+redis-cli -v
+
+sudo service redis-server restart
 ```
-  
+
 Linux:
 ```
   Todo
