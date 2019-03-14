@@ -1,3 +1,16 @@
+# Table of contents
+
+- [Containers](#containers)
+- [Concepts](#concepts)
+- [Module](#module)
+- [Package](#package)
+- [Class](#class)
+- [Namespace](#namespace)
+- [Format](#format)
+- [Regex](#regex)
+- [Serialization](#serialization)
+- [Databases](#databases)
+
 > Pip is a package manager + Virtualenv is an environment manager = [Conda](https://conda.io/en/latest/) is both
 
 # [Anaconda](https://www.anaconda.com/) environment:
@@ -216,24 +229,26 @@ Library to serialize data as binary:
 
 ---
 
-# Relational Database
+# Databases
+
+## Relational Database
 
 > Relational Databases (pеляционная база данных) представляет собой множество взаимосвязанных таблиц, каждая из которых содержит информацию об объектах определенного вида.
 
-## SQL
+### SQL
 > SQL (Structured Query Language, структурированный язык запросов) не является API или протоколом. Это декларативный язык: вы говорите, что вам нужно, вместо того, как это сделать. Это универсальный язык реляционных баз данных.
 
-## DDL
+### DDL
 > DDL (Data Definition Language, язык определения данных) который обрабатывает создание, удаление,
 ограничения и разрешения для таблиц, баз данных.
 
-## DML
+### DML
 > DML (Data Manipulation Language, язык манипулирования данными), который обрабатывает
 добавление данных, их выборку, обновление и удаление.
 
 Основные операции DML реляционной базы данных можно запомнить с помощью акронима `CRUD` - Create, Read, Update, Delete.
 
-## DB-API
+### DB-API
 [DB-API](https://legacy.python.org/dev/peps/pep-0249/) - это стандартный API в Python, предназначенный для получения доступа к реляционным базам данных. 
 
 Примеры реляционный баз данных:
@@ -253,7 +268,7 @@ Library to serialize data as binary:
 
 ---
 
-# NoSQL database
+## NoSQL database
 
 > Они были созданы для работы с очень крупными наборами данных, позволяют более гибко определять данные и поддерживают пользовательские операции с данными.
 
@@ -264,8 +279,14 @@ NoSQL database example:
 - [redis](http://redis.io/) — это сервер структур данных. Как и в случае с memcached, все данные сервера Redis должны поместиться в память (хотя у нас имеется возможность сохранить все данные на диск).
   - [redis-py](https://github.com/andymccurdy/redis-py) driver
   - [redis-py](http://bit.ly/redis-py-docs) documentation
+- Cassandra
+- CouchDB
+- HBase
+- Kyoto
+- MongoDB
+- Riak
   
-### Redis How to
+#### Redis How to
 Windows:
 
 - First of all in order to deploy `redis` on Windows we need enable `WSL` (Windows Subsystem for Linux), follow the instructions on [Microsoft Docs](https://docs.microsoft.com/en-us/windows/wsl/install-win10#install-the-windows-subsystem-for-linux)
@@ -282,3 +303,14 @@ sudo service redis-server restart
 ```
 
 PS: Follow this guide to clarify more details: [Windows Subsystem for Linux (WSL)](https://redislabs.com/blog/redis-on-windows-10/)
+
+---
+
+## Fulltext databases
+
+- Lucene
+- Solr
+- ElasticSearch
+- Sphinx
+- Xapian
+- Whoosh
