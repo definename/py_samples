@@ -293,7 +293,7 @@ PS: Follow this guide to clarify more details: [Windows Subsystem for Linux (WSL
 
 ---
 
-#Fulltext databases
+# Fulltext databases
 
 - Lucene
 - Solr
