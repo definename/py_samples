@@ -3,22 +3,22 @@ import pickle
 
 todoList = {}
 
-def validateDate(func):
-    def wrapper(date, *args):
+def ValidateDate(func):
+    def Wrapper(date, *args):
         try:
             datetime.datetime.strptime(date, r"%d.%m.%y")
         except ValueError:
             raise ValueError("Incorrect date")
         return func(date, *args)
-    return wrapper
+    return Wrapper
 
-def add():
+def Add():
     dt = input("\tEnter date in format 01.01.99: ")
     desc = input("\tEnter task description: ")
-    addTask(dt, desc)
+    AddTask(dt, desc)
 
-@validateDate
-def addTask(dt, desc):
+@ValidateDate
+def AddTask(dt, desc):
     try:
         if dt in todoList:
             todoList[dt].append(desc)
@@ -29,12 +29,12 @@ def addTask(dt, desc):
     else:
         print("Task has been successfully added to the task list")
 
-def enum():
+def Enum():
     dt = input("\tEnter date in format 01.01.99: ")
-    enumTasks(dt)
+    EnumTasks(dt)
 
-@validateDate
-def enumTasks(dt):
+@ValidateDate
+def EnumTasks(dt):
     try:
         if dt in todoList:
             print("\tDate: {}\n\tTask list: {}".format(dt, todoList[dt]))
@@ -45,7 +45,7 @@ def enumTasks(dt):
     else:
         print("Task list has been successfully enumerated")
 
-def saveList():
+def SaveList():
     try:
         fout = open("todoList.dat", "wb")
         pickle.dump(todoList, fout)
@@ -55,7 +55,7 @@ def saveList():
         print("Task list has been successfully saved")
 
 
-def loadList():
+def LoadList():
     try:
         fin = open("todoList.dat", "rb")
         todoList.update(pickle.load(fin))
@@ -70,18 +70,18 @@ desc = """Usage:
 'x' - to exit.
 """
 
-loadList()
+LoadList()
 
 while True:
     v = input(desc)
 
     if v == 'a':
-        add()
+        Add()
     elif v == 'e':
-        enum()
+        Enum()
     elif v == 'x':
         break
     else:
         continue
 
-saveList()
+SaveList()
