@@ -52,7 +52,7 @@ for line in fread3:
 fread3.close()
 print("{} bytes have been read".format(len(l_poem)), end="\n\n")
 
-# read with lines
+# read with lines, this method closes file automaticaly.
 ls_poem = ""
 with open("relativity", "rt") as fread4:
     lines = fread4.readlines()
