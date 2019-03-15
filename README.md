@@ -333,3 +333,9 @@ PS: Follow this guide to clarify more details: [Windows Subsystem for Linux (WSL
 - Sphinx
 - Xapian
 - Whoosh
+
+---
+
+# WWW
+
+We can start simple http server in this way: `python -m http.server`
