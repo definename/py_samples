@@ -148,6 +148,21 @@ It is also possible to import module and create alias for it in this way: `impor
 To be able to import only specific function from python module we need to do the following: `from modulename import functionname`
 To do the same with alias: `from modulename import functionname as fn`
 
+## Generate documentation and tests
+
+```
+def add(x, y):
+    """
+    Add x and y
+    >>> add(2, 3)
+    5
+    """
+    return x + y
+```
+
+- Generate documentation with `pydoc` module: `pydoc -w .\report.py`
+- Invoke test with `doctest` module: `python -m doctest .\report.py -v`
+
 ---
 
 # package
