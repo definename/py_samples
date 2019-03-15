@@ -152,7 +152,7 @@ To do the same with alias: `from modulename import functionname as fn`
 
 ```
 **********************************************************************
-report.py
+    report.py
 **********************************************************************
 
 def add(x, y):
@@ -164,7 +164,7 @@ def add(x, y):
     return x + y
 ```
 
-- Generate documentation with `pydoc` module: `pydoc -w .\report.py`
+- Generate documentation with `pydoc` module: `pydoc -w .\report.py`. `report.html` file will be generated.
 - Invoke test with `doctest` module: `python -m doctest .\report.py -v`
 
 ---
