@@ -343,8 +343,6 @@ We can start simple http server in this way: `python -m http.server`
 
 ## Web frameworks
 
-### Cервера отладки
-
 - [Bottle](https://bottlepy.org/docs/dev/) ("бутылка")
 ```
 pip install bottle
@@ -354,4 +352,4 @@ pip install bottle
 pip install flask
 ```
 
-### Full-Stack [Web Frameworks](https://wiki.python.org/moin/WebFrameworks) for Python
+Full-Stack [Web Frameworks](https://wiki.python.org/moin/WebFrameworks) for Python
