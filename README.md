@@ -339,3 +339,11 @@ PS: Follow this guide to clarify more details: [Windows Subsystem for Linux (WSL
 # WWW
 
 We can start simple http server in this way: `python -m http.server`
+
+## Web frameworks
+
+- Bottle
+```
+pip install bottle
+```
+- Flask
