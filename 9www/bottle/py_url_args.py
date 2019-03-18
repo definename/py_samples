@@ -1,4 +1,5 @@
-# Use this url: http://127.0.0.1:9999/echo/Oleh to test this sample
+# http://127.0.0.1:9999
+# http://127.0.0.1:9999/echo/Oleh
 
 from bottle import route, run, static_file
 
