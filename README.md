@@ -339,8 +339,6 @@ PS: Follow this guide to clarify more details: [Windows Subsystem for Linux (WSL
 
 # WWW
 
-> We can start simple http server in this way: python -m http.server
-
 ## Web clients
 
 - http
@@ -348,6 +346,8 @@ PS: Follow this guide to clarify more details: [Windows Subsystem for Linux (WSL
 - [requests](http://docs.python-requests.org/en/master/)
 
 ## Web frameworks
+
+We can start simple http server in this way: python -m http.server
 
 - [Bottle](https://bottlepy.org/docs/dev/) ("бутылка")
 ```
