@@ -343,11 +343,11 @@ We can start simple http server in this way: `python -m http.server`
 
 ## Web frameworks
 
-- [Bottle](https://bottlepy.org/docs/dev/)
+- [Bottle](https://bottlepy.org/docs/dev/) ("бутылка")
 ```
 pip install bottle
 ```
-- [Flask](http://flask.pocoo.org/)
+- [Flask](http://flask.pocoo.org/) ("склянка")
 ```
 pip install flask
 ```
