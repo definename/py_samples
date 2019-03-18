@@ -347,6 +347,10 @@ PS: Follow this guide to clarify more details: [Windows Subsystem for Linux (WSL
 
 ## Web frameworks
 
+> Общий интерфейс шлюза (Common Gateway Interface, CGI) был разработан для того, чтобы веб-серверы могли запускать внешние программы и возвращать результаты.
+
+> Web Server Gateway Interface (WSGI) — универсального API между веб-приложениями и веб-серверами.
+
 We can start simple http server in this way: python -m http.server
 
 - [Bottle](https://bottlepy.org/docs/dev/) ("бутылка")
