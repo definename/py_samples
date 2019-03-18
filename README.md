@@ -10,6 +10,7 @@
 - [Regex](#regex)
 - [Serialization](#serialization)
 - [Databases](#databases)
+- [WWW](#www)
 
 > Pip is a package manager + Virtualenv is an environment manager = [Conda](https://conda.io/en/latest/) is both
 
@@ -342,7 +343,7 @@ We can start simple http server in this way: `python -m http.server`
 
 ## Web frameworks
 
-- Bottle
+- [Bottle](https://bottlepy.org/docs/dev/)
 ```
 pip install bottle
 ```
