@@ -347,4 +347,7 @@ We can start simple http server in this way: `python -m http.server`
 ```
 pip install bottle
 ```
-- Flask
+- [Flask](http://flask.pocoo.org/)
+```
+pip install flask
+```
