@@ -363,3 +363,24 @@ pip install flask
 ```
 
 Full-Stack [Web Frameworks](https://wiki.python.org/moin/WebFrameworks) for Python
+
+## HTTP
+
+"Передача состояния представления" (Representational State Transfer, `REST`)
+
+> Многие продукты имеют REST-интерфейс или интерфейс RESTful. На практике это часто означает, что они имеют веб-интерфейс — определения URL, предназначенные для доступа к веб-сервису.
+
+- `HEAD` - получает информацию о ресурсе, но не его данные;
+
+- `GET` - GET получает данные ресурса с сервера. Это стандартный метод, используемый вашим браузером. В любое время, когда вы видите URL с вопросительным знаком (?), за которым следует несколько аргументов, вы можете распознать запрос GET. GET не должен использоваться для создания, изменения или удаления данных;
+
+- `POST` - этот глагол обновляет данные на сервере. Он часто используется для HTML-форм и сетевых API;
+
+- `PUT` - этот глагол создает новый ресурс;
+
+- `DELETE` - этот глагол говорит сам за себя: DELETE удаляет.
+
+[Scrapy](https://scrapy.org/) - An open source and collaborative framework for extracting the data you need from websites.
+[Beautiful Soup](https://www.crummy.com/software/BeautifulSoup/) - Beautiful Soup is a Python library for pulling data out of HTML and XML files.
+
+[Top](#table-of-contents)
