@@ -380,4 +380,6 @@ Full-Stack [Web Frameworks](https://wiki.python.org/moin/WebFrameworks) for Pyth
 
 - `DELETE` - этот глагол говорит сам за себя: DELETE удаляет.
 
+[Scrapy](https://scrapy.org/) - An open source and collaborative framework for extracting the data you need from websites
+
 [Top](#table-of-contents)
