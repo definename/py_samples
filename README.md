@@ -379,3 +379,5 @@ Full-Stack [Web Frameworks](https://wiki.python.org/moin/WebFrameworks) for Pyth
 - `PUT` - этот глагол создает новый ресурс;
 
 - `DELETE` - этот глагол говорит сам за себя: DELETE удаляет. Мы за правдивость в рекламе!
+
+                                    [Top](#table-of-contents)
