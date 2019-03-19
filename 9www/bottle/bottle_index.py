@@ -7,7 +7,7 @@ def index():
 
 # http://127.0.0.1:9999/echo
 @route("/echo")
-def echo1():
+def echo():
     return "It isn't fancy, but it's my home page"
 
 # http://127.0.0.1:9999/thing/Balu
