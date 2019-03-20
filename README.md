@@ -11,6 +11,7 @@
 - [Serialization](#serialization)
 - [Databases](#databases)
 - [WWW](#www)
+- [System](#system)
 
 > Pip is a package manager + Virtualenv is an environment manager = [Conda](https://conda.io/en/latest/) is both
 
@@ -383,5 +384,15 @@ Full-Stack [Web Frameworks](https://wiki.python.org/moin/WebFrameworks) for Pyth
 [Scrapy](https://scrapy.org/) - An open source and collaborative framework for extracting the data you need from websites.
 
 [Beautiful Soup](https://www.crummy.com/software/BeautifulSoup/) - Beautiful Soup is a Python library for pulling data out of HTML and XML files.
+
+---
+
+# System
+
+## Datetime
+
+Одним из способов представления абсолютного времени является подсчет количества секунд, прошедших с некоторой стартовой точки. В Unix используется количество секунд, прошедших с полуночи 1 января 1970 года (примерно в это время появилась система Unix). Это значение часто называют `epoch`
+
+:point_up: Не забывайте: `UTC` для времени, `UTF-8` для строк
 
 [Top](#table-of-contents)
