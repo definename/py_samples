@@ -381,6 +381,7 @@ Full-Stack [Web Frameworks](https://wiki.python.org/moin/WebFrameworks) for Pyth
 - `DELETE` - этот глагол говорит сам за себя: DELETE удаляет.
 
 [Scrapy](https://scrapy.org/) - An open source and collaborative framework for extracting the data you need from websites.
+
 [Beautiful Soup](https://www.crummy.com/software/BeautifulSoup/) - Beautiful Soup is a Python library for pulling data out of HTML and XML files.
 
 [Top](#table-of-contents)
