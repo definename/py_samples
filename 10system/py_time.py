@@ -24,3 +24,14 @@ print("UTC datetime with direct access: {}/{}/{} {}:{}:{}".format(
     st_utc.tm_hour,
     st_utc.tm_min,
     st_utc.tm_sec))
+
+fmt = "It's %A, %B %d, %Y, local time %I:%M:%S%p"
+t = time.localtime(time.time())
+print(time.strftime(fmt, t))
+
+fmt2 = "%Y-%m-%d"
+st_parsed = time.strptime("2019-03-21", fmt2)
+print("Parsed struct_time with direct access: {}/{}/{}".format(
+    st_parsed.tm_year,
+    st_parsed.tm_mon,
+    st_parsed.tm_mday))
