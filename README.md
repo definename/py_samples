@@ -397,9 +397,9 @@ Full-Stack [Web Frameworks](https://wiki.python.org/moin/WebFrameworks) for Pyth
 
 ## Alternative datetime modules:
 
-- [arrow](https://arrow.readthedocs.io/en/latest/) Этот модуль содержит множество функций для работы с датой и временем и имеет простой API.
-- [dateutil](https://dateutil.readthedocs.io/en/stable/) Модуль может проанализировать любой формат даты и хорошо работает с относительными датами и временем.
-- [iso8601](https://pypi.org/project/iso8601/). Этот модуль заполняет пробелы, связанные с работой модулей стандартной библиотеки, когда речь идет о формате ISO 8601.
-- [fleming](https://fleming.readthedocs.io/en/develop/). Модуль содержит множество функций для работы с часовыми поясами.
+- [arrow](https://arrow.readthedocs.io/en/latest/) - содержит множество функций для работы с датой и временем и имеет простой API.
+- [dateutil](https://dateutil.readthedocs.io/en/stable/) - может проанализировать любой формат даты и хорошо работает с относительными датами и временем.
+- [iso8601](https://pypi.org/project/iso8601/) - заполняет пробелы, связанные с работой модулей стандартной библиотеки, когда речь идет о формате ISO 8601.
+- [fleming](https://fleming.readthedocs.io/en/develop/) - содержит множество функций для работы с часовыми поясами.
 
 [Top](#table-of-contents)
