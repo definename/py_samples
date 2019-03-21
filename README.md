@@ -12,6 +12,7 @@
 - [Databases](#databases)
 - [WWW](#www)
 - [System](#system)
+- [Thread, concurrency](#thread,-concurrency)
 
 > Pip is a package manager + Virtualenv is an environment manager = [Conda](https://conda.io/en/latest/) is both
 
