@@ -21,6 +21,7 @@ def dryer(input):
         print("Dry: {}".format(dish))
         input.task_done()
 
+# entry point
 if __name__ == "__main__":
     dish_queue = mp.JoinableQueue()
     proc = mp.Process(target=dryer, args=(dish_queue,))
