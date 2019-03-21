@@ -12,7 +12,7 @@
 - [Databases](#databases)
 - [WWW](#www)
 - [System](#system)
-- [Thread, concurrency](#thread,-concurrency)
+- [Concurrency](#concurrency)
 
 > Pip is a package manager + Virtualenv is an environment manager = [Conda](https://conda.io/en/latest/) is both
 
@@ -402,7 +402,7 @@ Full-Stack [Web Frameworks](https://wiki.python.org/moin/WebFrameworks) for Pyth
 - [iso8601](https://pypi.org/project/iso8601/) - заполняет пробелы, связанные с работой модулей стандартной библиотеки, когда речь идет о формате ISO 8601.
 - [fleming](https://fleming.readthedocs.io/en/develop/) - содержит множество функций для работы с часовыми поясами.
 
-# Thread, concurrency
+# Concurrency
 
 :point_up: В Python потоки не ускоряют задачи, связанные с ограничениями процессора, из-за одной детали реализации стандартной системы Python, которая называется Global Interpreter Lock (GIL). Она предназначена для того, чтобы избежать потоковых проблем в интерпретаторе Python, и действительно может замедлить многопоточную программу по сравнению с однопоточной или даже многопроцессорной версией.
 
