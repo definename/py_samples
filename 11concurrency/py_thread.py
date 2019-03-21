@@ -3,7 +3,7 @@ import time
 
 def washer(dishes, dish_queue):
     for dish in dishes:
-        time.sleep(2)
+        time.sleep(1)
         dish_queue.put(dish)
 
         if dish == "exit":
@@ -13,7 +13,7 @@ def washer(dishes, dish_queue):
 
 def dryer(dish_queue):
     while True:
-        time.sleep(3)
+        time.sleep(2)
         dish = dish_queue.get()
 
         if dish == "exit":
