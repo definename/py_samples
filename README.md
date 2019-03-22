@@ -408,7 +408,7 @@ Full-Stack [Web Frameworks](https://wiki.python.org/moin/WebFrameworks) for Pyth
 
 :point_up: В Python потоки не ускоряют задачи, связанные с ограничениями процессора, из-за одной детали реализации стандартной системы Python, которая называется Global Interpreter Lock (GIL). Она предназначена для того, чтобы избежать потоковых проблем в интерпретаторе Python, и действительно может замедлить многопоточную программу по сравнению с однопоточной или даже многопроцессорной версией.
 
-## Frameworks
+## Networking frameworks
 
 - [gevent](http://www.gevent.org/) - gevent is a coroutine -based Python networking library that uses greenlet to provide a high-level synchronous API on top of the libev or libuv event loop.
 - [tornado](https://www.tornadoweb.org/en/stable/) - Tornado is a Python web framework and asynchronous networking library
