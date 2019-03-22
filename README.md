@@ -413,6 +413,7 @@ Full-Stack [Web Frameworks](https://wiki.python.org/moin/WebFrameworks) for Pyth
 - [gevent](http://www.gevent.org/) - gevent is a coroutine -based Python networking library that uses greenlet to provide a high-level synchronous API on top of the libev or libuv event loop.
 - [tornado](https://www.tornadoweb.org/en/stable/) - Tornado is a Python web framework and asynchronous networking library
 - [gunicorn](https://gunicorn.org/) - Gunicorn 'Green Unicorn' is a Python WSGI HTTP Server for UNIX
+- [twisted](https://twistedmatrix.com) - Twisted is an event-driven networking engine written in Python
 
 ---
 
