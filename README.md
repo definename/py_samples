@@ -416,6 +416,13 @@ Full-Stack [Web Frameworks](https://wiki.python.org/moin/WebFrameworks) for Pyth
 - [twisted](https://twistedmatrix.com) - Twisted is an event-driven networking engine written in Python;
 - [asyncio](https://docs.python.org/3/library/asyncio.html) - asyncio is a library to write concurrent code using the async/await syntax.
 
+## Python queue packages:
+
+-[Celery](http://www.celeryproject.org/) - Celery is an asynchronous task queue/job queue based on distributed message passing.
+-[thoonk](https://pypi.org/project/thoonk/) - hoonk is a clusterable, Redis based, Publish-Subscribe, Queue, and Job Distrubtion system based on the philosophies of XMPP Pubsub
+-[RQ (Redis Queue)](http://python-rq.org/) - simple Python library for queueing jobs and processing them in the background with workers.
+[Queues](https://python-scripts.com/queues) - этот сайт предлагает поучаствовать в дискуссии о программном обеспечении для создания очередей, как написанном на Python, так и ином.
+
 ---
 
 [Top](#table-of-contents)
