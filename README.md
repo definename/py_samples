@@ -416,7 +416,8 @@ Full-Stack [Web Frameworks](https://wiki.python.org/moin/WebFrameworks) for Pyth
 - [twisted](https://twistedmatrix.com) - Twisted is an event-driven networking engine written in Python;
 - [asyncio](https://docs.python.org/3/library/asyncio.html) - asyncio is a library to write concurrent code using the async/await syntax.
 - [pyzmq](http://zeromq.org/bindings:python) - Python binding for ZeroMQ library.
-    - [pyzmq documentation](https://pyzmq.readthedocs.io/en/latest/) - PyZMQ Documentation
+    - [pyzmq sources](https://github.com/zeromq/pyzmq) - github repo of pyzmq sources;
+    - [pyzmq documentation](https://pyzmq.readthedocs.io/en/latest/) - PyZMQ Documentation.
 
 ## Python queue packages:
 
