@@ -415,6 +415,7 @@ Full-Stack [Web Frameworks](https://wiki.python.org/moin/WebFrameworks) for Pyth
 - [gunicorn](https://gunicorn.org/) - Gunicorn 'Green Unicorn' is a Python WSGI HTTP Server for UNIX;
 - [twisted](https://twistedmatrix.com) - Twisted is an event-driven networking engine written in Python;
 - [asyncio](https://docs.python.org/3/library/asyncio.html) - asyncio is a library to write concurrent code using the async/await syntax.
+- [pyzmq](http://zeromq.org/bindings:python) - Python binding for ZeroMQ library.
 
 ## Python queue packages:
 
