@@ -13,6 +13,7 @@
 - [WWW](#www)
 - [System](#system)
 - [Concurrency](#concurrency)
+- [AWS-IoT](#aws-iot)
 
 > Pip is a package manager + Virtualenv is an environment manager = [Conda](https://conda.io/en/latest/) is both
 
@@ -425,6 +426,11 @@ Full-Stack [Web Frameworks](https://wiki.python.org/moin/WebFrameworks) for Pyth
 - [thoonk](https://pypi.org/project/thoonk/) - hoonk is a clusterable, Redis based, Publish-Subscribe, Queue, and Job Distrubtion system based on the philosophies of XMPP Pubsub
 - [RQ (Redis Queue)](http://python-rq.org/) - simple Python library for queueing jobs and processing them in the background with workers.
 - [Queues](https://python-scripts.com/queues) - этот сайт предлагает поучаствовать в дискуссии о программном обеспечении для создания очередей, как написанном на Python, так и ином.
+
+---
+
+# AWS-IoT
+
 
 ---
 
