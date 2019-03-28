@@ -13,7 +13,7 @@
 - [WWW](#www)
 - [System](#system)
 - [Concurrency](#concurrency)
-- [AWS-IoT](#aws-iot)
+- [AWS IoT](#aws-iot)
 
 > Pip is a package manager + Virtualenv is an environment manager = [Conda](https://conda.io/en/latest/) is both
 
@@ -429,7 +429,7 @@ Full-Stack [Web Frameworks](https://wiki.python.org/moin/WebFrameworks) for Pyth
 
 ---
 
-# AWS-IoT
+# AWS IoT
 
 
 ---
