@@ -65,6 +65,20 @@
             "request": "launch",
             "program": "${file}",
             "console": "externalTerminal"
+        },
+        {
+            "name": "Python: app-client.py",
+            "type": "python",
+            "request": "launch",
+            "program": "${file}",
+            "console": "integratedTerminal",
+            "args": [
+                "-e", "a6406hrbnb143-ats.iot.us-east-2.amazonaws.com",
+                "-r", "${workspaceFolder}\\aws-iot\\AmazonRootCA1.pem",
+                "-c", "${workspaceFolder}\\aws-iot\\5a256deadb-certificate.pem.crt",
+                "-k", "${workspaceFolder}\\aws-iot\\5a256deadb-private.pem.key",
+                "-n", "testiot"
+            ]
         }
     ]
 }

@@ -431,6 +431,21 @@ Full-Stack [Web Frameworks](https://wiki.python.org/moin/WebFrameworks) for Pyth
 
 # AWS IoT
 
+## How to:
+
+Application client usage:
+```
+python .\device-client.py -e a6406hrbnb143-ats.iot.us-east-2.amazonaws.com -r AmazonRootCA1.pem -c 96b5d1ce52-certificate.pem.crt -k 96b5d1ce52-private.pem.key -n testiot
+```
+
+Device client usage:
+```
+python .\app-client.py -e a6406hrbnb143-ats.iot.us-east-2.amazonaws.com -r AmazonRootCA1.pem -c 5a256deadb-certificate.pem.crt -k 5a256deadb-private.pem.key -n testiot
+```
+
+AWS IoT Python [SDK](https://github.com/aws/aws-iot-device-sdk-python)
+
+AWS IoT Python [SDK Documentation](https://s3.amazonaws.com/aws-iot-device-sdk-python-docs/html/index.html)
 
 ---
 
