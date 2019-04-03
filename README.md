@@ -419,6 +419,8 @@ Full-Stack [Web Frameworks](https://wiki.python.org/moin/WebFrameworks) for Pyth
 - [pyzmq](http://zeromq.org/bindings:python) - Python binding for ZeroMQ library.
     - [pyzmq sources](https://github.com/zeromq/pyzmq) - github repo of pyzmq sources;
     - [pyzmq documentation](https://pyzmq.readthedocs.io/en/latest/) - PyZMQ Documentation.
+    
+Python socket [how to](https://docs.python.org/3/howto/sockets.html)
 
 ## Python queue packages:
 
