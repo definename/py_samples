@@ -447,6 +447,8 @@ AWS IoT Python [SDK](https://github.com/aws/aws-iot-device-sdk-python)
 
 AWS IoT Python [SDK Documentation](https://s3.amazonaws.com/aws-iot-device-sdk-python-docs/html/index.html)
 
+AWS [IoT Core](https://docs.aws.amazon.com/iot/?id=docs_gateway) Documentation
+
 ---
 
 [Top](#table-of-contents)
