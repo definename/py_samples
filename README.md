@@ -427,6 +427,11 @@ Full-Stack [Web Frameworks](https://wiki.python.org/moin/WebFrameworks) for Pyth
 - [RQ (Redis Queue)](http://python-rq.org/) - simple Python library for queueing jobs and processing them in the background with workers.
 - [Queues](https://python-scripts.com/queues) - этот сайт предлагает поучаствовать в дискуссии о программном обеспечении для создания очередей, как написанном на Python, так и ином.
 
+## Message brokers
+
+- [RabbitMQ](https://www.rabbitmq.com/) - the most widely deployed open source message broker;
+- [PubSubHubbub](https://github.com/pubsubhubbub/) - an open, simple, web-scale and decentralized pubsub protocol;
+
 ---
 
 # AWS IoT
