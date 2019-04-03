@@ -5,7 +5,7 @@ import threading
 
 streamHandler = logging.StreamHandler()
 streamHandler.setFormatter(logging.Formatter('%(asctime)s %(name)s %(levelname)s - %(message)s'))
-logger = logging.getLogger("UDP")
+logger = logging.getLogger("TCP")
 logger.setLevel(logging.DEBUG)
 logger.addHandler(streamHandler)
 
@@ -15,14 +15,17 @@ addr = ("localhost", 6789)
 def ServerHandler(server):
     try:
         server.bind(addr)
+        server.listen(5)
 
         while True:
-            data, client_addr = server.recvfrom(max_size)
+            client, client_addr = server.accept()
+            data = client.recv(max_size)
             logger.debug("At {} client: {} said: {}".format(datetime.now(), client_addr, data))
-            server.sendto(b"Are you talking to me?", client_addr)
+            client.sendall(b"Are you talking to me?")
+            client.close()
 
     except Exception as e:
-        logger.error("UDP server handler error: {}".format(e))
+        logger.error("TCP server handler error: {}".format(e))
 
 desc = """Usage:
     'q' - exit;
@@ -31,7 +34,7 @@ desc = """Usage:
 
 def main():
     logger.debug("UDP server is being started at: {}".format(addr))
-    server = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
+    server = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 
     thread = threading.Thread(target=ServerHandler, args=(server,))
     thread.start()
@@ -48,4 +51,4 @@ if __name__ == "__main__":
     try:
         main()
     except Exception as e:
-        logger.error("UDP server error: {}".format(e))
+        logger.error("TCP server error: {}".format(e))

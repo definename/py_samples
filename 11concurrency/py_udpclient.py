@@ -17,7 +17,7 @@ try:
     client.sendto(b"Hey", addr)
 
     data, server_addr = client.recvfrom(max_size)
-    logger.debug("At: {} server: {} said: {}".format(datetime.now(), server_addr, data.decode("utf-8")))
+    logger.debug("At: {} server: {} said: {}".format(datetime.now(), server_addr, data))
     client.close()
 except Exception as e:
     logger.error("UDP client error: {}".format(e))
