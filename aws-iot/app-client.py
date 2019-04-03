@@ -2,7 +2,6 @@ import AWSIoTPythonSDK.MQTTLib as mqtt
 import logging
 import json
 import argparse
-import threading
 
 # Read in command-line parameters
 parser = argparse.ArgumentParser()
@@ -65,24 +64,22 @@ shadowClient.configureConnectDisconnectTimeout(10)  # 10 sec
 shadowClient.configureMQTTOperationTimeout(5)  # 5 sec
 
 mqttClient = shadowClient.getMQTTConnection()
-mqttClient.configureOfflinePublishQueueing(2, mqtt.DROP_OLDEST)
+mqttClient.configureOfflinePublishQueueing(-1, mqtt.DROP_OLDEST)
 
-def OnOnline():
-    logger.debug("Online event has just signaled from MQTT session")
-def OnOffline():
-    logger.debug("Offline event has just signaled from MQTT session")
-
-shadowClient.onOnline = OnOnline
-shadowClient.onOffline = OnOffline
+shadowClient.onOnline = lambda: logger.debug("MQTT client online event signaled")
+shadowClient.onOffline = lambda: logger.debug("MQTT client offline event signaled")
 
 # Connect to AWS IoT
 logger.debug("MQTT client connected: {}".format(shadowClient.connect()))
 
-def ShadowDocumentUpdateCallback(client, userdata, message):
-    logger.debug(message.topic)
-    logger.debug("Shadow current state: {}".format(json.loads(message.payload)["current"]))
+def ShadowDocumentsCallback(client, userdata, message):
+    try:
+        logger.debug(message.topic)
+        logger.debug("Shadow current state: {}".format(json.loads(message.payload)["current"]))
+    except Exception as e:
+        logger.error("Shadow documents callback error: {}".format(e))
 
-logger.debug("Document update subscribed: {}".format(mqttClient.subscribe("$aws/things/{}/shadow/update/documents".format(thingName), 0, ShadowDocumentUpdateCallback)))
+logger.debug("Shadow documents subscribed: {}".format(mqttClient.subscribe("$aws/things/{}/shadow/update/documents".format(thingName), 0, ShadowDocumentsCallback)))
 
 # Create a deviceShadow with persistent subscription
 shadowHandler = shadowClient.createShadowHandlerWithName(thingName, False)

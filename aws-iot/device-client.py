@@ -3,7 +3,6 @@ import time
 import logging
 import json
 import argparse
-import threading
 
 # Read in command-line parameters
 parser = argparse.ArgumentParser()
@@ -64,15 +63,10 @@ shadowClient.configureConnectDisconnectTimeout(10)  # 10 sec
 shadowClient.configureMQTTOperationTimeout(5)  # 5 sec
 
 mqttClient = shadowClient.getMQTTConnection()
-mqttClient.configureOfflinePublishQueueing(2, mqtt.DROP_OLDEST)
+mqttClient.configureOfflinePublishQueueing(-1, mqtt.DROP_OLDEST)
 
-def OnOnline():
-    logger.debug("Online event has just signaled from MQTT session")
-def OnOffline():
-    logger.debug("Offline event has just signaled from MQTT session")
-
-shadowClient.onOnline = OnOnline
-shadowClient.onOffline = OnOffline
+shadowClient.onOnline = lambda: logger.debug("MQTT client online event signaled")
+shadowClient.onOffline = lambda: logger.debug("MQTT client offline event signaled")
 
 # Connect to AWS IoT
 logger.debug("MQTT client connected: {}".format(shadowClient.connect()))
