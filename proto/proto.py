@@ -25,6 +25,5 @@ def main():
     inf = frame.FrameHeader(*in_data)
     logger.debug("Parsed frame header: {}".format(inf))
 
-
 if __name__ == "__main__":
     main()
