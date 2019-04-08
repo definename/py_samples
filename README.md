@@ -469,8 +469,6 @@ Autoformatting workspace settings:
     "python.formatting.provider": "autopep8",
     "python.formatting.autopep8Path": "<autopep8path>",
     "python.formatting.autopep8Args": [
-        "--aggressive",
-        "--aggressive",
         "--max-line-length",
         "100"
     ]
