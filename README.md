@@ -14,6 +14,7 @@
 - [System](#system)
 - [Concurrency](#concurrency)
 - [AWS IoT](#aws-iot)
+- [Formatting](#formatting)
 
 > Pip is a package manager + Virtualenv is an environment manager = [Conda](https://conda.io/en/latest/) is both
 
