@@ -458,4 +458,10 @@ AWS [IoT Core](https://docs.aws.amazon.com/iot/?id=docs_gateway) Documentation
 
 ---
 
+# Formatting
+
+[autopep8](https://pypi.org/project/autopep8/)
+
+---
+
 [Top](#table-of-contents)
