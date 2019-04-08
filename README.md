@@ -478,6 +478,10 @@ Autoformatting workspace settings:
     ]
 ```
 
+## Linting
+
+By default `VS Code` uses [pylint](https://www.pylint.org/) to provide linting support.
+
 ---
 
 [Top](#table-of-contents)
