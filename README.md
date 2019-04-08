@@ -461,9 +461,9 @@ AWS [IoT Core](https://docs.aws.amazon.com/iot/?id=docs_gateway) Documentation
 
 # Formatting
 
-[autopep8](https://pypi.org/project/autopep8/) - autopep8 automatically formats Python code to conform to the PEP 8 style guide.
+:fingerup: [autopep8](https://pypi.org/project/autopep8/) - autopep8 automatically formats Python code to conform to the PEP 8 style guide.
 
-Auto formatting workspace settings:
+Autoformatting workspace settings:
 ```
     "editor.formatOnSave": true,
     "python.formatting.provider": "autopep8",
