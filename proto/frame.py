@@ -28,3 +28,14 @@ class FrameHeader:
             self.proto_v,
             self.res10,
             self.len_packet)
+
+
+class FrameData:
+    def __init__(self, data):
+        self.data = data
+
+
+class Frame:
+    def __init__(self, header, data):
+        self.header = header
+        self.data = data
