@@ -467,7 +467,7 @@ Autoformatting workspace settings:
 ```
     "editor.formatOnSave": true,
     "python.formatting.provider": "autopep8",
-    "python.formatting.autopep8Path": "C:\\Users\\OKolomiitsev\\AppData\\Local\\Continuum\\anaconda3\\Scripts\\autopep8",
+    "python.formatting.autopep8Path": "<autopep8path>",
     "python.formatting.autopep8Args": [
         "--aggressive",
         "--aggressive",
