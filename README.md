@@ -14,7 +14,7 @@
 - [System](#system)
 - [Concurrency](#concurrency)
 - [AWS IoT](#aws-iot)
-- [Formatting](#formatting)
+- [Formatting](#formatting-and-linting)
 
 > Pip is a package manager + Virtualenv is an environment manager = [Conda](https://conda.io/en/latest/) is both
 
@@ -459,7 +459,9 @@ AWS [IoT Core](https://docs.aws.amazon.com/iot/?id=docs_gateway) Documentation
 
 ---
 
-# Formatting
+# Formatting and Linting
+
+> Linting analyzes how the code runs and detects errors whereas formatting simply restructures how code appears.
 
 [autopep8](https://pypi.org/project/autopep8/) - autopep8 automatically formats Python code to conform to the PEP 8 style guide.
 
