@@ -465,7 +465,6 @@ AWS [IoT Core](https://docs.aws.amazon.com/iot/?id=docs_gateway) Documentation
 
 Auto formatting workspace settings:
 ```
-    "editor.renderWhitespace": "all",
     "editor.formatOnSave": true,
     "python.formatting.provider": "autopep8",
     "python.formatting.autopep8Path": "C:\\Users\\OKolomiitsev\\AppData\\Local\\Continuum\\anaconda3\\Scripts\\autopep8",
