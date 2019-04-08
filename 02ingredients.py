@@ -1,3 +1,5 @@
+import gc
+import sys
 import math
 
 msg = 61
@@ -5,7 +7,7 @@ print(msg)
 
 print(type(123))
 
-print(divmod(9,5))
+print(divmod(9, 5))
 
 print(0b10, 0o10, 0x10, sep=",")
 
@@ -25,16 +27,16 @@ print(math.pi)
 print(math.pow(8, 2))
 print("'Snap'")
 
-poem ='''111
+poem = '''111
 222'''
 print(poem)
 
 # strings
 print(str(True))
 
-start = "Na-" *4
+start = "Na-" * 4
 print(start)
-print(start[0], start[1], start[-1],sep='')
+print(start[0], start[1], start[-1], sep='')
 
 stop = start.replace("-", "+", 2)
 print(stop)
@@ -69,10 +71,8 @@ a = 100000
 b = 100000
 print(a is b)
 
-import sys
 print("Reference count for 'a': {}".format(sys.getrefcount(a)))
 
-import gc
 print("Garbage collector has just destroyed: {} objects".format(gc.collect()))
 
 print(1 < 3 < 5 > 99)
