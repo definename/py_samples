@@ -1,4 +1,4 @@
-[Py sort](https://github.com/gwtw/py-sorting)samples
+Different [sorting](https://github.com/gwtw/py-sorting) alghoritms implemented with python
 
 # Table of contents
 
