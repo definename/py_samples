@@ -19,7 +19,7 @@ Different [sorting](https://github.com/gwtw/py-sorting) algorithms implementatio
 - [Formatting and Linting](#formatting-and-linting)
 - [RPC](#rpc)
 
-> Pip is a package manager + Virtualenv is an environment manager = [Conda](https://conda.io/en/latest/) is both
+> [Pip](https://the-hitchhikers-guide-to-packaging.readthedocs.io/en/latest/pip.html) is a package manager + [Virtualenv](https://www.dabapps.com/blog/introduction-to-pip-and-virtualenv-python/) is an environment manager = [Conda](https://conda.io/en/latest/) is both
 
 # [Anaconda](https://www.anaconda.com/) environment:
 
