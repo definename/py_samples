@@ -17,6 +17,7 @@ Different [sorting](https://github.com/gwtw/py-sorting) algorithms implementatio
 - [Concurrency](#concurrency)
 - [AWS IoT](#aws-iot)
 - [Formatting and Linting](#formatting-and-linting)
+- [RPC](#rpc)
 
 > Pip is a package manager + Virtualenv is an environment manager = [Conda](https://conda.io/en/latest/) is both
 
@@ -483,6 +484,14 @@ Autoformatting workspace settings:
 ## Linting
 
 By default `VS Code` uses [pylint](https://www.pylint.org/) to provide linting support.
+
+---
+
+## RPC
+
+[xmlrpc](https://docs.python.org/3/library/xmlrpc.html)
+[fabric](http://docs.fabfile.org/en/2.4/)
+[msgpack-rpc](https://github.com/msgpack-rpc/msgpack-rpc-python)
 
 ---
 
