@@ -37,11 +37,10 @@ def main():
     t = threading.Thread(target=ReplyHandler, args=(socket, ))
     t.start()
 
-    while True:
+    while socket.closed != True:
         val = input(desc)
         if val == "q":
             socket.close()
-            break
         elif val == "?":
             logging.debug(desc)
 
