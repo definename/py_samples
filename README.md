@@ -489,9 +489,9 @@ By default `VS Code` uses [pylint](https://www.pylint.org/) to provide linting s
 
 ## RPC
 
-[xmlrpc](https://docs.python.org/3/library/xmlrpc.html)
-[fabric](http://docs.fabfile.org/en/2.4/)
-[msgpack-rpc](https://github.com/msgpack-rpc/msgpack-rpc-python)
+- [xmlrpc](https://docs.python.org/3/library/xmlrpc.html)
+- [fabric](http://docs.fabfile.org/en/2.4/)
+- [msgpack-rpc](https://github.com/msgpack-rpc/msgpack-rpc-python)
 
 ---
 
