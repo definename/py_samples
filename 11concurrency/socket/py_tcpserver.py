@@ -12,6 +12,7 @@ logger.addHandler(streamHandler)
 max_size = 4096
 addr = ("localhost", 6789)
 
+
 def ServerHandler(server):
     try:
         server.bind(addr)
@@ -27,13 +28,15 @@ def ServerHandler(server):
     except Exception as e:
         logger.error("TCP server handler error: {}".format(e))
 
+
 desc = """Usage:
     'q' - exit;
     '?' - get this help.
 """
 
+
 def main():
-    logger.debug("UDP server is being started at: {}".format(addr))
+    logger.debug("TCP server is being started at: {}".format(addr))
     server = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 
     thread = threading.Thread(target=ServerHandler, args=(server,))
@@ -46,6 +49,7 @@ def main():
             break
         elif val == "?":
             logging.debug(desc)
+
 
 if __name__ == "__main__":
     try:

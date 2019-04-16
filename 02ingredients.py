@@ -86,3 +86,9 @@ print(r"c:\new\files\rawstring.py")
 
 print("ab" not in "abc")
 print(not "ab" in "abc")
+
+num1 = 5
+num2 = 2
+
+print("{}".format(num1 / num2))
+print("{}".format(num1 // num2))
