@@ -1,32 +1,20 @@
 class Person():
     def __init__(self, name):
         print("__init__ Person")
-        self.name = name + "!"
+        self.name = name
+
 
 class ConcretePerson(Person):
-    def __init__(self, name):
-        print("__init__ ConcretePerson")
-        self.name = name + "!!"
-
-    def get_name(self):
-        return "Derived" + self.name
-
-person = Person("Name")
-c_person = ConcretePerson("Name")
-print("Here is <base> person name:", person.name)
-print("Here is <derived> person name:", c_person.get_name())
-print("The same as previous call: Here is <derived> person name:", ConcretePerson.get_name(c_person))
-print()
-
-class EmailPerson(Person):
     def __init__(self, name, email):
+        print("__init__ ConcretePerson")
         super().__init__(name)
-        print("__init__ EmailPerson")
         self.email = email
 
-e_person = EmailPerson("Name", "name@gmail.com")
-print("EmailPerson name:", e_person.name, "email:", e_person.email)
+
+person = ConcretePerson("Concrete", "concrete@gmail.com")
+print("Name: {} email: {}".format(person.name, person.email))
 print()
+
 
 class Duck():
     def __init__(self, name):
@@ -42,12 +30,14 @@ class Duck():
 
     name = property(get_name, set_name)
 
+
 duck = Duck("Name")
 duck.name = "Donald Duck"
 print("Duck name:", duck.name)
 # print("Failed to retrieve name:", duck.__name)
 print("Duck name lifehack:", duck._Duck__name)
 print()
+
 
 class Carrot():
     def __init__(self, name):
@@ -62,6 +52,7 @@ class Carrot():
     def name(self, name):
         print("inside set_name")
         self.__name = name
+
 
 carrot = Carrot("Name")
 carrot.name = "Green Carrot"
@@ -79,6 +70,7 @@ class Circle:
     def diameter(self):
         print("inside diameter")
         return self.__radius * 2
+
 
 circle = Circle(10)
 # print("Failed to retrieve radius:", circle.__radius)
