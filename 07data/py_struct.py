@@ -26,3 +26,9 @@ b_packed = struct.pack(">1I", num)
 log.debug("{:>20} :b packed".format(b_packed.hex()))
 log.debug("{:>20x} :l unpacked".format(struct.unpack("<1I", b_packed)[0]))
 log.debug("{:>20x} :b unpacked".format(struct.unpack(">1I", b_packed)[0]))
+
+serial = "12345678912345678"
+packed_serial = serial.encode()
+log.debug("Packed: {}".format(packed_serial))
+unpacked_serial = packed_serial.decode()
+log.debug("Unpacked: {}".format(unpacked_serial))
