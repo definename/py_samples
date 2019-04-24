@@ -2,6 +2,11 @@ class Person():
     def __init__(self, name):
         print("__init__ Person")
         self.name = name
+        self.__secure = "BaseSecure"
+
+    @property
+    def secure(self):
+        return self.__secure
 
 
 class ConcretePerson(Person):
@@ -9,6 +14,7 @@ class ConcretePerson(Person):
         print("__init__ ConcretePerson")
         super().__init__(name)
         self.email = email
+        print("__init__ ConcretePerson {}".format(self.secure))
 
 
 person = ConcretePerson("Concrete", "concrete@gmail.com")

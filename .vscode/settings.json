@@ -10,15 +10,15 @@
         "--max-line-length",
         "100"
     ],
-    "python.unitTest.unittestEnabled": true,
-    "python.unitTest.unittestArgs": [
+    "python.testing.unittestEnabled": true,
+    "python.testing.unittestArgs": [
         "-v",
         "-s",
         "./py_test",
         "-p",
         "test_*.py"
     ],
-    "python.unitTest.pyTestEnabled": false,
-    "python.unitTest.nosetestsEnabled": false,
-    "python.unitTest.autoTestDiscoverOnSaveEnabled": true
+    "python.testing.pyTestEnabled": false,
+    "python.testing.nosetestsEnabled": false,
+    "python.testing.autoTestDiscoverOnSaveEnabled": true
 }
