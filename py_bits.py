@@ -4,27 +4,43 @@ logging.basicConfig(level=logging.DEBUG)
 log = logging.getLogger()
 
 
-def pack_msg(size, req=True): return (0x8000 if req else 0) | size
+class Header():
+    @staticmethod
+    def pack_msg(num, req=True): return (0x8000 if req else 0) | num
+
+    @staticmethod
+    def is_msg_req(msg): return msg & 0x8000
+
+    @staticmethod
+    def get_msg_num(msg): return msg & 0x7FFF
+
+    @staticmethod
+    def reset_msg_req_bit(msg):
+        return msg ^ 0x8000
 
 
-def is_req(msg): return msg & 0x8000
+def line(): return log.debug("{:=^100s}".format("Line"))
 
 
-def unpack_size(msg): return msg & 0x7FFF
-
-
-# Origin size
-size = 41
-log.debug("size: {:016b}".format(size))
+# Origin num
+num = 41
+log.debug("num: {:016b}".format(num))
 
 # Pack/Unpack request
-msg_req = pack_msg(size, req=True)
+msg_req = Header.pack_msg(num, req=True)
 log.debug("msg_req: {:016b}".format(msg_req))
-log.debug("is_req: {:016b}".format(is_req(msg_req)))
-log.debug("size: {:016b}".format(unpack_size(msg_req)))
+log.debug("is_msg_req: {:016b}".format(Header.is_msg_req(msg_req)))
+log.debug("num: {:016b}".format(Header.get_msg_num(msg_req)))
+
+line()
 
 # Pack/Unpack response
-msg_resp = pack_msg(size, req=False)
+msg_resp = Header.pack_msg(num, req=False)
 log.debug("msg_resp: {:016b}".format(msg_resp))
-log.debug("is_req: {:016b}".format(is_req(msg_resp)))
-log.debug("size: {:016b}".format(unpack_size(msg_resp)))
+log.debug("is_msg_req: {:016b}".format(Header.is_msg_req(msg_resp)))
+log.debug("num: {:016b}".format(Header.get_msg_num(msg_resp)))
+
+line()
+
+log.debug("reset req bit: {:016b}".format(Header.reset_msg_req_bit(msg_req)))
+log.debug("reset resp bit: {:016b}".format(Header.reset_msg_req_bit(msg_resp)))
