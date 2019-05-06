@@ -8,20 +8,25 @@ log = logging.getLogger()
 
 
 class RepeatingTimer():
-    def __init__(self, interval, callback, *args, **kwargs):
+    def __init__(self, interval, callback, args=None, kwargs=None):
         super().__init__()
         self.__timer = None
         self.__interval = interval
         self.__callback = callback
-        self.__args = args
-        self.__kwargs = kwargs
+        self.__args = args if args is not None else []
+        self.__kwargs = kwargs if kwargs is not None else {}
 
-    def callback(self):
-        self.__callback(*self.__args, **self.__kwargs)
+    def function(self, *args, **kwargs):
+        self.__callback(*args, **kwargs)
         self.start()
 
     def start(self):
-        self.__timer = threading.Timer(self.__interval, self.callback)
+        self.__timer = threading.Timer(
+            interval=self.__interval,
+            function=self.function,
+            args=self.__args,
+            kwargs=self.__kwargs)
+
         self.__timer.start()
 
     def join(self):
@@ -31,13 +36,13 @@ class RepeatingTimer():
         self.__timer.cancel()
 
 
-def timeout_handler():
-    log.debug("Expired!!!")
+def timeout_handler(param1, param2):
+    log.debug("Expired!!! {} {}".format(param1, param2))
 
 
 def main():
     try:
-        tm = RepeatingTimer(1, timeout_handler)
+        tm = RepeatingTimer(interval=1, callback=timeout_handler, args=(123, 321))
         log.debug("Timer has been started")
         tm.start()
 
