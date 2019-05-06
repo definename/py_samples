@@ -1,5 +1,11 @@
-import threading, queue
+import threading
+import queue
 import time
+import logging
+
+logging.basicConfig(level=logging.DEBUG)
+log = logging.getLogger()
+
 
 def washer(dishes, dish_queue):
     for dish in dishes:
@@ -7,9 +13,10 @@ def washer(dishes, dish_queue):
         dish_queue.put(dish)
 
         if dish == "exit":
-            print("\tWasher done...")
+            log.debug("Washer done...")
         else:
-            print("Wash: {}".format(dish))
+            log.debug("Wash: {}".format(dish))
+
 
 def dryer(dish_queue):
     while True:
@@ -17,21 +24,24 @@ def dryer(dish_queue):
         dish = dish_queue.get()
 
         if dish == "exit":
-            print("\tDryer done...")
+            log.debug("Dryer done...")
             dish_queue.task_done()
             break
 
-        print("Dry: {}".format(dish))
+        log.debug("Dry: {}".format(dish))
         dish_queue.task_done()
 
-# entry point
-dish_queue = queue.Queue()
-for n in range(1):
+
+def main():
+    dish_queue = queue.Queue()
     thread = threading.Thread(target=dryer, args=(dish_queue,))
     thread.start()
 
-washer(["salad", "bread", "entee", "desert", "exit"], dish_queue)
-dish_queue.join()
+    washer(["salad", "bread", "entee", "desert", "exit"], dish_queue)
+    dish_queue.join()
 
-print("Done...")
+    log.debug("Done...")
 
+
+if __name__ == "__main__":
+    main()
