@@ -3,7 +3,8 @@ import queue
 import time
 import logging
 
-logging.basicConfig(level=logging.DEBUG)
+logging.basicConfig(level=logging.DEBUG,
+                    format="{asctime} {name} {levelname} - {message}", style="{")
 log = logging.getLogger()
 
 
