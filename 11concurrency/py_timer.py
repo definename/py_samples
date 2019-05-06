@@ -8,17 +8,23 @@ log = logging.getLogger()
 
 
 class RepeatingTimer():
-    def __init__(self, interval, callback, args=None, kwargs=None):
+    def __init__(self, interval, callback, repeat=-1, args=None, kwargs=None):
         super().__init__()
         self.__timer = None
         self.__interval = interval
         self.__callback = callback
         self.__args = args if args is not None else []
         self.__kwargs = kwargs if kwargs is not None else {}
+        self.__repeat = repeat
 
     def function(self, *args, **kwargs):
         self.__callback(*args, **kwargs)
-        self.start()
+
+        if self.__repeat < 0:
+            self.start()
+        if self.__repeat > 0:
+            self.__repeat -= 1
+            self.start()
 
     def start(self):
         self.__timer = threading.Timer(
