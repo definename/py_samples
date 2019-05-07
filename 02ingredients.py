@@ -92,3 +92,9 @@ num2 = 2
 
 print("{}".format(num1 / num2))
 print("{}".format(num1 // num2))
+
+
+a = 1
+b = 2
+if a == 1 and b == 2:
+    print("123")

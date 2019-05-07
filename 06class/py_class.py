@@ -46,13 +46,24 @@ print()
 
 
 class Carrot():
-    def __init__(self, name):
+    def __init__(self, name, args=None):
         self.__name = name
+        self.__args = args
 
     @property
     def name(self):
         print("inside get_name")
         return self.__name
+
+    @property
+    def args(self):
+        print("inside get_name")
+        return self.__args
+
+    @args.setter
+    def args(self, args):
+        print("inside set_args")
+        self.__args = args
 
     @name.setter
     def name(self, name):
@@ -60,9 +71,11 @@ class Carrot():
         self.__name = name
 
 
-carrot = Carrot("Name")
+carrot = Carrot("Name", args=[1, 2, 3])
 carrot.name = "Green Carrot"
 print("Carrot name:", carrot.name)
+carrot.args = [4, 5, 6]
+print("Carrot name:", carrot.args)
 print()
 
 

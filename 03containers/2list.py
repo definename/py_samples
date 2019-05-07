@@ -1,3 +1,4 @@
+import copy
 empty_list = []
 print(empty_list)
 
@@ -63,7 +64,6 @@ print(copy3)
 print()
 
 # use copy module to create deeepcopy of the given list (copies all list levels)
-import copy
 l1 = [1, 2, [3, 4]]
 l2 = l1.copy()
 
@@ -75,3 +75,10 @@ l1[2][0] = "nocopy"
 
 print("l1 {} l2 {}".format(l1, l2))
 
+# Replace list values
+
+args = [999]
+args[1:] = [1, 2, 3]
+print(args)
+args[1:] = [0, 1, 2, 3]
+print(args)
