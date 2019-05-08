@@ -1,7 +1,8 @@
 import struct
 import logging
 
-logging.basicConfig(format="%(asctime)s %(name)s %(levelname)s - %(message)s", level=logging.DEBUG)
+logging.basicConfig(level=logging.DEBUG,
+                    format="{asctime} {name} {levelname} - {message}", style="{")
 log = logging.getLogger()
 
 data = 1
@@ -32,3 +33,8 @@ packed_serial = serial.encode()
 log.debug("Packed: {}".format(packed_serial))
 unpacked_serial = packed_serial.decode()
 log.debug("Unpacked: {}".format(unpacked_serial))
+
+DATA_BYTEORDER = "<"
+fmt = "{}B".format(DATA_BYTEORDER)
+data_packed = struct.pack(fmt, 255)
+log.debug("{} 0x{}".format(data_packed, bytes(data_packed).hex()))
