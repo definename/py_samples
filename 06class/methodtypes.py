@@ -1,3 +1,11 @@
+import threading
+import logging
+
+logging.basicConfig(level=logging.DEBUG,
+                    format="{asctime} {name} {levelname} - {message}", style="{")
+log = logging.getLogger()
+
+
 # classmethod decorator
 class A():
     __count = 0
@@ -13,7 +21,7 @@ class A():
 
     @classmethod
     def kids(cls):
-        print("A has", cls.__count, "little objects")
+        log.debug("A has {} little objects".format(cls.__count))
 
 
 a1 = A()
@@ -33,7 +41,7 @@ A.kids()
 class B():
     @staticmethod
     def ad():
-        print("ad")
+        log.debug("ad")
 
 
 B.ad()
