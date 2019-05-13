@@ -18,7 +18,7 @@ Different [sorting](https://github.com/gwtw/py-sorting) algorithms implementatio
 - [AWS IoT](#aws-iot)
 - [Formatting and Linting](#formatting-and-linting)
 - [RPC](#rpc)
-- [ctags](@ctags)
+- [CTags](#ctags)
 
 > [Pip](https://the-hitchhikers-guide-to-packaging.readthedocs.io/en/latest/pip.html) is a package manager + [Virtualenv](https://www.dabapps.com/blog/introduction-to-pip-and-virtualenv-python/) is an environment manager = [Conda](https://conda.io/en/latest/) is both
 
@@ -500,7 +500,7 @@ By default `VS Code` uses [pylint](https://www.pylint.org/) to provide linting s
 
 ---
 
-## Ctags
+## CTags
 
 Install [ctags](http://ctags.sourceforge.net/) and run: `ctags -R  --verbose=yes --append=yes --totals=yes ..`
 
