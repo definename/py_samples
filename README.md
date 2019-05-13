@@ -500,10 +500,9 @@ By default `VS Code` uses [pylint](https://www.pylint.org/) to provide linting s
 
 ---
 
-ctags:
-```
-ctags -R  --verbose=yes --append=yes --totals=yes ..
-```
+## Ctags
+
+Install [ctags](http://ctags.sourceforge.net/) and run: `ctags -R  --verbose=yes --append=yes --totals=yes ..`
 
 ---
 
