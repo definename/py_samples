@@ -1,0 +1,788 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+-add	..\05modules\report.html	/^<td width="100%"><dl><dt><a name="-add"><strong>add<\/strong><\/a>(x, y)<\/dt><dd><tt>Add&nbsp;x&nbsp;and&nbsp;y<br>$/;"	a
+-get_description	..\05modules\report.html	/^ <dl><dt><a name="-get_description"><strong>get_description<\/strong><\/a>()<\/dt><dd><tt>Returns&nbsp;weather&nbsp;forecast<\/tt><\/dd><\/dl>$/;"	a
+A	..\06class\methodtypes.py	/^class A():$/;"	c
+AWSIoTPythonSDK	..\aws-iot\app-client.py	/^import AWSIoTPythonSDK.MQTTLib as mqtt$/;"	i
+AWSIoTPythonSDK	..\aws-iot\dev-client.py	/^import AWSIoTPythonSDK.MQTTLib as mqtt$/;"	i
+Add	..\lx-course\todo_list.py	/^def Add():$/;"	f
+AddTask	..\lx-course\todo_list.py	/^def AddTask(dt, desc):$/;"	f
+B	..\06class\methodtypes.py	/^class B():$/;"	c
+Base	..\06class\py_oop.py	/^class Base():$/;"	c
+Bill	..\06class\composition.py	/^class Bill():$/;"	c
+CalculateChecksum	..\test-protocol\util.py	/^def CalculateChecksum(buff_bytes):$/;"	f
+Carrot	..\06class\py_class.py	/^class Carrot():$/;"	c
+Circle	..\06class\py_class.py	/^class Circle:$/;"	c
+ConcretePerson	..\06class\py_class.py	/^class ConcretePerson(Person):$/;"	c
+Counter	..\05modules\std.py	/^from collections import Counter$/;"	i
+DATA_BYTEORDER	..\07data\py_struct.py	/^DATA_BYTEORDER = "<"$/;"	v
+Derived	..\06class\py_oop.py	/^class Derived(Base):$/;"	c
+Duck	..\03containers\2namedtuple.py	/^Duck = namedtuple("Duck", "bill tail")$/;"	v
+Duck	..\06class\composition.py	/^class Duck():$/;"	c
+Duck	..\06class\py_class.py	/^class Duck():$/;"	c
+EchoClient	..\11concurrency\twisted\py_twisted_client.py	/^class EchoClient(protocol.Protocol):$/;"	c
+EchoFactory	..\11concurrency\twisted\py_twisted_client.py	/^class EchoFactory(protocol.ClientFactory):$/;"	c
+EchoFactory	..\11concurrency\twisted\py_twisted_server.py	/^class EchoFactory(protocol.ServerFactory):$/;"	c
+EchoServer	..\11concurrency\twisted\py_twisted_server.py	/^class EchoServer(protocol.Protocol):$/;"	c
+Element	..\03containers\2namedtuple.py	/^Element = namedtuple("Element", "name, symbol, number")$/;"	v
+Enum	..\lx-course\todo_list.py	/^def Enum():$/;"	f
+EnumTasks	..\lx-course\todo_list.py	/^def EnumTasks(dt):$/;"	f
+ExclamationQuote	..\06class\ducktyping.py	/^class ExclamationQuote(Quote):$/;"	c
+FindPackets	..\test-protocol\util.py	/^def FindPackets(buff):$/;"	f
+Flask	..\09www\flask\flask_index.py	/^from flask import Flask$/;"	i
+Flask	..\09www\flask\flask_template.py	/^from flask import Flask, render_template, request$/;"	i
+FrameData	..\test-protocol\protocol.py	/^class FrameData(Measurable):$/;"	c
+FrameHeader	..\test-protocol\protocol.py	/^class FrameHeader(Measurable):$/;"	c
+FramePacket	..\test-protocol\protocol.py	/^class FramePacket(Measurable):$/;"	c
+Header	..\py_bits.py	/^class Header():$/;"	c
+InvalidLenghtException	..\04cycle-function\4exception.py	/^class InvalidLenghtException(Exception):$/;"	c
+LoadList	..\lx-course\todo_list.py	/^def LoadList():$/;"	f
+Measurable	..\test-protocol\protocol.py	/^class Measurable:$/;"	c
+NAMESPACE_HANDLER	..\py_uuid.py	/^NAMESPACE_HANDLER = uuid.UUID("{18a42823-3a4d-4aaf-84b6-816e2b74c788}")$/;"	v
+OopsException	..\04cycle-function\4task.py	/^class OopsException(Exception):$/;"	c
+OrderedDict	..\05modules\std.py	/^from collections import OrderedDict$/;"	i
+PackFrame	..\test-protocol\util.py	/^def PackFrame(header_dict, frame_data=None):$/;"	f
+PackSerial	..\test-protocol\util.py	/^def PackSerial(frame):$/;"	f
+ParseFrame	..\test-protocol\util.py	/^def ParseFrame(frame_bytes):$/;"	f
+ParseSerial	..\test-protocol\util.py	/^def ParseSerial(buff):$/;"	f
+Person	..\06class\py_class.py	/^class Person():$/;"	c
+QuestionQuote	..\06class\ducktyping.py	/^class QuestionQuote(Quote):$/;"	c
+Quote	..\06class\ducktyping.py	/^class Quote():$/;"	c
+RepeatingTimer	..\11concurrency\py_timer.py	/^class RepeatingTimer():$/;"	c
+ReplyHandler	..\11concurrency\zmq\zmq_rep.py	/^def ReplyHandler(socket):$/;"	f
+SaveList	..\lx-course\todo_list.py	/^def SaveList():$/;"	f
+SerialPacket	..\test-protocol\protocol.py	/^class SerialPacket(Measurable):$/;"	c
+ServerHandler	..\11concurrency\socket\py_tcpserver.py	/^def ServerHandler(server):$/;"	f
+ServerHandler	..\11concurrency\socket\py_udpserver.py	/^def ServerHandler(server):$/;"	f
+ServerHandler	..\test-protocol\server.py	/^def ServerHandler(server):$/;"	f
+ShadowDeltaCallback	..\aws-iot\dev-client.py	/^def ShadowDeltaCallback(payload, responseStatus, token):$/;"	f
+ShadowDocumentsCallback	..\aws-iot\app-client.py	/^def ShadowDocumentsCallback(client, userdata, message):$/;"	f
+ShadowGetCallback	..\aws-iot\app-client.py	/^def ShadowGetCallback(payload, responseStatus, token):$/;"	f
+ShadowUpdateCallback	..\aws-iot\app-client.py	/^def ShadowUpdateCallback(payload, responseStatus, token):$/;"	f
+ShadowUpdateCallback	..\aws-iot\dev-client.py	/^def ShadowUpdateCallback(payload, responseStatus, token):$/;"	f
+SimpleXMLRPCServer	..\11concurrency\rpc\xmlrpc_serve.py	/^from xmlrpc.server import SimpleXMLRPCServer$/;"	i
+Tail	..\06class\composition.py	/^class Tail():$/;"	c
+Test_Protocol	..\test-protocol\test_protocol.py	/^class Test_Protocol(unittest.TestCase):$/;"	c
+Test_TestIncrementDecrement	..\py_test\test_unittests.py	/^class Test_TestIncrementDecrement(unittest.TestCase):$/;"	c
+Tiny	..\08save-data\py_pickle.py	/^class Tiny():$/;"	c
+ValidateDate	..\lx-course\todo_list.py	/^def ValidateDate(func):$/;"	f
+Victim	..\06class\ducktyping.py	/^class Victim():$/;"	c
+Word	..\06class\py_specmethod.py	/^class Word():$/;"	c
+Wrapper	..\lx-course\todo_list.py	/^    def Wrapper(date, *args):$/;"	f	function:ValidateDate
+__bytes__	..\06class\py_specmethod.py	/^    def __bytes__(self):$/;"	m	class:Word	file:
+__bytes__	..\test-protocol\protocol.py	/^    def __bytes__(self):$/;"	m	class:FrameData	file:
+__bytes__	..\test-protocol\protocol.py	/^    def __bytes__(self):$/;"	m	class:FrameHeader	file:
+__bytes__	..\test-protocol\protocol.py	/^    def __bytes__(self):$/;"	m	class:FramePacket	file:
+__bytes__	..\test-protocol\protocol.py	/^    def __bytes__(self):$/;"	m	class:SerialPacket	file:
+__count	..\06class\methodtypes.py	/^    __count = 0$/;"	v	class:A
+__eq__	..\06class\py_specmethod.py	/^    def __eq__(self, word):$/;"	m	class:Word	file:
+__init__	..\06class\composition.py	/^    def __init__(self, bill, tail):$/;"	m	class:Duck
+__init__	..\06class\composition.py	/^    def __init__(self, description):$/;"	m	class:Bill
+__init__	..\06class\composition.py	/^    def __init__(self, length):$/;"	m	class:Tail
+__init__	..\06class\ducktyping.py	/^    def __init__(self, person, phrase):$/;"	m	class:Quote
+__init__	..\06class\methodtypes.py	/^    def __init__(self):$/;"	m	class:A
+__init__	..\06class\py_class.py	/^    def __init__(self, name):$/;"	m	class:Duck
+__init__	..\06class\py_class.py	/^    def __init__(self, name):$/;"	m	class:Person
+__init__	..\06class\py_class.py	/^    def __init__(self, name, args=None):$/;"	m	class:Carrot
+__init__	..\06class\py_class.py	/^    def __init__(self, name, email):$/;"	m	class:ConcretePerson
+__init__	..\06class\py_class.py	/^    def __init__(self, radius):$/;"	m	class:Circle
+__init__	..\06class\py_oop.py	/^    def __init__(self):$/;"	m	class:Base
+__init__	..\06class\py_oop.py	/^    def __init__(self):$/;"	m	class:Derived
+__init__	..\06class\py_specmethod.py	/^    def __init__(self, text):$/;"	m	class:Word
+__init__	..\11concurrency\py_timer.py	/^    def __init__(self, interval, callback, repeat=-1, args=None, kwargs=None):$/;"	m	class:RepeatingTimer
+__init__	..\test-protocol\protocol.py	/^    def __init__(self, command, version, data_size):$/;"	m	class:FrameHeader
+__init__	..\test-protocol\protocol.py	/^    def __init__(self, frame, checksum):$/;"	m	class:SerialPacket
+__init__	..\test-protocol\protocol.py	/^    def __init__(self, frame_header, frame_data=None):$/;"	m	class:FramePacket
+__init__	..\test-protocol\protocol.py	/^    def __init__(self, payload_bytes):$/;"	m	class:FrameData
+__str__	..\06class\py_specmethod.py	/^    def __str__(self):$/;"	m	class:Word	file:
+__str__	..\08save-data\py_pickle.py	/^    def __str__(self):$/;"	m	class:Tiny	file:
+__str__	..\test-protocol\protocol.py	/^    def __str__(self):$/;"	m	class:FrameHeader	file:
+a	..\02ingredients.py	/^a = 1$/;"	v
+a	..\02ingredients.py	/^a = 100000$/;"	v
+a	..\03containers\2set.py	/^a = {1, 2}$/;"	v
+a	..\04cycle-function\py_closure.py	/^a = talk("Subject1")$/;"	v
+a	..\04cycle-function\py_crust.py	/^a = 1$/;"	v
+a	..\04cycle-function\py_function.py	/^a = 10$/;"	v
+a	..\04cycle-function\py_function.py	/^a = 5$/;"	v
+a	..\07data\py_binary.py	/^a = 10$/;"	v
+a1	..\06class\methodtypes.py	/^a1 = A()$/;"	v
+a2	..\06class\methodtypes.py	/^a2 = A()$/;"	v
+a3	..\06class\methodtypes.py	/^a3 = A()$/;"	v
+about	..\06class\composition.py	/^    def about(self):$/;"	m	class:Duck
+ac	..\05modules\std.py	/^from itertools import accumulate as ac$/;"	i
+ad	..\06class\methodtypes.py	/^    def ad():$/;"	m	class:B
+add	..\05modules\report.py	/^def add(x, y):$/;"	f
+add_ints	..\04cycle-function\py_decorator.py	/^def add_ints(a, b):$/;"	f
+add_str	..\04cycle-function\py_decorator.py	/^def add_str(a, b):$/;"	f
+addmul	..\04cycle-function\py_function.py	/^def addmul(x, y):$/;"	f
+addr	..\11concurrency\rpc\xmlrpc_serve.py	/^addr = ("localhost", 6789)$/;"	v
+addr	..\11concurrency\socket\py_tcpclient.py	/^addr = ("localhost", 6789)$/;"	v
+addr	..\11concurrency\socket\py_tcpserver.py	/^addr = ("localhost", 6789)$/;"	v
+addr	..\11concurrency\socket\py_udpclient.py	/^addr = ("localhost", 6789)$/;"	v
+addr	..\11concurrency\socket\py_udpserver.py	/^addr = ("localhost", 6789)$/;"	v
+addr	..\test-protocol\client.py	/^addr = ("localhost", 6789)$/;"	v
+addr	..\test-protocol\server.py	/^addr = ("localhost", 6789)$/;"	v
+age	..\07data\py_format.py	/^age = 21$/;"	v
+animal	..\04cycle-function\4namespace.py	/^animal = "fruitbat"$/;"	v
+another_palindrome	..\05modules\std.py	/^def another_palindrome(word):$/;"	f
+app	..\09www\flask\flask_index.py	/^app = Flask(__name__, static_folder=".", static_url_path="")$/;"	v
+app	..\09www\flask\flask_template.py	/^app = Flask(__name__)$/;"	v
+argDict	..\04cycle-function\py_function.py	/^argDict = { "one": 11, "two": 22, "three": 33 }$/;"	v
+argparse	..\aws-iot\app-client.py	/^import argparse$/;"	i
+argparse	..\aws-iot\dev-client.py	/^import argparse$/;"	i
+args	..\03containers\2list.py	/^args = [999]$/;"	v
+args	..\06class\py_class.py	/^    def args(self):$/;"	m	class:Carrot
+args	..\06class\py_class.py	/^    def args(self, args):$/;"	m	class:Carrot
+args	..\09www\flask\flask_template.py	/^def args(thing):$/;"	f
+args	..\aws-iot\app-client.py	/^args = parser.parse_args()$/;"	v
+args	..\aws-iot\dev-client.py	/^args = parser.parse_args()$/;"	v
+attemts	..\lx-course\guess_num.py	/^attemts = 0$/;"	v
+b	..\02ingredients.py	/^b = 1$/;"	v
+b	..\02ingredients.py	/^b = 100000$/;"	v
+b	..\02ingredients.py	/^b = 2$/;"	v
+b	..\02ingredients.py	/^b = int("123") + 1$/;"	v
+b	..\03containers\2set.py	/^b = {2, 3}$/;"	v
+b	..\04cycle-function\py_closure.py	/^b = talk("Subject2")$/;"	v
+b	..\04cycle-function\py_crust.py	/^b = 2$/;"	v
+bList	..\07data\py_binary.py	/^bList = [1, 2, 3, 255]$/;"	v
+b_packed	..\07data\py_struct.py	/^b_packed = struct.pack(">1I", num)$/;"	v
+bar	..\06class\py_oop.py	/^    def bar(self):$/;"	m	class:Derived
+bday	..\10system\py_datetime.py	/^bday = date(1987, 12, 24)$/;"	v
+bday	..\10system\py_local.py	/^bday = date(1987, 12, 24)$/;"	v
+blabla	..\test-protocol\client.py	/^def blabla():$/;"	f
+breakfast	..\05modules\std.py	/^breakfast = ["spam", "spam", "eggs", "spam"]$/;"	v
+breakfast_count	..\05modules\std.py	/^breakfast_count = Counter(breakfast)$/;"	v
+buggy	..\04cycle-function\py_function.py	/^def buggy(arg, result=[]):$/;"	f
+buildProtocol	..\11concurrency\twisted\py_twisted_client.py	/^    def buildProtocol(self, addr):$/;"	m	class:EchoFactory
+buildProtocol	..\11concurrency\twisted\py_twisted_server.py	/^    def buildProtocol(self, addr):$/;"	m	class:EchoFactory
+c	..\04cycle-function\py_crust.py	/^c = 3$/;"	v
+calendar	..\10system\py_datetime.py	/^import calendar$/;"	i
+cancel	..\11concurrency\py_timer.py	/^    def cancel(self):$/;"	m	class:RepeatingTimer
+carrot	..\06class\py_class.py	/^carrot = Carrot("Name", args=[1, 2, 3])$/;"	v
+cat	..\11concurrency\redis\redis_pub.py	/^    cat = random.choice(cats)$/;"	v
+cat	..\11concurrency\redis\redis_sub.py	/^        cat = msg["channel"].decode("utf-8")$/;"	v
+cat	..\11concurrency\zmq\zmq_pub.py	/^    cat = random.choice(cats)$/;"	v
+cat	..\11concurrency\zmq\zmq_sub.py	/^    cat = cat_bytes.decode("utf-8")$/;"	v
+cat_bytes	..\11concurrency\zmq\zmq_pub.py	/^    cat_bytes = cat.encode("utf-8")$/;"	v
+cats	..\11concurrency\redis\redis_pub.py	/^cats = ["siamese", "persian", "maine coon", "norwegian forest"]$/;"	v
+cats	..\11concurrency\zmq\zmq_pub.py	/^cats = ["siamese", "persian", "maine coon", "norwegian forest"]$/;"	v
+certificatePath	..\aws-iot\app-client.py	/^certificatePath = args.certificatePath$/;"	v
+certificatePath	..\aws-iot\dev-client.py	/^certificatePath = args.certificatePath$/;"	v
+cfg	..\08save-data\py_cfg.py	/^cfg = configparser.ConfigParser()$/;"	v
+checksum	..\test-protocol\protocol.py	/^    def checksum(self):$/;"	m	class:SerialPacket
+choice	..\05modules\report.py	/^    from random import choice$/;"	i
+chunk	..\08save-data\8task.py	/^chunk = 100$/;"	v
+chunk	..\08save-data\py_file.py	/^chunk = 100$/;"	v
+circle	..\06class\py_class.py	/^circle = Circle(10)$/;"	v
+client	..\11concurrency\rpc\xmlrpc_client.py	/^import xmlrpc.client$/;"	i
+client	..\11concurrency\socket\py_tcpclient.py	/^    client = socket.socket(socket.AF_INET, socket.SOCK_STREAM)$/;"	v
+client	..\11concurrency\socket\py_udpclient.py	/^    client = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)$/;"	v
+clientConnectionFailed	..\11concurrency\twisted\py_twisted_client.py	/^    def clientConnectionFailed(self, connector, reason):$/;"	m	class:EchoFactory
+clientConnectionLost	..\11concurrency\twisted\py_twisted_client.py	/^    def clientConnectionLost(self, connector, reason):$/;"	m	class:EchoFactory
+clientId	..\aws-iot\app-client.py	/^clientId = args.clientId$/;"	v
+clientId	..\aws-iot\dev-client.py	/^clientId = args.clientId$/;"	v
+client_list	..\test-protocol\server.py	/^client_list = list()$/;"	v
+collection	..\04cycle-function\py_crust.py	/^collection = []$/;"	v
+configparser	..\08save-data\py_cfg.py	/^import configparser$/;"	i
+conn	..\08save-data\py_redis.py	/^conn = redis.Redis("localhost", 6379)$/;"	v
+conn	..\08save-data\py_sqlite.py	/^conn = sqlite3.connect("enterprise.db")$/;"	v
+conn	..\09www\py_urllib.py	/^conn = ur.urlopen(url)$/;"	v
+conn	..\11concurrency\redis\redis_dryer.py	/^conn = redis.Redis()$/;"	v
+conn	..\11concurrency\redis\redis_pub.py	/^conn = redis.Redis()$/;"	v
+conn	..\11concurrency\redis\redis_sub.py	/^conn = redis.Redis()$/;"	v
+conn	..\11concurrency\redis\redis_washer.py	/^conn = redis.Redis()$/;"	v
+connectionLost	..\11concurrency\twisted\py_twisted_client.py	/^    def connectionLost(self, reason):$/;"	m	class:EchoClient
+connectionLost	..\11concurrency\twisted\py_twisted_server.py	/^    def connectionLost(self, reason):$/;"	m	class:EchoServer
+connectionMade	..\11concurrency\twisted\py_twisted_client.py	/^    def connectionMade(self):$/;"	m	class:EchoClient
+connectionMade	..\11concurrency\twisted\py_twisted_server.py	/^    def connectionMade(self):$/;"	m	class:EchoServer
+copy	..\03containers\2list.py	/^import copy$/;"	i
+copy0	..\03containers\2list.py	/^copy0 = origin$/;"	v
+copy1	..\03containers\2list.py	/^copy1 = origin.copy()$/;"	v
+copy2	..\03containers\2list.py	/^copy2 = list(origin)$/;"	v
+copy3	..\03containers\2list.py	/^copy3 = origin[:]$/;"	v
+count	..\04cycle-function\py_crust.py	/^count = 1$/;"	v
+count	..\py_debug.py	/^count = 0$/;"	v
+ctx	..\11concurrency\zmq\zmq_pub.py	/^ctx = zmq.Context()$/;"	v
+ctx	..\11concurrency\zmq\zmq_req.py	/^ctx = zmq.Context()$/;"	v
+ctx	..\11concurrency\zmq\zmq_sub.py	/^ctx = zmq.Context()$/;"	v
+curs	..\08save-data\py_sqlite.py	/^curs = conn.cursor()$/;"	v
+d	..\07data\py_format.py	/^d = { "r": "Richard", "g": "Gere" }$/;"	v
+d1	..\10system\py_timedelta.py	/^d1 = datetime.utcnow()$/;"	v
+d2	..\10system\py_timedelta.py	/^d2 = datetime.utcnow()$/;"	v
+daily	..\05modules\test.py	/^from sources import daily, weekly$/;"	i
+data	..\03containers\2namedtuple.py	/^data = { "name": "Hydrogen", "symbol": "H", "number": 1 }$/;"	v
+data	..\07data\py_struct.py	/^data = 1$/;"	v
+data	..\11concurrency\socket\py_tcpclient.py	/^    data = client.recv(max_size)$/;"	v
+data	..\test-protocol\protocol.py	/^    def data(self):$/;"	m	class:FramePacket
+dataReceived	..\11concurrency\twisted\py_twisted_client.py	/^    def dataReceived(self, data):$/;"	m	class:EchoClient
+dataReceived	..\11concurrency\twisted\py_twisted_server.py	/^    def dataReceived(self, data):$/;"	m	class:EchoServer
+data_packed	..\07data\py_struct.py	/^data_packed = struct.pack(fmt, 255)$/;"	v
+date	..\10system\py_datetime.py	/^from datetime import date$/;"	i
+date	..\10system\py_local.py	/^from datetime import date$/;"	i
+datetime	..\10system\py_datetime.py	/^from datetime import datetime$/;"	i
+datetime	..\10system\py_timedelta.py	/^from datetime import datetime, timedelta$/;"	i
+datetime	..\11concurrency\socket\py_tcpclient.py	/^from datetime import datetime$/;"	i
+datetime	..\11concurrency\socket\py_tcpserver.py	/^from datetime import datetime$/;"	i
+datetime	..\11concurrency\socket\py_udpclient.py	/^from datetime import datetime$/;"	i
+datetime	..\11concurrency\socket\py_udpserver.py	/^from datetime import datetime$/;"	i
+datetime	..\lx-course\todo_list.py	/^import datetime$/;"	i
+db	..\08save-data\py_dbm.py	/^db = dbm.open("definitions", "c")$/;"	v
+dbm	..\08save-data\py_dbm.py	/^import dbm$/;"	i
+dd	..\05modules\std.py	/^from collections import defaultdict as dd$/;"	i
+dec	..\04cycle-function\4task.py	/^dec = test(test_func)$/;"	v
+decoded_str	..\07data\py_unicode.py	/^decoded_str = encoded_bytes.decode("utf-8")$/;"	v
+decorated	..\04cycle-function\py_decorator.py	/^decorated = document_it(add_ints)  # Мануальное присваивание$/;"	v
+decrement	..\06class\methodtypes.py	/^    def decrement(self):$/;"	m	class:A
+decrement	..\py_test\inc_dec.py	/^def decrement(x):$/;"	f
+def_table	..\05modules\std.py	/^def_table = dd(lambda: "Huh?")$/;"	v
+delta1	..\10system\py_timedelta.py	/^delta1 = timedelta(seconds=4)$/;"	v
+delta2	..\10system\py_timedelta.py	/^delta2 = d2 - d1$/;"	v
+deque	..\05modules\std.py	/^    from collections import deque$/;"	i
+desc	..\06class\composition.py	/^    def desc(self):$/;"	m	class:Bill
+description	..\05modules\weatherman.py	/^description = wr.get_description()$/;"	v
+diameter	..\06class\py_class.py	/^    def diameter(self):$/;"	m	class:Circle
+dictCopy	..\03containers\2dict.py	/^dictCopy = dictOrigin.copy()$/;"	v
+dictOrigin	..\03containers\2dict.py	/^dictOrigin = {$/;"	v
+dict_of_lists	..\03containers\2composite_containers.py	/^dict_of_lists = {"list1": list1, "list2": list2}$/;"	v
+dirlist	..\10system\py_file.py	/^dirlist = glob.glob(".\/*")$/;"	v
+dish_queue	..\11concurrency\py_queue.py	/^    dish_queue = mp.JoinableQueue()$/;"	v
+dishes	..\11concurrency\redis\redis_washer.py	/^dishes = ["salad", "bread", "entee", "dessert"]$/;"	v
+do	..\11concurrency\py_thread_lock.py	/^def do(mutex):$/;"	f
+do_add	..\04cycle-function\py_function.py	/^def do_add(*args):$/;"	f
+do_add_args	..\04cycle-function\py_function.py	/^def do_add_args(func, *args):$/;"	f
+do_args	..\04cycle-function\py_function.py	/^def do_args(*args):$/;"	f
+do_exit	..\11concurrency\py_thread_lock.py	/^do_exit = False$/;"	v
+do_help	..\04cycle-function\py_function.py	/^def do_help(anything, check):$/;"	f
+do_it	..\04cycle-function\py_function.py	/^def do_it(one, two, three=10):$/;"	f
+do_kwargs	..\04cycle-function\py_function.py	/^def do_kwargs(**kwargs):$/;"	f
+do_lock1	..\11concurrency\py_thread_rlock.py	/^def do_lock1():$/;"	f
+do_lock2	..\11concurrency\py_thread_rlock.py	/^def do_lock2():$/;"	f
+do_this	..\10system\py_multiprocess.py	/^def do_this(what):$/;"	f
+document_it	..\04cycle-function\py_decorator.py	/^def document_it(func):$/;"	f
+double	..\11concurrency\rpc\xmlrpc_serve.py	/^def double(num):$/;"	f
+drinkNoVodka	..\03containers\2set.py	/^drinkNoVodka = []$/;"	v
+drinkVodka	..\03containers\2set.py	/^drinkVodka = []$/;"	v
+drinks	..\03containers\2set.py	/^drinks = {$/;"	v
+dryer	..\11concurrency\py_queue.py	/^def dryer(input):$/;"	f
+dryer	..\11concurrency\py_thread.py	/^def dryer(dish_queue):$/;"	f
+dryer	..\11concurrency\redis\redis_dryer.py	/^def dryer():$/;"	f
+dt	..\10system\py_datetime.py	/^dt = datetime.fromisoformat(today_string)$/;"	v
+duck	..\03containers\2namedtuple.py	/^duck = Duck("wide orange", "long")$/;"	v
+duck	..\06class\py_class.py	/^duck = Duck("Name")$/;"	v
+e	..\04cycle-function\py_crust.py	/^c$/;"	v
+e2f	..\03containers\2task.py	/^e2f = {$/;"	v
+echo	..\04cycle-function\py_function.py	/^def echo(anything):$/;"	f
+echo	..\09www\bottle\bottle_index.py	/^def echo():$/;"	f
+echo	..\09www\flask\flask_index.py	/^def echo(thing):$/;"	f
+echo_args1	..\09www\flask\flask_template.py	/^def echo_args1(thing, place):$/;"	f
+echo_args3	..\09www\flask\flask_template.py	/^def echo_args3():$/;"	f
+echo_args4	..\09www\flask\flask_template.py	/^def echo_args4():$/;"	f
+edit_story	..\04cycle-function\py_lambda.py	/^def edit_story(to_edit, func):$/;"	f
+empty_dict	..\03containers\2dict.py	/^empty_dict = {}$/;"	v
+empty_list	..\03containers\2list.py	/^empty_list = []$/;"	v
+empy_tuple	..\03containers\2tuple.py	/^empy_tuple = ()$/;"	v
+encoded_bytes	..\07data\py_unicode.py	/^encoded_bytes = origin_str.encode("utf-8")$/;"	v
+epoch_origin	..\10system\py_time.py	/^epoch_origin = time.time()$/;"	v
+epoch_regenerate	..\10system\py_time.py	/^epoch_regenerate = time.mktime(st_local)$/;"	v
+eset	..\03containers\2task.py	/^eset = set(e2f.keys())$/;"	v
+even_set	..\04cycle-function\4task.py	/^even_set = { val for val in range(10)}$/;"	v
+everything	..\03containers\2list.py	/^everything = [1, 2, 3, "one", "two", "three"]$/;"	v
+f	..\04cycle-function\py_closure.py	/^def f(x):$/;"	f
+f	..\04cycle-function\py_function.py	/^def f(x, y = 2):$/;"	f
+f2e	..\03containers\2task.py	/^f2e = dict()$/;"	v
+fcopy	..\10system\py_file.py	/^fcopy = ".\/ohno.txt"$/;"	v
+ff	..\04cycle-function\py_function.py	/^def ff(i, b = a):$/;"	f
+fff	..\04cycle-function\py_function.py	/^def fff():$/;"	f
+fhardlink	..\10system\py_file.py	/^fhardlink = ".\/hardlink.txt"$/;"	v
+filename	..\08save-data\8task.py	/^filename = "text.txt"$/;"	v
+files	..\10system\py_file.py	/^files = os.listdir(os.curdir)$/;"	v
+flag	..\04cycle-function\py_crust.py	/^flag = False$/;"	v
+fmt	..\07data\py_struct.py	/^fmt = "{}B".format(DATA_BYTEORDER)$/;"	v
+fmt	..\10system\py_time.py	/^fmt = "It's %A, %B %d, %Y, local time %I:%M:%S%p"$/;"	v
+fmt2	..\10system\py_time.py	/^fmt2 = "%Y-%m-%d"$/;"	v
+foo	..\06class\py_oop.py	/^    def foo(self):$/;"	m	class:Base
+foofoo	..\06class\py_oop.py	/^    def foofoo(self):$/;"	m	class:Derived
+forecast	..\05modules\sources\daily.py	/^def forecast():$/;"	f
+forecast	..\05modules\sources\weekly.py	/^def forecast():$/;"	f
+fout	..\08save-data\py_file.py	/^    fout = open("relativity", "wt")$/;"	v
+fout	..\10system\py_file.py	/^fout = open(fpath, "wt")$/;"	v
+fout	..\10system\py_local.py	/^fout = open("locale.txt", "wt")$/;"	v
+fpath	..\10system\py_file.py	/^fpath = ".\/oops.txt"$/;"	v
+fragment	..\08save-data\py_file.py	/^    fragment = fread1.read(chunk)$/;"	v
+frame	..\test-protocol\protocol.py	/^    def frame(self):$/;"	m	class:SerialPacket
+fread	..\08save-data\8task.py	/^fread = open(filename, "rt")$/;"	v
+fread1	..\08save-data\py_file.py	/^fread1 = open("relativity", "rt")$/;"	v
+fread2	..\08save-data\py_file.py	/^fread2 = open("relativity", "rt")$/;"	v
+fread3	..\08save-data\py_file.py	/^fread3 = open("relativity", "rt")$/;"	v
+function	..\11concurrency\py_timer.py	/^    def function(self, *args, **kwargs):$/;"	m	class:RepeatingTimer
+fwrite	..\08save-data\8task.py	/^fwrite = open(filename, "wt")$/;"	v
+g	..\04cycle-function\py_closure.py	/^    def g(y):$/;"	f	function:f
+g	..\04cycle-function\py_closure.py	/^g = f(2)$/;"	v
+gc	..\02ingredients.py	/^import gc$/;"	i
+gen_inclusion	..\04cycle-function\4task.py	/^gen_inclusion = ("Got %s" % number for number in range(5))$/;"	v
+get_description	..\05modules\report.py	/^def get_description():$/;"	f
+get_even	..\04cycle-function\4task.py	/^def get_even():$/;"	f
+get_links	..\09www\py_beautifulsoup.py	/^def get_links(url):$/;"	f
+get_msg_num	..\py_bits.py	/^    def get_msg_num(msg): return msg & 0x7FFF$/;"	m	class:Header
+get_name	..\06class\py_class.py	/^    def get_name(self):$/;"	m	class:Duck
+gevent	..\11concurrency\py_gevent.py	/^import gevent$/;"	i
+glob	..\10system\py_file.py	/^import glob$/;"	i
+good	..\04cycle-function\4task.py	/^def good():$/;"	f
+googol	..\02ingredients.py	/^googol = 10**100$/;"	v
+guess	..\lx-course\guess_num.py	/^        guess = int(input("? "))$/;"	v
+guess_me	..\04cycle-function\4task.py	/^guess_me = 7$/;"	v
+hat	..\11concurrency\redis\redis_pub.py	/^    hat = random.choice(hats)$/;"	v
+hat	..\11concurrency\redis\redis_sub.py	/^        hat = msg["data"].decode("utf-8")$/;"	v
+hat	..\11concurrency\zmq\zmq_pub.py	/^    hat = random.choice(hats)$/;"	v
+hat	..\11concurrency\zmq\zmq_sub.py	/^    hat = hat_bytes.decode("utf-8")$/;"	v
+hat_bytes	..\11concurrency\zmq\zmq_pub.py	/^    hat_bytes = hat.encode("utf-8")$/;"	v
+hats	..\11concurrency\redis\redis_pub.py	/^hats = ["stovepipe", "bowler", "tam-o-shanter", "fedora"]$/;"	v
+hats	..\11concurrency\zmq\zmq_pub.py	/^hats = ["stovepipe", "bowler", "tam-o-shanter", "fedora"]$/;"	v
+header	..\test-protocol\protocol.py	/^    def header(self):$/;"	m	class:FramePacket
+hello	..\04cycle-function\py_for.py	/^hello = "Hello"$/;"	v
+home	..\09www\flask\flask_index.py	/^def home():$/;"	f
+host	..\aws-iot\app-client.py	/^host = args.host$/;"	v
+host	..\aws-iot\dev-client.py	/^host = args.host$/;"	v
+hosts	..\11concurrency\py_gevent.py	/^hosts = ["www.google.com"]$/;"	v
+hunter	..\06class\ducktyping.py	/^hunter = Quote("Hunter", "I'm hunting")$/;"	v
+hydrogen	..\03containers\2namedtuple.py	/^hydrogen = Element(**data)$/;"	v
+importlib	..\py-reload\py-reload.py	/^import importlib$/;"	i
+inc_dec	..\py_test\test_unittests.py	/^import inc_dec$/;"	i
+increment	..\06class\methodtypes.py	/^    def increment(self):$/;"	m	class:A
+increment	..\py_test\inc_dec.py	/^def increment(x):$/;"	f
+index	..\09www\bottle\bottle_index.py	/^def index():$/;"	f
+inner	..\04cycle-function\py_closure.py	/^    def inner():$/;"	f	function:talk
+inner	..\04cycle-function\py_function.py	/^    def inner(text):$/;"	f	function:outer
+ins	..\08save-data\py_sqlite.py	/^ins = "insert into zoo values(?, ?, ?)"$/;"	v
+io	..\10system\py_datetime.py	/^import io$/;"	i
+iofile	..\10system\py_datetime.py	/^iofile = open("dt.dat", "w+")$/;"	v
+is_msg_req	..\py_bits.py	/^    def is_msg_req(msg): return msg & 0x8000$/;"	m	class:Header
+is_none	..\04cycle-function\py_function.py	/^def is_none(thing):$/;"	f
+it_poem	..\08save-data\py_file.py	/^it_poem = ""$/;"	v
+jobs	..\11concurrency\py_gevent.py	/^jobs = [gevent.spawn(gevent.socket.gethostbyname, host) for host in hosts]$/;"	v
+join	..\11concurrency\py_timer.py	/^    def join(self):$/;"	m	class:RepeatingTimer
+json	..\08save-data\py_json.py	/^import json$/;"	i
+json	..\aws-iot\app-client.py	/^import json$/;"	i
+json	..\aws-iot\dev-client.py	/^import json$/;"	i
+jsonMenu	..\08save-data\py_json.py	/^jsonMenu = json.dumps(menu1)$/;"	v
+keys	..\08save-data\py_redis.py	/^keys = ["secret", "carats", "fever"]$/;"	v
+kids	..\06class\methodtypes.py	/^    def kids(cls):$/;"	m	class:A
+l1	..\03containers\2list.py	/^l1 = [1, 2, [3, 4]]$/;"	v
+l2	..\03containers\2list.py	/^l2 = copy.deepcopy(l1)$/;"	v
+l2	..\03containers\2list.py	/^l2 = l1.copy()$/;"	v
+l_packed	..\07data\py_struct.py	/^l_packed = struct.pack("<1I", num)$/;"	v
+l_poem	..\08save-data\py_file.py	/^l_poem = ""$/;"	v
+length	..\06class\composition.py	/^    def length(self):$/;"	m	class:Tail
+letters	..\02ingredients.py	/^letters = '0123456789'$/;"	v
+lifeDict	..\03containers\2task.py	/^lifeDict = {$/;"	v
+line	..\08save-data\8task.py	/^    line = fread.read(chunk)$/;"	v
+line	..\08save-data\py_file.py	/^    line = fread2.readline()$/;"	v
+line	..\08save-data\py_file.py	/^line = 100$/;"	v
+line	..\10system\py_datetime.py	/^    line = iofile.readline()$/;"	v
+line	..\py_bits.py	/^def line(): return log.debug("{:=^100s}".format("Line"))$/;"	f
+lines	..\08save-data\py_file.py	/^    lines = fread4.readlines()$/;"	v
+list1	..\03containers\2composite_containers.py	/^list1 = ['val1', 'val2', 'val3']$/;"	v
+list1	..\04cycle-function\py_for.py	/^list1 = [1, 2, 3, 4]$/;"	v
+list2	..\03containers\2composite_containers.py	/^list2 = ['var1', 'var2', 'var3']$/;"	v
+list2	..\04cycle-function\py_for.py	/^list2 = ["1", "2", "3"]$/;"	v
+listOfLists	..\03containers\2list.py	/^listOfLists = [weekdayList, everything]$/;"	v
+list_of_lists	..\03containers\2composite_containers.py	/^list_of_lists = [list1, list2]$/;"	v
+locale	..\10system\py_local.py	/^import locale$/;"	i
+log	..\06class\py_oop.py	/^log = logging.getLogger()$/;"	v
+log	..\07data\py_struct.py	/^log = logging.getLogger()$/;"	v
+log	..\10system\py_timedelta.py	/^log = logging.getLogger()$/;"	v
+log	..\11concurrency\py_thread.py	/^log = logging.getLogger()$/;"	v
+log	..\11concurrency\py_thread_lock.py	/^log = logging.getLogger()$/;"	v
+log	..\11concurrency\py_thread_rlock.py	/^log = logging.getLogger()$/;"	v
+log	..\11concurrency\py_timer.py	/^log = logging.getLogger()$/;"	v
+log	..\py_bits.py	/^log = logging.getLogger()$/;"	v
+log	..\py_uuid.py	/^log = logging.getLogger()$/;"	v
+logger	..\06class\py_specmethod.py	/^logger = logging.getLogger("proto")$/;"	v
+logger	..\11concurrency\rpc\xmlrpc_client.py	/^logger = logging.getLogger("RPC-CLIENT")$/;"	v
+logger	..\11concurrency\rpc\xmlrpc_serve.py	/^logger = logging.getLogger("RPC-SERVER")$/;"	v
+logger	..\11concurrency\socket\py_tcpclient.py	/^logger = logging.getLogger("TCP")$/;"	v
+logger	..\11concurrency\socket\py_tcpserver.py	/^logger = logging.getLogger("TCP")$/;"	v
+logger	..\11concurrency\socket\py_udpclient.py	/^logger = logging.getLogger("UDP")$/;"	v
+logger	..\11concurrency\socket\py_udpserver.py	/^logger = logging.getLogger("UDP")$/;"	v
+logger	..\11concurrency\zmq\zmq_rep.py	/^logger = logging.getLogger("REP")$/;"	v
+logger	..\11concurrency\zmq\zmq_req.py	/^logger = logging.getLogger("REQ")$/;"	v
+logger	..\aws-iot\app-client.py	/^logger = logging.getLogger("jd")$/;"	v
+logger	..\aws-iot\dev-client.py	/^logger = logging.getLogger("jd")$/;"	v
+logger	..\test-protocol\client.py	/^logger = logging.getLogger("CLIENT")$/;"	v
+logger	..\test-protocol\server.py	/^logger = logging.getLogger("SERVER")$/;"	v
+logging	..\06class\py_oop.py	/^import logging$/;"	i
+logging	..\06class\py_specmethod.py	/^import logging$/;"	i
+logging	..\07data\py_struct.py	/^import logging$/;"	i
+logging	..\10system\py_timedelta.py	/^import logging$/;"	i
+logging	..\11concurrency\py_thread.py	/^import logging$/;"	i
+logging	..\11concurrency\py_thread_lock.py	/^import logging$/;"	i
+logging	..\11concurrency\py_thread_rlock.py	/^import logging$/;"	i
+logging	..\11concurrency\py_timer.py	/^import logging$/;"	i
+logging	..\11concurrency\rpc\xmlrpc_client.py	/^import logging$/;"	i
+logging	..\11concurrency\rpc\xmlrpc_serve.py	/^import logging$/;"	i
+logging	..\11concurrency\socket\py_tcpclient.py	/^import logging$/;"	i
+logging	..\11concurrency\socket\py_tcpserver.py	/^import logging$/;"	i
+logging	..\11concurrency\socket\py_udpclient.py	/^import logging$/;"	i
+logging	..\11concurrency\socket\py_udpserver.py	/^import logging$/;"	i
+logging	..\11concurrency\zmq\zmq_rep.py	/^import logging$/;"	i
+logging	..\11concurrency\zmq\zmq_req.py	/^import logging$/;"	i
+logging	..\aws-iot\app-client.py	/^import logging$/;"	i
+logging	..\aws-iot\dev-client.py	/^import logging$/;"	i
+logging	..\py_bits.py	/^import logging$/;"	i
+logging	..\py_uuid.py	/^import logging$/;"	i
+logging	..\test-protocol\client.py	/^import logging$/;"	i
+logging	..\test-protocol\server.py	/^import logging$/;"	i
+lol	..\03containers\2dict.py	/^lol = [ ['a', 'b'], ['c', 'd'], ['e', 'f'] ]$/;"	v
+lot	..\03containers\2dict.py	/^lot = [ ('a', 'b'), ('c', 'd'), ('e', 'f') ]$/;"	v
+ls	..\04cycle-function\py_lambda.py	/^ls = [1, 2, 3]$/;"	v
+ls1	..\04cycle-function\py_lambda.py	/^ls1 = [(1, 3), (3, 1), (2, 2)]$/;"	v
+ls_poem	..\08save-data\py_file.py	/^ls_poem = ""$/;"	v
+lunch	..\05modules\std.py	/^lunch = ["eggs", "eggs", "bacon"]$/;"	v
+lunch_counter	..\05modules\std.py	/^lunch_counter = Counter(lunch)$/;"	v
+main	..\06class\py_oop.py	/^def main():$/;"	f
+main	..\11concurrency\py_thread.py	/^def main():$/;"	f
+main	..\11concurrency\py_thread_lock.py	/^def main():$/;"	f
+main	..\11concurrency\py_thread_rlock.py	/^def main():$/;"	f
+main	..\11concurrency\py_timer.py	/^def main():$/;"	f
+main	..\11concurrency\redis\redis_dryer.py	/^def main():$/;"	f
+main	..\11concurrency\socket\py_tcpserver.py	/^def main():$/;"	f
+main	..\11concurrency\socket\py_udpserver.py	/^def main():$/;"	f
+main	..\11concurrency\twisted\py_twisted_client.py	/^def main():$/;"	f
+main	..\11concurrency\twisted\py_twisted_server.py	/^def main():$/;"	f
+main	..\11concurrency\zmq\zmq_rep.py	/^def main():$/;"	f
+main	..\aws-iot\app-client.py	/^def main():$/;"	f
+main	..\aws-iot\dev-client.py	/^def main():$/;"	f
+main	..\test-protocol\client.py	/^def main():$/;"	f
+main	..\test-protocol\server.py	/^def main():$/;"	f
+math	..\02ingredients.py	/^import math$/;"	i
+max_size	..\11concurrency\socket\py_tcpclient.py	/^max_size = 4096$/;"	v
+max_size	..\11concurrency\socket\py_tcpserver.py	/^max_size = 4096$/;"	v
+max_size	..\11concurrency\socket\py_udpclient.py	/^max_size = 4096$/;"	v
+max_size	..\11concurrency\socket\py_udpserver.py	/^max_size = 4096$/;"	v
+max_size	..\test-protocol\client.py	/^max_size = 1024$/;"	v
+max_size	..\test-protocol\server.py	/^max_size = 1024$/;"	v
+menu1	..\08save-data\py_json.py	/^menu1 = {$/;"	v
+menu2	..\08save-data\py_json.py	/^menu2 = json.loads(jsonMenu)$/;"	v
+mo	..\04cycle-function\py_lambda.py	/^mo = map(lambda v: v * 2, ls)$/;"	v
+mo1	..\07data\py_regex.py	/^mo1 = re.match("You", source)$/;"	v
+mo1	..\07data\py_regex_specifier.py	/^mo1 = re.search(r"(. dish\\b).*(\\bfish\\b)", source)$/;"	v
+mo2	..\07data\py_regex.py	/^mo2 = re.match("^You", source)$/;"	v
+mo2	..\07data\py_regex_specifier.py	/^mo2 = re.search(r"(?P<DISHGROUP>. dish\\b).*(?P<FISHGROUP>\\bfish\\b)", source)$/;"	v
+mo2_dict	..\07data\py_regex_specifier.py	/^    mo2_dict = mo2.groupdict()$/;"	v
+mo3	..\07data\py_regex.py	/^mo3 = re.search("Frank", source)$/;"	v
+mo4	..\07data\py_regex.py	/^mo4 = re.findall("n", source)$/;"	v
+mo5	..\07data\py_regex.py	/^mo5 = re.findall("n.", source)$/;"	v
+mo6	..\07data\py_regex.py	/^mo6 = re.findall("n.?", source)$/;"	v
+mo7	..\07data\py_regex.py	/^mo7 = re.split("n", source)$/;"	v
+mo8	..\07data\py_regex.py	/^mo8 = re.sub("n", "!", source)$/;"	v
+mp	..\11concurrency\py_queue.py	/^import multiprocessing as mp$/;"	i
+mqtt	..\aws-iot\app-client.py	/^import AWSIoTPythonSDK.MQTTLib as mqtt$/;"	i
+mqtt	..\aws-iot\dev-client.py	/^import AWSIoTPythonSDK.MQTTLib as mqtt$/;"	i
+mqttClient	..\aws-iot\app-client.py	/^mqttClient = shadowClient.getMQTTConnection()$/;"	v
+mqttClient	..\aws-iot\dev-client.py	/^mqttClient = shadowClient.getMQTTConnection()$/;"	v
+msg	..\02ingredients.py	/^msg = 61$/;"	v
+msg	..\11concurrency\redis\redis_washer.py	/^    msg = dish.encode("utf-8")$/;"	v
+msg_req	..\py_bits.py	/^msg_req = Header.pack_msg(num, req=True)$/;"	v
+msg_resp	..\py_bits.py	/^msg_resp = Header.pack_msg(num, req=False)$/;"	v
+multiply	..\05modules\std.py	/^multiply = lambda a, b : a * b$/;"	v
+multiprocessing	..\10system\py_multiprocess.py	/^import multiprocessing$/;"	i
+multiprocessing	..\11concurrency\redis\redis_dryer.py	/^import multiprocessing$/;"	i
+mutex	..\11concurrency\py_thread_rlock.py	/^mutex = threading.RLock()$/;"	v
+my_range	..\04cycle-function\4generators.py	/^def my_range(first=0, last=10, step=1):$/;"	f
+mydict	..\04cycle-function\py_inclusion.py	/^mydict = { letter: word.count(letter) for letter in word }$/;"	v
+mygen	..\04cycle-function\py_inclusion.py	/^mygen = (number for number in range(1, 5))$/;"	v
+mylist	..\04cycle-function\py_inclusion.py	/^mylist = [number for number in range(1, 5) if number % 2 == 0]$/;"	v
+myset	..\04cycle-function\py_inclusion.py	/^myset = { number for number in range(1, 5) if number % 2 > 0 }$/;"	v
+mystery	..\07data\7task.py	/^mystery = "\\U0001f4a9"$/;"	v
+name	..\06class\py_class.py	/^    def name(self):$/;"	m	class:Carrot
+name	..\06class\py_class.py	/^    def name(self, name):$/;"	m	class:Carrot
+name	..\06class\py_class.py	/^    name = property(get_name, set_name)$/;"	v	class:Duck
+name	..\07data\py_format.py	/^name = "Oleh"$/;"	v
+namedtuple	..\03containers\2namedtuple.py	/^from collections import namedtuple$/;"	i
+new_func	..\04cycle-function\4task.py	/^    def new_func(*args, **kwargs):$/;"	f	function:test
+new_func	..\04cycle-function\py_decorator.py	/^    def new_func(*args, **kwargs):$/;"	f	function:document_it
+no_buggy	..\04cycle-function\py_function.py	/^def no_buggy(arg):$/;"	f
+no_idea	..\05modules\std.py	/^def no_idea():$/;"	f
+num	..\07data\py_struct.py	/^num = 1$/;"	v
+num	..\11concurrency\rpc\xmlrpc_client.py	/^num = 7$/;"	v
+num	..\11concurrency\zmq\zmq_req.py	/^num = 0$/;"	v
+num	..\py_bits.py	/^num = 41$/;"	v
+num1	..\02ingredients.py	/^num1 = 5$/;"	v
+num2	..\02ingredients.py	/^num2 = 2$/;"	v
+numList	..\03containers\2list.py	/^numList = [1, 223, 545, 2, 34, 100, 190, 25, 31]$/;"	v
+odd_list	..\04cycle-function\4task.py	/^odd_list = [number for number in range(10) if number % 2 > 0]$/;"	v
+oneDay	..\10system\py_datetime.py	/^oneDay = timedelta(days=1)$/;"	v
+order_quotes	..\05modules\std.py	/^order_quotes = OrderedDict(quotes)$/;"	v
+origin	..\03containers\2list.py	/^origin = [1, 2, 3]$/;"	v
+originList	..\03containers\2tuple.py	/^originList = ["list1", "list2", "list3"]$/;"	v
+originTuple	..\03containers\2tuple.py	/^originTuple = (1, 2, 3, originList)$/;"	v
+origin_set	..\03containers\2set.py	/^origin_set = set([1, 2, 3, 4])$/;"	v
+origin_set1	..\03containers\2set.py	/^origin_set1 = {'a', 'b', 'c', 'd', 'e'}$/;"	v
+origin_set2	..\03containers\2set.py	/^origin_set2 = set({$/;"	v
+origin_str	..\07data\py_unicode.py	/^origin_str = "\\u2603"$/;"	v
+os	..\10system\py_file.py	/^import os$/;"	i
+os	..\10system\py_multiprocess.py	/^import os$/;"	i
+os	..\11concurrency\redis\redis_dryer.py	/^import os$/;"	i
+others	..\03containers\2dict.py	/^others = {$/;"	v
+outer	..\04cycle-function\py_function.py	/^def outer(say):$/;"	f
+pack_msg	..\py_bits.py	/^    def pack_msg(num, req=True): return (0x8000 if req else 0) | num$/;"	m	class:Header
+packed_serial	..\07data\py_struct.py	/^packed_serial = serial.encode()$/;"	v
+palindrome	..\05modules\std.py	/^def palindrome(word):$/;"	f
+parser	..\aws-iot\app-client.py	/^parser = argparse.ArgumentParser()$/;"	v
+parser	..\aws-iot\dev-client.py	/^parser = argparse.ArgumentParser()$/;"	v
+person	..\06class\py_class.py	/^person = ConcretePerson("Concrete", "concrete@gmail.com")$/;"	v
+pickle	..\08save-data\py_pickle.py	/^import pickle$/;"	i
+pickle	..\lx-course\todo_list.py	/^import pickle$/;"	i
+pickled	..\08save-data\py_pickle.py	/^pickled = pickle.dumps(tiny1)$/;"	v
+place_via_code	..\07data\py_unicode.py	/^place_via_code = "caf\\u00e9"$/;"	v
+place_via_name	..\07data\py_unicode.py	/^place_via_name = "caf\\N{LATIN SMALL LETTER E WITH ACUTE}"$/;"	v
+plots	..\04cycle-function\4task.py	/^plots = ['A nun turns into a monster', 'A haunted yarn shop']$/;"	v
+pop_bytes	..\07data\7task.py	/^pop_bytes = mystery.encode("utf-8")$/;"	v
+pop_string	..\07data\7task.py	/^pop_string = pop_bytes.decode("utf-8")$/;"	v
+port	..\aws-iot\app-client.py	/^    port = 443$/;"	v
+port	..\aws-iot\app-client.py	/^    port = 8883$/;"	v
+port	..\aws-iot\app-client.py	/^port = args.port$/;"	v
+port	..\aws-iot\dev-client.py	/^    port = 443$/;"	v
+port	..\aws-iot\dev-client.py	/^    port = 8883$/;"	v
+port	..\aws-iot\dev-client.py	/^port = args.port$/;"	v
+pos	..\04cycle-function\4exception.py	/^        pos = int(value)$/;"	v
+pos	..\04cycle-function\4exception.py	/^pos = 100$/;"	v
+pp	..\05modules\std.py	/^pp = pprint.PrettyPrinter(1, 30)$/;"	v
+pprint	..\05modules\std.py	/^import pprint$/;"	i
+print_and_change_global	..\04cycle-function\4namespace.py	/^def print_and_change_global():$/;"	f
+privateKeyPath	..\aws-iot\app-client.py	/^privateKeyPath = args.privateKeyPath$/;"	v
+privateKeyPath	..\aws-iot\dev-client.py	/^privateKeyPath = args.privateKeyPath$/;"	v
+proc	..\11concurrency\py_queue.py	/^    proc = mp.Process(target=dryer, args=(dish_queue,))$/;"	v
+proto	..\test-protocol\client.py	/^import protocol as proto$/;"	i
+proto	..\test-protocol\server.py	/^import protocol as proto$/;"	i
+proto	..\test-protocol\util.py	/^import protocol as proto$/;"	i
+protocol	..\11concurrency\twisted\py_twisted_client.py	/^from twisted.internet import reactor, protocol$/;"	i
+protocol	..\11concurrency\twisted\py_twisted_server.py	/^from twisted.internet import reactor, protocol$/;"	i
+proxy	..\11concurrency\rpc\xmlrpc_client.py	/^proxy = xmlrpc.client.ServerProxy("http:\/\/localhost:6789")$/;"	v
+ptvsd	..\py_debug.py	/^import ptvsd$/;"	i
+pub	..\11concurrency\zmq\zmq_pub.py	/^pub = ctx.socket(zmq.PUB)$/;"	v
+queue	..\11concurrency\py_thread.py	/^import queue$/;"	i
+quotes	..\05modules\std.py	/^quotes = {$/;"	v
+r	..\04cycle-function\4generators.py	/^r = list(my_range())$/;"	v
+r_poem	..\08save-data\py_file.py	/^r_poem = ""$/;"	v
+rabbits	..\04cycle-function\py_for.py	/^rabbits = ['Flopsy', 'Mopsy', 'Cottontail', 'Peter']$/;"	v
+random	..\11concurrency\redis\redis_pub.py	/^import random$/;"	i
+random	..\11concurrency\zmq\zmq_pub.py	/^import random$/;"	i
+random	..\lx-course\guess_num.py	/^import random$/;"	i
+re	..\07data\7task.py	/^import re$/;"	i
+re	..\07data\py_regex.py	/^import re$/;"	i
+re	..\07data\py_regex_special_symbol.py	/^import re$/;"	i
+re	..\07data\py_regex_specifier.py	/^import re$/;"	i
+reactor	..\11concurrency\twisted\py_twisted_client.py	/^from twisted.internet import reactor, protocol$/;"	i
+reactor	..\11concurrency\twisted\py_twisted_server.py	/^from twisted.internet import reactor, protocol$/;"	i
+redable	..\10system\py_local.py	/^redable = bday.strftime("%A %B %d")$/;"	v
+redis	..\08save-data\py_redis.py	/^import redis$/;"	i
+redis	..\11concurrency\redis\redis_dryer.py	/^import redis$/;"	i
+redis	..\11concurrency\redis\redis_pub.py	/^import redis$/;"	i
+redis	..\11concurrency\redis\redis_sub.py	/^import redis$/;"	i
+redis	..\11concurrency\redis\redis_washer.py	/^import redis$/;"	i
+render_template	..\09www\flask\flask_template.py	/^from flask import Flask, render_template, request$/;"	i
+rep_bytes	..\11concurrency\zmq\zmq_req.py	/^    rep_bytes = socket.recv()$/;"	v
+rep_str	..\11concurrency\zmq\zmq_req.py	/^    rep_str = rep_bytes.decode("utf-8")$/;"	v
+req_bytes	..\11concurrency\zmq\zmq_req.py	/^    req_bytes = req_str.encode("utf-8")$/;"	v
+req_str	..\11concurrency\zmq\zmq_req.py	/^    req_str = "Message #{}".format(num)$/;"	v
+request	..\09www\flask\flask_template.py	/^from flask import Flask, render_template, request$/;"	i
+requests	..\09www\py_beautifulsoup.py	/^import requests$/;"	i
+requests	..\09www\py_requests.py	/^import requests$/;"	i
+reset_msg_req_bit	..\py_bits.py	/^    def reset_msg_req_bit(msg):$/;"	m	class:Header
+resp	..\09www\py_requests.py	/^resp = requests.get(url)$/;"	v
+response	..\07data\7task.py	/^response = {$/;"	v
+result	..\04cycle-function\py_function.py	/^result = buggy("b")$/;"	v
+ret	..\10system\py_subprocess.py	/^ret = subprocess.run("dir", shell=True, stdout=subprocess.PIPE, text=True)$/;"	v
+rootCAPath	..\aws-iot\app-client.py	/^rootCAPath = args.rootCAPath$/;"	v
+rootCAPath	..\aws-iot\dev-client.py	/^rootCAPath = args.rootCAPath$/;"	v
+route	..\09www\bottle\bottle_index.py	/^from bottle import route, run, static_file$/;"	i
+rows	..\08save-data\py_sqlite.py	/^rows = curs.fetchall()$/;"	v
+rtext	..\08save-data\8task.py	/^rtext = ""$/;"	v
+run	..\09www\bottle\bottle_index.py	/^from bottle import route, run, static_file$/;"	i
+says	..\06class\ducktyping.py	/^    def says(self):$/;"	m	class:ExclamationQuote
+says	..\06class\ducktyping.py	/^    def says(self):$/;"	m	class:QuestionQuote
+says	..\06class\ducktyping.py	/^    def says(self):$/;"	m	class:Quote
+says	..\06class\ducktyping.py	/^    def says(self):$/;"	m	class:Victim
+secret	..\lx-course\guess_num.py	/^secret = random.randint(1, 10)$/;"	v
+secure	..\06class\py_class.py	/^    def secure(self):$/;"	m	class:Person
+serial	..\07data\py_struct.py	/^serial = "12345678912345678"$/;"	v
+server	..\11concurrency\rpc\xmlrpc_serve.py	/^server = SimpleXMLRPCServer(addr)$/;"	v
+setUp	..\py_test\test_unittests.py	/^    def setUp(self):$/;"	m	class:Test_TestIncrementDecrement
+setUp	..\test-protocol\test_protocol.py	/^    def setUp(self):$/;"	m	class:Test_Protocol
+set_name	..\06class\py_class.py	/^    def set_name(self, name):$/;"	m	class:Duck
+set_x	..\04cycle-function\py_closure.py	/^    def set_x(a):$/;"	f	function:f
+shadowClient	..\aws-iot\app-client.py	/^    shadowClient = mqtt.AWSIoTMQTTShadowClient(clientId)$/;"	v
+shadowClient	..\aws-iot\app-client.py	/^    shadowClient = mqtt.AWSIoTMQTTShadowClient(clientId, useWebsocket=True)$/;"	v
+shadowClient	..\aws-iot\app-client.py	/^shadowClient = None$/;"	v
+shadowClient	..\aws-iot\dev-client.py	/^    shadowClient = mqtt.AWSIoTMQTTShadowClient(clientId)$/;"	v
+shadowClient	..\aws-iot\dev-client.py	/^    shadowClient = mqtt.AWSIoTMQTTShadowClient(clientId, useWebsocket=True)$/;"	v
+shadowClient	..\aws-iot\dev-client.py	/^shadowClient = None$/;"	v
+shadowHandler	..\aws-iot\app-client.py	/^shadowHandler = shadowClient.createShadowHandlerWithName(thingName, False)$/;"	v
+shadowHandler	..\aws-iot\dev-client.py	/^shadowHandler = shadowClient.createShadowHandlerWithName(thingName, True)$/;"	v
+short_list	..\04cycle-function\4exception.py	/^short_list = list((1, 2, 3))$/;"	v
+shutil	..\10system\py_file.py	/^import shutil$/;"	i
+size	..\test-protocol\protocol.py	/^    def size(self):$/;"	m	class:Measurable
+socket	..\11concurrency\py_gevent.py	/^from gevent import socket$/;"	i
+socket	..\11concurrency\socket\py_tcpclient.py	/^import socket$/;"	i
+socket	..\11concurrency\socket\py_tcpserver.py	/^import socket$/;"	i
+socket	..\11concurrency\socket\py_udpclient.py	/^import socket$/;"	i
+socket	..\11concurrency\socket\py_udpserver.py	/^import socket$/;"	i
+socket	..\11concurrency\zmq\zmq_req.py	/^socket = ctx.socket(zmq.REQ)$/;"	v
+socket	..\test-protocol\client.py	/^import socket$/;"	i
+socket	..\test-protocol\server.py	/^import socket$/;"	i
+some	..\10system\py_datetime.py	/^some = datetime.combine(someDate, someTime)$/;"	v
+someDate	..\10system\py_datetime.py	/^someDate = date.today()$/;"	v
+someTime	..\10system\py_datetime.py	/^someTime = time(23, 12, 31)$/;"	v
+songdict	..\08save-data\py_redis.py	/^songdict = {$/;"	v
+soup	..\09www\py_beautifulsoup.py	/^from bs4 import BeautifulSoup as soup$/;"	i
+source	..\07data\py_regex.py	/^source = "Young Frankenstein"$/;"	v
+sqlite3	..\08save-data\py_sqlite.py	/^import sqlite3$/;"	i
+square_dict	..\04cycle-function\4task.py	/^square_dict = { key : key**2 for key in range(5) }$/;"	v
+st_local	..\10system\py_time.py	/^st_local = time.localtime(epoch_origin)$/;"	v
+st_parsed	..\10system\py_time.py	/^st_parsed = time.strptime("2019-03-21", fmt2)$/;"	v
+st_utc	..\10system\py_time.py	/^st_utc = time.gmtime(epoch_origin)$/;"	v
+start	..\02ingredients.py	/^start = "Na-" * 4$/;"	v
+start	..\04cycle-function\4task.py	/^start = 1$/;"	v
+start	..\11concurrency\py_timer.py	/^    def start(self):$/;"	m	class:RepeatingTimer
+static_file	..\09www\bottle\bottle_index.py	/^from bottle import route, run, static_file$/;"	i
+stop	..\02ingredients.py	/^stop = start.replace("-", "+", 2)$/;"	v
+streamHandler	..\06class\py_specmethod.py	/^streamHandler = logging.StreamHandler()$/;"	v
+streamHandler	..\11concurrency\rpc\xmlrpc_client.py	/^streamHandler = logging.StreamHandler()$/;"	v
+streamHandler	..\11concurrency\rpc\xmlrpc_serve.py	/^streamHandler = logging.StreamHandler()$/;"	v
+streamHandler	..\11concurrency\socket\py_tcpclient.py	/^streamHandler = logging.StreamHandler()$/;"	v
+streamHandler	..\11concurrency\socket\py_tcpserver.py	/^streamHandler = logging.StreamHandler()$/;"	v
+streamHandler	..\11concurrency\socket\py_udpclient.py	/^streamHandler = logging.StreamHandler()$/;"	v
+streamHandler	..\11concurrency\socket\py_udpserver.py	/^streamHandler = logging.StreamHandler()$/;"	v
+streamHandler	..\11concurrency\zmq\zmq_rep.py	/^streamHandler = logging.StreamHandler()$/;"	v
+streamHandler	..\11concurrency\zmq\zmq_req.py	/^streamHandler = logging.StreamHandler()$/;"	v
+streamHandler	..\aws-iot\app-client.py	/^streamHandler = logging.StreamHandler()$/;"	v
+streamHandler	..\aws-iot\dev-client.py	/^streamHandler = logging.StreamHandler()$/;"	v
+streamHandler	..\test-protocol\client.py	/^streamHandler = logging.StreamHandler()$/;"	v
+streamHandler	..\test-protocol\server.py	/^streamHandler = logging.StreamHandler()$/;"	v
+string	..\07data\py_regex_special_symbol.py	/^import string$/;"	i
+struct	..\07data\py_struct.py	/^import struct$/;"	i
+struct	..\test-protocol\client.py	/^import struct$/;"	i
+struct	..\test-protocol\protocol.py	/^import struct$/;"	i
+struct	..\test-protocol\server.py	/^import struct$/;"	i
+struct	..\test-protocol\test_protocol.py	/^import struct$/;"	i
+struct	..\test-protocol\util.py	/^import struct$/;"	i
+sub	..\11concurrency\redis\redis_sub.py	/^sub = conn.pubsub()$/;"	v
+sub	..\11concurrency\zmq\zmq_sub.py	/^sub = ctx.socket(zmq.SUB)$/;"	v
+subprocess	..\10system\py_subprocess.py	/^import subprocess$/;"	i
+surprise	..\03containers\2task.py	/^surprise = ["Groucho", "Chico", "Harpo"]$/;"	v
+sys	..\02ingredients.py	/^import sys$/;"	i
+sys	..\05modules\test.py	/^import sys$/;"	i
+sys	..\09www\py_beautifulsoup.py	/^    import sys$/;"	i
+t	..\10system\py_time.py	/^t = time.localtime(time.time())$/;"	v
+table	..\05modules\std.py	/^table = {$/;"	v
+talk	..\04cycle-function\py_closure.py	/^def talk(subject):$/;"	f
+tearDown	..\py_test\test_unittests.py	/^    def tearDown(self):$/;"	m	class:Test_TestIncrementDecrement
+tearDown	..\test-protocol\test_protocol.py	/^    def tearDown(self):$/;"	m	class:Test_Protocol
+test	..\04cycle-function\4task.py	/^def test(func):$/;"	f
+test_checksum_calculation	..\test-protocol\test_protocol.py	/^    def test_checksum_calculation(self):$/;"	m	class:Test_Protocol
+test_decrement	..\py_test\test_unittests.py	/^    def test_decrement(self):$/;"	m	class:Test_TestIncrementDecrement
+test_func	..\04cycle-function\4task.py	/^def test_func():$/;"	f
+test_increment	..\py_test\test_unittests.py	/^    def test_increment(self):$/;"	m	class:Test_TestIncrementDecrement
+test_list	..\04cycle-function\4task.py	/^test_list = [3, 2, 1, 0]$/;"	v
+test_serial_parsing	..\test-protocol\test_protocol.py	/^    def test_serial_parsing(self):$/;"	m	class:Test_Protocol
+testreload	..\py-reload\py-reload.py	/^import testreload$/;"	i
+theByteArray	..\07data\py_binary.py	/^theByteArray = bytearray(bList)$/;"	v
+theBytes	..\07data\py_binary.py	/^theBytes = bytes(bList)$/;"	v
+thing	..\09www\bottle\bottle_index.py	/^def thing(thing):$/;"	f
+thingName	..\aws-iot\app-client.py	/^thingName = args.thingName$/;"	v
+thingName	..\aws-iot\dev-client.py	/^thingName = args.thingName$/;"	v
+things	..\03containers\2task.py	/^things = ["mozzarella", "cinderella", "cinderella"]$/;"	v
+threading	..\11concurrency\py_thread.py	/^import threading$/;"	i
+threading	..\11concurrency\py_thread_lock.py	/^import threading$/;"	i
+threading	..\11concurrency\py_thread_rlock.py	/^import threading$/;"	i
+threading	..\11concurrency\py_timer.py	/^import threading$/;"	i
+threading	..\11concurrency\socket\py_tcpserver.py	/^import threading$/;"	i
+threading	..\11concurrency\socket\py_udpserver.py	/^import threading$/;"	i
+threading	..\11concurrency\zmq\zmq_rep.py	/^import threading$/;"	i
+threading	..\test-protocol\server.py	/^import threading$/;"	i
+time	..\10system\py_datetime.py	/^from datetime import time$/;"	i
+time	..\10system\py_multiprocess.py	/^import time$/;"	i
+time	..\10system\py_time.py	/^import time$/;"	i
+time	..\10system\py_timedelta.py	/^import time$/;"	i
+time	..\11concurrency\py_thread.py	/^import time$/;"	i
+time	..\11concurrency\py_thread_lock.py	/^import time$/;"	i
+time	..\11concurrency\py_timer.py	/^import time$/;"	i
+time	..\11concurrency\redis\redis_dryer.py	/^import time$/;"	i
+time	..\11concurrency\twisted\py_twisted_server.py	/^import time$/;"	i
+time	..\11concurrency\zmq\zmq_pub.py	/^import time$/;"	i
+time	..\11concurrency\zmq\zmq_rep.py	/^import time$/;"	i
+time	..\11concurrency\zmq\zmq_req.py	/^import time$/;"	i
+time	..\aws-iot\dev-client.py	/^import time$/;"	i
+time	..\py-reload\py-reload.py	/^import time$/;"	i
+time	..\py_debug.py	/^import time$/;"	i
+time	..\test-protocol\client.py	/^import time$/;"	i
+time	..\test-protocol\server.py	/^import time$/;"	i
+timedelta	..\10system\py_datetime.py	/^from datetime import timedelta$/;"	i
+timedelta	..\10system\py_timedelta.py	/^from datetime import datetime, timedelta$/;"	i
+timeit	..\py_test\py_timeit.py	/^from timeit import timeit$/;"	i
+timeout_handler	..\11concurrency\py_timer.py	/^def timeout_handler(param1, param2):$/;"	f
+tiny1	..\08save-data\py_pickle.py	/^tiny1 = Tiny()$/;"	v
+tiny2	..\08save-data\py_pickle.py	/^tiny2 = pickle.loads(pickled)$/;"	v
+title_dict	..\04cycle-function\4task.py	/^title_dict = dict()$/;"	v
+titles	..\04cycle-function\4task.py	/^titles = ['Creature of Habit', 'Crewel Fate']$/;"	v
+today_string	..\10system\py_datetime.py	/^today_string = ""$/;"	v
+todoList	..\lx-course\todo_list.py	/^todoList = {}$/;"	v
+tomorrow	..\10system\py_datetime.py	/^tomorrow = someDate + oneDay$/;"	v
+topics	..\11concurrency\zmq\zmq_sub.py	/^topics = ["maine coon", "persian"]$/;"	v
+tos	..\03containers\2dict.py	/^tos = ('ab', 'cd', 'ef')$/;"	v
+tuple1	..\03containers\2tuple.py	/^tuple1 = "one",$/;"	v
+tuple2	..\03containers\2tuple.py	/^tuple2 = "one", "two"$/;"	v
+tuple3	..\03containers\2tuple.py	/^tuple3 = ("1", "2", "3")$/;"	v
+tuple_of_lists	..\03containers\2composite_containers.py	/^tuple_of_lists = list1, list2$/;"	v
+unicode_test	..\07data\py_unicode.py	/^def unicode_test(origin):$/;"	f
+unicodedata	..\07data\7task.py	/^import unicodedata$/;"	i
+unicodedata	..\07data\py_unicode.py	/^import unicodedata$/;"	i
+unittest	..\py_test\test_unittests.py	/^import unittest$/;"	i
+unittest	..\test-protocol\test_protocol.py	/^import unittest$/;"	i
+unpacked_serial	..\07data\py_struct.py	/^unpacked_serial = packed_serial.decode()$/;"	v
+ur	..\09www\py_urllib.py	/^import urllib.request as ur$/;"	i
+url	..\09www\py_requests.py	/^url = "http:\/\/google.com"$/;"	v
+url	..\09www\py_urllib.py	/^url = "http:\/\/google.com"$/;"	v
+url	..\09www\py_webbrowser.py	/^url = "http:\/\/www.python.org"$/;"	v
+urllib	..\09www\py_urllib.py	/^import urllib.request as ur$/;"	i
+useWebsocket	..\aws-iot\app-client.py	/^useWebsocket = args.useWebsocket$/;"	v
+useWebsocket	..\aws-iot\dev-client.py	/^useWebsocket = args.useWebsocket$/;"	v
+util	..\test-protocol\client.py	/^import util$/;"	i
+util	..\test-protocol\server.py	/^import util$/;"	i
+util	..\test-protocol\test_protocol.py	/^import util$/;"	i
+uuid	..\py_uuid.py	/^import uuid$/;"	i
+v	..\lx-course\todo_list.py	/^    v = input(desc)$/;"	v
+value	..\04cycle-function\4exception.py	/^    value = input("Position [q to quit]? ")$/;"	v
+verbStr	..\02ingredients.py	/^verbStr = "; ".join(verbs.split(","))$/;"	v
+verbs	..\02ingredients.py	/^verbs = "get, got, gotten"$/;"	v
+victim1	..\06class\ducktyping.py	/^victim1 = ExclamationQuote("Victim2", "It's hunting season")$/;"	v
+victim2	..\06class\ducktyping.py	/^victim2 = QuestionQuote("Victim1", "What's up, doc")$/;"	v
+victim3	..\06class\ducktyping.py	/^victim3 = Victim()$/;"	v
+w1	..\06class\py_specmethod.py	/^w1 = Word("ah")$/;"	v
+w2	..\06class\py_specmethod.py	/^w2 = Word("AH")$/;"	v
+washer	..\11concurrency\py_queue.py	/^def washer(dishes, output):$/;"	f
+washer	..\11concurrency\py_thread.py	/^def washer(dishes, dish_queue):$/;"	f
+webbrowser	..\09www\py_webbrowser.py	/^import webbrowser$/;"	i
+weekdayList	..\03containers\2list.py	/^weekdayList = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday']$/;"	v
+weekly	..\05modules\test.py	/^from sources import daily, weekly$/;"	i
+who	..\06class\ducktyping.py	/^    def who(self):$/;"	m	class:Quote
+who	..\06class\ducktyping.py	/^    def who(self):$/;"	m	class:Victim
+who_says	..\06class\ducktyping.py	/^def who_says(obj):$/;"	f
+word	..\04cycle-function\py_for.py	/^word = "cat"$/;"	v
+word	..\04cycle-function\py_inclusion.py	/^word = "cat"$/;"	v
+words	..\04cycle-function\py_lambda.py	/^words = ["word1", "word2", "word3"]$/;"	v
+wr	..\05modules\weatherman.py	/^import report as wr$/;"	i
+wtext	..\08save-data\8task.py	/^wtext = "This is a test of the emergency text system"$/;"	v
+xmlrpc	..\11concurrency\rpc\xmlrpc_client.py	/^import xmlrpc.client$/;"	i
+yesterday	..\10system\py_datetime.py	/^yesterday = someDate - oneDay$/;"	v
+zmq	..\11concurrency\zmq\zmq_pub.py	/^import zmq$/;"	i
+zmq	..\11concurrency\zmq\zmq_rep.py	/^import zmq$/;"	i
+zmq	..\11concurrency\zmq\zmq_req.py	/^import zmq$/;"	i
+zmq	..\11concurrency\zmq\zmq_sub.py	/^import zmq$/;"	i
+zoolist	..\08save-data\py_redis.py	/^zoolist = ["tiger", "parrot"]$/;"	v
+zooset	..\08save-data\py_redis.py	/^zooset = { "duck", "goat", "turkey" }$/;"	v
