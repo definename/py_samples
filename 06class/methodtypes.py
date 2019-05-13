@@ -6,18 +6,12 @@ logging.basicConfig(level=logging.DEBUG,
 log = logging.getLogger()
 
 
-# classmethod decorator
+# kids with class method
 class A():
     __count = 0
 
     def __init__(self):
         A.__count += 1
-
-    def increment(self):
-        A.__count += 1
-
-    def decrement(self):
-        A.__count -= 1
 
     @classmethod
     def kids(cls):
@@ -29,19 +23,20 @@ a2 = A()
 a3 = A()
 A.kids()
 
-a1.increment()
-A.kids()
 
-a1.decrement()
-A.kids()
-
-# staticmethod decorator
-
-
+# kids with static method
 class B():
+    __count = 0
+
+    def __init__(self):
+        B.__count += 1
+
     @staticmethod
-    def ad():
-        log.debug("ad")
+    def kids():
+        log.debug("B has {} little objects".format(B.__count))
 
 
-B.ad()
+b1 = B()
+b2 = B()
+b3 = B()
+B.kids()
