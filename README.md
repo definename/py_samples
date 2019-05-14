@@ -2,6 +2,7 @@ Different [sorting](https://github.com/gwtw/py-sorting) algorithms implementatio
 
 # Table of contents
 
+## IDE and tools
 - [Visual Studio Code](#visual-studio-code)
     - [Configure interpreter](#configure-interpreter)
     - [Configure and run debugger](#configure-and-run-debugger)
@@ -10,6 +11,7 @@ Different [sorting](https://github.com/gwtw/py-sorting) algorithms implementatio
     - [Unit testing](#unit-testing)
     - [CTags](#ctags)
 - [Anaconda](#anaconda)
+## Language references:
 - [Containers](#containers)
 - [Concepts](#concepts)
 - [Module](#module)
@@ -24,6 +26,7 @@ Different [sorting](https://github.com/gwtw/py-sorting) algorithms implementatio
 - [System](#system)
 - [Concurrency](#concurrency)
 - [RPC](#rpc)
+## Cloud
 - [AWS IoT](#aws-iot)
 
 > [Pip](https://the-hitchhikers-guide-to-packaging.readthedocs.io/en/latest/pip.html) is a package manager + [Virtualenv](https://www.dabapps.com/blog/introduction-to-pip-and-virtualenv-python/) is an environment manager = [Conda](https://conda.io/en/latest/) is both
