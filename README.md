@@ -10,7 +10,6 @@ Different [sorting](https://github.com/gwtw/py-sorting) algorithms implementatio
     - [Unit testing](#unit-testing)
     - [CTags](#ctags)
 - [Anaconda](#anaconda)
-
 - [Containers](#containers)
 - [Concepts](#concepts)
 - [Module](#module)
@@ -25,7 +24,6 @@ Different [sorting](https://github.com/gwtw/py-sorting) algorithms implementatio
 - [System](#system)
 - [Concurrency](#concurrency)
 - [RPC](#rpc)
-
 - [AWS IoT](#aws-iot)
 
 > [Pip](https://the-hitchhikers-guide-to-packaging.readthedocs.io/en/latest/pip.html) is a package manager + [Virtualenv](https://www.dabapps.com/blog/introduction-to-pip-and-virtualenv-python/) is an environment manager = [Conda](https://conda.io/en/latest/) is both
