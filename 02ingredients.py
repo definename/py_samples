@@ -52,6 +52,8 @@ print("[2:5] {}".format(letters[2:5]))
 print("[-1:] {}".format(letters[-1:]))
 print("[::2] {}".format(letters[::2]))
 print("[-1::-1] {}".format(letters[-1::-1]))
+print("[0:2] {}".format(letters[1:3]))
+print("[9:10] {}".format(letters[9:10]))
 
 print()
 
