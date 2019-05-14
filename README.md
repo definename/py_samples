@@ -2,8 +2,8 @@ Different [sorting](https://github.com/gwtw/py-sorting) algorithms implementatio
 
 # Table of contents
 
-- [Visual Studio Code](#visualstudiocode)
-    - [Configure interpreter](#configureinterpreter)
+- [Visual Studio Code](#visual-studio-code)
+    - [Configure interpreter](#configure-interpreter)
     - 123
     - 123
     - 123
