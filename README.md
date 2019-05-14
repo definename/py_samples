@@ -4,7 +4,7 @@ Different [sorting](https://github.com/gwtw/py-sorting) algorithms implementatio
 
 - [Visual Studio Code](#visual-studio-code)
     - [Configure interpreter](#configure-interpreter)
-    - 123
+    - [Configure and run debugger](#configure-and-run-debugger)
     - 123
     - 123
     - 123
