@@ -5,9 +5,9 @@ Different [sorting](https://github.com/gwtw/py-sorting) algorithms implementatio
 - [Visual Studio Code](#visual-studio-code)
     - [Configure interpreter](#configure-interpreter)
     - [Configure and run debugger](#configure-and-run-debugger)
-    - 123
-    - 123
-    - 123
+    - [Formatting](#formatting)
+    - [Linting](#linting)
+    - [Unit testing](#unit-testing)
 - [Containers](#containers)
 - [Concepts](#concepts)
 - [Module](#module)
@@ -22,7 +22,6 @@ Different [sorting](https://github.com/gwtw/py-sorting) algorithms implementatio
 - [System](#system)
 - [Concurrency](#concurrency)
 - [AWS IoT](#aws-iot)
-- [Formatting and Linting](#formatting-and-linting)
 - [RPC](#rpc)
 - [CTags](#ctags)
 
@@ -46,6 +45,45 @@ As result `.vscode` folder will be created with `settings.json` file.  Inside of
 - ctrl+shift+d (go to debugging tab)
 - Select `python: current file`
 - Run debugging by pressing `F5`
+
+> Linting analyzes how the code runs and detects errors whereas formatting simply restructures how code appears.
+
+## Formatting
+
+[autopep8](https://pypi.org/project/autopep8/) - autopep8 automatically formats Python code to conform to the PEP 8 style guide.
+
+Autoformatting workspace settings:
+```
+    "editor.formatOnSave": true,
+    "python.formatting.provider": "autopep8",
+    "python.formatting.autopep8Path": "<autopep8path>",
+    "python.formatting.autopep8Args": [
+        "--max-line-length",
+        "100"
+    ]
+```
+
+## Linting
+
+By default `VS Code` uses [pylint](https://www.pylint.org/) to provide linting support.
+
+## Unit testing
+
+The Python extension supports unit testing with Python's built-in `unittest` framework as well as `pytest` and `Nose`.
+
+```
+    "python.testing.unittestEnabled": true,
+    "python.testing.unittestArgs": [
+        "-v",
+        "-s",
+        "./py_test",
+        "-p",
+        "test_*.py"
+    ],
+    "python.testing.pyTestEnabled": false,
+    "python.testing.nosetestsEnabled": false,
+    "python.testing.autoTestDiscoverOnSaveEnabled": true
+```
 
 ---
 
@@ -470,50 +508,6 @@ AWS IoT Python [SDK](https://github.com/aws/aws-iot-device-sdk-python)
 AWS IoT Python [SDK Documentation](https://s3.amazonaws.com/aws-iot-device-sdk-python-docs/html/index.html)
 
 AWS [IoT Core](https://docs.aws.amazon.com/iot/?id=docs_gateway) Documentation
-
----
-
-# Formatting and Linting
-
-> Linting analyzes how the code runs and detects errors whereas formatting simply restructures how code appears.
-
-## Formatting
-
-[autopep8](https://pypi.org/project/autopep8/) - autopep8 automatically formats Python code to conform to the PEP 8 style guide.
-
-Autoformatting workspace settings:
-```
-    "editor.formatOnSave": true,
-    "python.formatting.provider": "autopep8",
-    "python.formatting.autopep8Path": "<autopep8path>",
-    "python.formatting.autopep8Args": [
-        "--max-line-length",
-        "100"
-    ]
-```
-
-## Linting
-
-By default `VS Code` uses [pylint](https://www.pylint.org/) to provide linting support.
-
----
-## Unit testing
-
-The Python extension supports unit testing with Python's built-in `unittest` framework as well as `pytest` and `Nose`.
-
-```
-    "python.testing.unittestEnabled": true,
-    "python.testing.unittestArgs": [
-        "-v",
-        "-s",
-        "./py_test",
-        "-p",
-        "test_*.py"
-    ],
-    "python.testing.pyTestEnabled": false,
-    "python.testing.nosetestsEnabled": false,
-    "python.testing.autoTestDiscoverOnSaveEnabled": true
-```
 
 ---
 
