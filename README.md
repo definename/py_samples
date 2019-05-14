@@ -491,6 +491,25 @@ Autoformatting workspace settings:
 By default `VS Code` uses [pylint](https://www.pylint.org/) to provide linting support.
 
 ---
+## Unit testing
+
+The Python extension supports unit testing with Python's built-in `unittest` framework as well as `pytest` and `Nose`.
+
+```
+    "python.testing.unittestEnabled": true,
+    "python.testing.unittestArgs": [
+        "-v",
+        "-s",
+        "./py_test",
+        "-p",
+        "test_*.py"
+    ],
+    "python.testing.pyTestEnabled": false,
+    "python.testing.nosetestsEnabled": false,
+    "python.testing.autoTestDiscoverOnSaveEnabled": true
+```
+
+---
 
 ## RPC
 
