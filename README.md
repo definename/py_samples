@@ -2,6 +2,12 @@ Different [sorting](https://github.com/gwtw/py-sorting) algorithms implementatio
 
 # Table of contents
 
+- [Visual Studio Code](#visualstudiocode)
+    - [Configure interpreter](#configureinterpreter)
+    - 123
+    - 123
+    - 123
+    - 123
 - [Containers](#containers)
 - [Concepts](#concepts)
 - [Module](#module)
@@ -21,6 +27,27 @@ Different [sorting](https://github.com/gwtw/py-sorting) algorithms implementatio
 - [CTags](#ctags)
 
 > [Pip](https://the-hitchhikers-guide-to-packaging.readthedocs.io/en/latest/pip.html) is a package manager + [Virtualenv](https://www.dabapps.com/blog/introduction-to-pip-and-virtualenv-python/) is an environment manager = [Conda](https://conda.io/en/latest/) is both
+
+# [Visual Studio Code](https://code.visualstudio.com/docs/python/python-tutorial#_prerequisites)
+
+## Configure interpreter
+
+- Install `python` extention
+- Select `python` interpreter
+    - ctrl+shift+p
+    - type `python: select interpreter`
+    - select `python` interpreter from the list of available interpreters
+
+As result `.vscode` folder will be created with `settings.json` file.  Inside of `setting.json` file `python.pythonPath` variable will point to the `python` interpreter.
+
+## Configure and run debugger
+
+- Set breakpoint
+- ctrl+shift+d (go to debugging tab)
+- Select `python: current file`
+- Run debugging by pressing `F5`
+
+---
 
 # [Anaconda](https://www.anaconda.com/) environment:
 
@@ -70,27 +97,6 @@ anaconda-clean --yes
 
 :three:
 On `Windows` remove `anaconda` with `Control Panel`. On `Linux` with command `rm -rf ~/anaconda`
-
----
-
-# [Visual Studio Code](https://code.visualstudio.com/docs/python/python-tutorial#_prerequisites) configuration
-
-## Configure interpreter
-
-- Install `python` extention
-- Select `python` interpreter
-    - ctrl+shift+p
-    - type `python: select interpreter`
-    - select `python` interpreter from the list of available interpreters
-
-As result `.vscode` folder will be created with `settings.json` file.  Inside of `setting.json` file `python.pythonPath` variable will point to the `python` interpreter.
-
-## Configure and run debugger
-
-- Set breakpoint
-- ctrl+shift+d (go to debugging tab)
-- Select `python: current file`
-- Run debugging by pressing `F5`
 
 ---
 
