@@ -8,6 +8,7 @@ Different [sorting](https://github.com/gwtw/py-sorting) algorithms implementatio
     - [Formatting](#formatting)
     - [Linting](#linting)
     - [Unit testing](#unit-testing)
+    - [CTags](#ctags)
 - [Anaconda](#anaconda)
 - [Containers](#containers)
 - [Concepts](#concepts)
@@ -85,6 +86,11 @@ The Python extension supports unit testing with Python's built-in `unittest` fra
     "python.testing.nosetestsEnabled": false,
     "python.testing.autoTestDiscoverOnSaveEnabled": true
 ```
+
+### CTags
+
+Install [ctags](http://ctags.sourceforge.net/) and run: `ctags -R  --verbose=yes --append=yes --totals=yes .`
+With `Ctrl+T` you will be able to use `ctags` functionality.
 
 ---
 
@@ -514,12 +520,6 @@ AWS [IoT Core](https://docs.aws.amazon.com/iot/?id=docs_gateway) Documentation
 - [xmlrpc](https://docs.python.org/3/library/xmlrpc.html)
 - [fabric](http://docs.fabfile.org/en/2.4/)
 - [msgpack-rpc](https://github.com/msgpack-rpc/msgpack-rpc-python)
-
----
-
-## CTags
-
-Install [ctags](http://ctags.sourceforge.net/) and run: `ctags -R  --verbose=yes --append=yes --totals=yes ..`
 
 ---
 
