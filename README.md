@@ -28,6 +28,8 @@ Different [sorting](https://github.com/gwtw/py-sorting) algorithms implementatio
 
 > [Pip](https://the-hitchhikers-guide-to-packaging.readthedocs.io/en/latest/pip.html) is a package manager + [Virtualenv](https://www.dabapps.com/blog/introduction-to-pip-and-virtualenv-python/) is an environment manager = [Conda](https://conda.io/en/latest/) is both
 
+> Linting analyzes how the code runs and detects errors whereas formatting simply restructures how code appears.
+
 # [Visual Studio Code](https://code.visualstudio.com/docs/python/python-tutorial#_prerequisites)
 
 ### Configure interpreter
@@ -46,8 +48,6 @@ As result `.vscode` folder will be created with `settings.json` file.  Inside of
 - ctrl+shift+d (go to debugging tab)
 - Select `python: current file`
 - Run debugging by pressing `F5`
-
-> Linting analyzes how the code runs and detects errors whereas formatting simply restructures how code appears.
 
 ### Formatting
 
