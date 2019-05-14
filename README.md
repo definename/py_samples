@@ -90,6 +90,7 @@ The Python extension supports unit testing with Python's built-in `unittest` fra
 ### CTags
 
 Install [ctags](http://ctags.sourceforge.net/) and run: `ctags -R  --verbose=yes --append=yes --totals=yes .`
+
 With `Ctrl+T` you will be able to use `ctags` functionality.
 
 ---
