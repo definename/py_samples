@@ -1,6 +1,5 @@
 Different [sorting](https://github.com/gwtw/py-sorting) algorithms implementation with python
 
-# Tips:
 > [Pip](https://the-hitchhikers-guide-to-packaging.readthedocs.io/en/latest/pip.html) is a package manager + [Virtualenv](https://www.dabapps.com/blog/introduction-to-pip-and-virtualenv-python/) is an environment manager = [Conda](https://conda.io/en/latest/) is both
 
 > Linting analyzes how the code runs and detects errors whereas formatting simply restructures how code appears.
@@ -153,7 +152,7 @@ Create `*.ipynb` file and share it via `nbviewer` service
 
 ---
 
-# containers
+# Containers
 
 List(Список) - `[1, 2, 3, "one", "two", "three"]`
 - Изменяемый контейнер
@@ -169,7 +168,7 @@ Set(Множество) - `{1, 2, 3, 4, 5, 6, 0}`
 
 ---
 
-# concepts
+# Concepts
 
 :point_up: `Включение` — это компактный способ создать структуру данных из одного или более итераторов.
 
@@ -195,7 +194,7 @@ set - { выражение for выражение in итерабельный о
 
 ---
 
-# module
+# Module
 
 :point_up: `Модуль` — это всего лишь файл, содержащий код Python
 
@@ -230,7 +229,7 @@ def add(x, y):
 
 ---
 
-# package
+# Package
 
 :point_up: Модули организованные в иерархии файлов называются `пакетами`
 
@@ -238,7 +237,7 @@ In order to create `python` package we need to create directory and put all `*.p
 
 ---
 
-# class
+# Class
 
 :point_up: `наследование` — создание нового класса из уже существующего, который при этом содержит какие-то дополнения и изменения
 
@@ -250,13 +249,13 @@ In order to make class attributes private we need to decorate their names with `
 
 ---
 
-# namespace
+# Namespace
 
 It works according to the given rule - `LEGB`
 
 ---
 
-# data
+# Data
 
 :point_up: `cтроки` — последовательности символов в кодировке Unicode, используемые для представления текстовых данных.
 
@@ -268,7 +267,7 @@ It works according to the given rule - `LEGB`
 
 ---
 
-# format
+# Format
 
 Python предлагает два способа форматирования строк, их часто называют `старым` стилем и `новым` стилем.
 
@@ -278,7 +277,7 @@ Python предлагает два способа форматирования �
 
 ---
 
-# regex
+# Regex
 
 `.` - любой символ
 
@@ -292,7 +291,7 @@ Python предлагает два способа форматирования �
 
 ---
 
-# serialization
+# Serialization
 
 Сохранение структур данных в файл называется `сериализацией`
 
@@ -498,6 +497,14 @@ Python socket [how to](https://docs.python.org/3/howto/sockets.html)
 
 ---
 
+## RPC
+
+- [xmlrpc](https://docs.python.org/3/library/xmlrpc.html)
+- [fabric](http://docs.fabfile.org/en/2.4/)
+- [msgpack-rpc](https://github.com/msgpack-rpc/msgpack-rpc-python)
+
+---
+
 # AWS IoT
 
 ## How to:
@@ -517,14 +524,6 @@ AWS IoT Python [SDK](https://github.com/aws/aws-iot-device-sdk-python)
 AWS IoT Python [SDK Documentation](https://s3.amazonaws.com/aws-iot-device-sdk-python-docs/html/index.html)
 
 AWS [IoT Core](https://docs.aws.amazon.com/iot/?id=docs_gateway) Documentation
-
----
-
-## RPC
-
-- [xmlrpc](https://docs.python.org/3/library/xmlrpc.html)
-- [fabric](http://docs.fabfile.org/en/2.4/)
-- [msgpack-rpc](https://github.com/msgpack-rpc/msgpack-rpc-python)
 
 ---
 
