@@ -8,6 +8,7 @@ Different [sorting](https://github.com/gwtw/py-sorting) algorithms implementatio
     - [Formatting](#formatting)
     - [Linting](#linting)
     - [Unit testing](#unit-testing)
+- [Anaconda](#anaconda)
 - [Containers](#containers)
 - [Concepts](#concepts)
 - [Module](#module)
@@ -29,7 +30,7 @@ Different [sorting](https://github.com/gwtw/py-sorting) algorithms implementatio
 
 # [Visual Studio Code](https://code.visualstudio.com/docs/python/python-tutorial#_prerequisites)
 
-## Configure interpreter
+### Configure interpreter
 
 - Install `python` extention
 - Select `python` interpreter
@@ -39,7 +40,7 @@ Different [sorting](https://github.com/gwtw/py-sorting) algorithms implementatio
 
 As result `.vscode` folder will be created with `settings.json` file.  Inside of `setting.json` file `python.pythonPath` variable will point to the `python` interpreter.
 
-## Configure and run debugger
+### Configure and run debugger
 
 - Set breakpoint
 - ctrl+shift+d (go to debugging tab)
@@ -48,7 +49,7 @@ As result `.vscode` folder will be created with `settings.json` file.  Inside of
 
 > Linting analyzes how the code runs and detects errors whereas formatting simply restructures how code appears.
 
-## Formatting
+### Formatting
 
 [autopep8](https://pypi.org/project/autopep8/) - autopep8 automatically formats Python code to conform to the PEP 8 style guide.
 
@@ -63,11 +64,11 @@ Autoformatting workspace settings:
     ]
 ```
 
-## Linting
+### Linting
 
 By default `VS Code` uses [pylint](https://www.pylint.org/) to provide linting support.
 
-## Unit testing
+### Unit testing
 
 The Python extension supports unit testing with Python's built-in `unittest` framework as well as `pytest` and `Nose`.
 
@@ -87,7 +88,7 @@ The Python extension supports unit testing with Python's built-in `unittest` fra
 
 ---
 
-# [Anaconda](https://www.anaconda.com/) environment:
+# [Anaconda](https://www.anaconda.com/):
 
 Update `anaconda` from older version:
 ```
@@ -119,21 +120,18 @@ Install specific package into specific environment (by default package is instal
 conda install --name custom spyder=3.3.3
 ```
 
-## [Uninstall](https://docs.anaconda.com/anaconda/install/uninstall/) `anaconda`:
+[Uninstall](https://docs.anaconda.com/anaconda/install/uninstall/) `anaconda`:
 
-:one:
 Install clean up tool:
 ```
 conda install anaconda-clean
 ```
 
-:two:
 Remove all Anaconda-related files and directories without being prompted to delete each one
 ```
 anaconda-clean --yes
 ```
 
-:three:
 On `Windows` remove `anaconda` with `Control Panel`. On `Linux` with command `rm -rf ~/anaconda`
 
 ---
