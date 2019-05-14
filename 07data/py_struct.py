@@ -38,3 +38,7 @@ DATA_BYTEORDER = "<"
 fmt = "{}B".format(DATA_BYTEORDER)
 data_packed = struct.pack(fmt, 255)
 log.debug("{} 0x{}".format(data_packed, bytes(data_packed).hex()))
+
+buff = bytes.fromhex("aa55")
+un = struct.unpack(">1H", buff[0:2])
+log.debug("0x{:04x}".format(un[0]))
