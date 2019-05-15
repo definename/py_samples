@@ -59,7 +59,10 @@ As result `.vscode` folder will be created with `settings.json` file.  Inside of
 
 Autoformatting workspace settings:
 ```
-    "editor.formatOnSave": true,
+    "[python]":
+    {
+        "editor.formatOnSave": true,
+    },
     "python.formatting.provider": "autopep8",
     "python.formatting.autopep8Path": "<autopep8path>",
     "python.formatting.autopep8Args": [
