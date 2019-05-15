@@ -10,7 +10,7 @@ class Base():
         pass
 
     def foo(self):
-        log.debug("Foo")
+        return "Foo"
 
 
 class Derived(Base):
@@ -20,13 +20,13 @@ class Derived(Base):
     def bar(self):
         log.debug("Bar")
 
-    def foofoo(self):
-        return "foofoo"
+    def foo(self):
+        return super().foo() + " Foo"
 
 
 def main():
     obj = Derived()
-    log.debug("{} {}".format(type(obj), obj.foofoo()))
+    log.debug("{} {}".format(type(obj), obj.foo()))
 
 
 if __name__ == "__main__":
