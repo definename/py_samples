@@ -1,4 +1,4 @@
-from sources import daily, weekly
+from sub_pack1 import daily, weekly
 import sys
 import logging
 
