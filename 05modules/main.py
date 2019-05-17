@@ -1,6 +1,8 @@
-from sub_pack1 import daily, weekly
+from packet import daily, weekly
 import sys
 import logging
+
+from packet.sub_packet import mod
 
 logging.basicConfig(level=logging.DEBUG,
                     format="{asctime} {name} {levelname} - {message}", style="{")
@@ -17,6 +19,8 @@ def main():
     # Python packages
     log.debug("Daily forecast: {}".format(daily.forecast()))
     log.debug("Weekly forecast: {}".format(weekly.forecast()))
+
+    mod.do()
 
 
 if __name__ == "__main__":
