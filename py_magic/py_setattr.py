@@ -7,16 +7,13 @@ log = logging.getLogger()
 
 class Config():
     def __setattr__(self, name, value):
-        log.debug("{} {}".format(name, value))
-
-    def __getattr__(self, name):
-        log.debug("{}".format(name))
+        self.__dict__[name] = value
 
 
 def main():
     cfg = Config()
     cfg.value = "data"
-    cfg.value
+    log.debug(cfg.value)
 
 
 if __name__ == "__main__":
