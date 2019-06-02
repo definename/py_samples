@@ -1,3 +1,4 @@
+#! /usr/bin/python3
 import threading
 import logging
 import time
@@ -13,7 +14,9 @@ def do(done_id):
     log.debug("Do... {}".format(done_id))
     with cv:
         while done_list[done_id] != True:
-            cv.wait()
+            if cv.wait(timeout=2.0) == False:
+                log.debug("Timeout expired...")
+
         log.debug("Done... {}".format(done_id))
 
 def main():
