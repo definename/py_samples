@@ -5,6 +5,7 @@ log = logging.getLogger(__name__)
 
 def main():
     exec(open("testexec.py").read())
+    exec("log.info('It works!!')")
 
 if __name__ == "__main__":
     main()
