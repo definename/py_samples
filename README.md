@@ -534,11 +534,11 @@ AWS [IoT Core](https://docs.aws.amazon.com/iot/?id=docs_gateway) Documentation
 
 # Tkinter
 
-:paperclip: Shows what version of Tcl/Tk is installed: `python -m tkinter`
+:point_up: Shows what version of Tcl/Tk is installed: `python -m tkinter`
 
 ## Ubuntu
 
-:paperclip: Provide tkinter support for python3: `sudo apt-get install python3-tk`
+:point_up: Provide tkinter support for python3: `sudo apt-get install python3-tk`
 
 ---
 
