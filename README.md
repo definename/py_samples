@@ -538,7 +538,7 @@ AWS [IoT Core](https://docs.aws.amazon.com/iot/?id=docs_gateway) Documentation
 
 ## Ubuntu
 
-:paperclip: Provide tkinter support for python3 `sudo apt-get install python3-tk`
+:paperclip: Provide tkinter support for python3: `sudo apt-get install python3-tk`
 
 ---
 
