@@ -1,30 +1,37 @@
+import logging
+
+logging.basicConfig(level=logging.DEBUG,
+                    format="{asctime} {name} {levelname} - {message}", style="{")
+log = logging.getLogger()
+
 empy_tuple = ()
-print(empy_tuple)
+log.debug(empy_tuple)
 
 tuple1 = "one",
-print(tuple1)
+log.debug(tuple1)
 
 tuple2 = "one", "two"
-print(tuple2)
+log.debug(tuple2)
 
-tuple3 = ("1", "2", "3")
-print(tuple3)
+tuple3 = (1, 2, 3)
+log.debug(tuple3)
 
+log.debug("0x{:04x} 0x{:04x} 0x{:04x}".format(*tuple3))
 t1, t2, t3 = tuple3
-print(t1, t2, t3, sep="-")
+log.debug(">>> {} {} {}".format(t1, t2, t3))
 
 t1, t2 = t2, t1
-print(t1, t2, t3, sep="-")
+log.debug("!!! {} {} {}".format(t1, t2, t3))
 
 originList = ["list1", "list2", "list3"]
-print("originList:", originList)
+log.debug("originList: {}".format(originList))
 originTuple = (1, 2, 3, originList)
-print("originTuple:", originTuple)
+log.debug("originTuple: {}".format(originTuple))
 
 try:
     originTuple[0] = 999
 except TypeError as e:
-    print("Unbale to change tuple container: {}".format(e))
+    log.error("Unbale to change tuple container: {}".format(e))
 
 originTuple[3][0] = "changed"
-print("But we can change list which was passed to the tuple: {}".format(originTuple))
+log.debug("But we can change list which was passed to the tuple: {}".format(originTuple))
