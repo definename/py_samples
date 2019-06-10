@@ -244,7 +244,7 @@ In order to create `python` package we need to create directory and put all `*.p
 
 # Class
 
-:point_up: `наследование` — создание нового класса из уже существующего, который при этом содержит какие-то дополнения и изменения
+:point_up: `наследование` - создание нового класса из уже существующего, который при этом содержит какие-то дополнения и изменения
 
 :point_up: `атрибуты` - иногда их называют информацией о состоянии
 
@@ -252,7 +252,7 @@ In order to create `python` package we need to create directory and put all `*.p
 
 In order to make class attributes private we need to decorate their names with `__` e.g `__name`
 
-:point_up: `полиморфизм` — это значит, что одна операция может быть произведена над разными объектами независимо от их класса.
+:point_up: `полиморфизм` - это значит, что одна операция может быть произведена над разными объектами независимо от их класса.
 
 ---
 
