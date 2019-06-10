@@ -246,6 +246,8 @@ In order to create `python` package we need to create directory and put all `*.p
 
 :point_up: `наследование` — создание нового класса из уже существующего, который при этом содержит какие-то дополнения и изменения
 
+:point_up: `атрибуты` - иногда их называют информацией о состоянии
+
 В Python *геттеры* и *сеттеры* не нужны, поскольку все атрибуты и методы являются открытыми, а от вас ожидается примерное поведение!
 
 In order to make class attributes private we need to decorate their names with `__` e.g `__name`
