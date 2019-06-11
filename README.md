@@ -55,6 +55,19 @@ As result `.vscode` folder will be created with `settings.json` file.  Inside of
 - Select `python: current file`
 - Run debugging by pressing `F5`
 
+### General settings
+
+Disable minimap, render white spaces etc.:
+```
+    "files.associations": {
+        "*.py": "python",
+        "*.c": "c",
+        "*.h": "c"
+    },
+    "editor.minimap.enabled": false,
+    "editor.renderWhitespace": "all"
+```
+
 ### Formatting
 
 [autopep8](https://pypi.org/project/autopep8/) - autopep8 automatically formats Python code to conform to the PEP 8 style guide.
