@@ -74,7 +74,7 @@ Disable minimap, render white spaces etc.:
 
 Install `autopep8`: `sudo pip3 install autopep8`
 
-Retrive `autopep8` path which should be put in configuration json: `which autopep8`
+Retrive `autopep8` path `which autopep8`. That path should be put in config section: `"python.formatting.autopep8Path":"<autopep8path>"`
 
 Autoformatting workspace settings:
 ```
