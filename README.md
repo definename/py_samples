@@ -72,6 +72,10 @@ Disable minimap, render white spaces etc.:
 
 [autopep8](https://pypi.org/project/autopep8/) - autopep8 automatically formats Python code to conform to the PEP 8 style guide.
 
+Install `autopep8`: `sudo pip3 install autopep8`
+
+Retrive `autopep8` path which should be put in configuration json: `which autopep8`
+
 Autoformatting workspace settings:
 ```
     "[python]":
