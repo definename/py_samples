@@ -1,14 +1,21 @@
+import logging
+
+logging.basicConfig(level=logging.DEBUG,
+                    format="{asctime} {name} {levelname} - {message}", style="{")
+log = logging.getLogger()
 
 bList = [1, 2, 3, 255]
 theBytes = bytes(bList)
-print("{}".format(theBytes))
+log.debug("{}".format(theBytes))
 
 theByteArray = bytearray(bList)
-print("{}".format(theByteArray))
+log.debug("{}".format(theByteArray))
 
 theByteArray[0] = 127
-print("{}".format(theByteArray))
+log.debug("{}".format(theByteArray))
 
 a = 10
-print(a << 1)
-print(a >> 1)
+log.debug(a << 1)
+log.debug(a >> 1)
+
+log.debug("{:08b}".format(3))
