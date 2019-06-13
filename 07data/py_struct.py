@@ -42,3 +42,9 @@ log.debug("{} 0x{}".format(data_packed, bytes(data_packed).hex()))
 buff = bytes.fromhex("aa55")
 un = struct.unpack(">1H", buff[0:2])
 log.debug("0x{:04x}".format(un[0]))
+
+data_raw = 12
+data_packed = struct.pack("<1H", data_raw)
+log.debug("packed: {}".format(data_packed.hex()))
+data_unpacket = struct.unpack("<1H", data_packed)
+log.debug("unpacked: {}".format(data_unpacket))
