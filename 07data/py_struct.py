@@ -13,7 +13,7 @@ log.debug("> {} big".format(struct.pack(">1I", data)))
 log.debug("! {} network (= big)".format(struct.pack("!1I", data)))
 
 
-log.debug("")
+log.debug("===")
 
 num = 1
 l_packed = struct.pack("<1I", num)
@@ -21,7 +21,7 @@ log.debug("{:>20} :l packed".format(l_packed.hex()))
 log.debug("{:>20x} :l unpacked".format(struct.unpack("<1I", l_packed)[0]))
 log.debug("{:>20x} :b unpacked".format(struct.unpack(">1I", l_packed)[0]))
 
-log.debug("")
+log.debug("===")
 
 b_packed = struct.pack(">1I", num)
 log.debug("{:>20} :b packed".format(b_packed.hex()))
@@ -43,8 +43,19 @@ buff = bytes.fromhex("aa55")
 un = struct.unpack(">1H", buff[0:2])
 log.debug("0x{:04x}".format(un[0]))
 
+log.debug("===")
+
 data_raw = 12
 data_packed = struct.pack("<1H", data_raw)
 log.debug("packed: {}".format(data_packed.hex()))
 data_unpacket = struct.unpack("<1H", data_packed)
 log.debug("unpacked: {}".format(data_unpacket))
+
+log.debug("=== raw date in format yymd (4bytes): e3070612")
+
+date_raw = bytes.fromhex("e3070612")
+log.debug("len: {}".format(len(date_raw)))
+yy = struct.unpack("<1H", date_raw[0:2])
+m = struct.unpack("<1B", date_raw[2:3])
+d = struct.unpack("<1B", date_raw[3:4])
+log.debug("yy{} m{} d{}".format(yy, m, d))
