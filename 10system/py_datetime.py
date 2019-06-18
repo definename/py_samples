@@ -63,7 +63,7 @@ log.debug("10 000 day was born: {}".format(bday + timedelta(days=10000)))
 
 log.debug("=== parse datetime string")
 
-yymd_raw = "20190618"
+yymd_raw = "201733"
 try:
     yymd_date = datetime.strptime(yymd_raw, r"%Y%m%d")
     log.info("yy({}) m({}) d({})".format(yymd_date.year, yymd_date.month, yymd_date.day))

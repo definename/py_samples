@@ -1,5 +1,6 @@
 import struct
 import logging
+from datetime import datetime
 
 logging.basicConfig(level=logging.DEBUG,
                     format="{asctime} {name} {levelname} - {message}", style="{")
@@ -53,9 +54,17 @@ log.debug("unpacked: {}".format(data_unpacket))
 
 log.debug("=== raw date in format yymd (4bytes): e3070612")
 
-date_raw = bytes.fromhex("e3070612")
-log.debug("len: {}".format(len(date_raw)))
-yy = struct.unpack("<1H", date_raw[0:2])
-m = struct.unpack("<1B", date_raw[2:3])
-d = struct.unpack("<1B", date_raw[3:4])
-log.debug("yy{} m{} d{}".format(yy, m, d))
+yymd_raw = "20150101"
+yymd_parsed = None
+try:
+    yymd_parsed = datetime.strptime(yymd_raw, r"%Y%m%d")
+    log.debug("yymd_parsed yy({}) m({}) d({})".format(yymd_parsed.year, yymd_parsed.month, yymd_parsed.day))
+except ValueError as e:
+    log.error("Failed to parse date: {}".format(e))
+else:
+    yymd_packed = struct.pack(">HBB", yymd_parsed.year, yymd_parsed.month, yymd_parsed.day)
+    log.debug("yymd_packed {}".format(yymd_packed.hex()))
+
+    log.debug("yymd_packed len: {}".format(len(yymd_packed)))
+    yymd = (yy, m, d) = struct.unpack(">HBB", yymd_packed)
+    log.debug("yymd_unpacked yy({}) m({}) d({})".format(yymd[0], yymd[1], yymd[2]))
