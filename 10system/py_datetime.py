@@ -69,3 +69,12 @@ try:
     log.info("yy({}) m({}) d({})".format(yymd_date.year, yymd_date.month, yymd_date.day))
 except ValueError as e:
     log.error("Failed to parse date: {}".format(e))
+
+log.debug("=== parse time string")
+
+tm_raw = "163710"
+try:
+    tm_date = datetime.strptime(tm_raw, r"%H%M%S")
+    log.info("h({}) m({}) s({})".format(tm_date.hour, tm_date.minute, tm_date.second))
+except ValueError as e:
+    log.error("Failed to parse date: {}".format(e))
