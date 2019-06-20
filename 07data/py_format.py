@@ -1,3 +1,9 @@
+import logging
+
+logging.basicConfig(level=logging.DEBUG,
+                    format="{asctime} {name} {levelname} - {message}", style="{")
+log = logging.getLogger()
+
 # old style
 print("Old style:")
 
@@ -37,3 +43,7 @@ print("{0:=^100s}".format("BIG SALE"))
 name = "Oleh"
 age = 21
 print(f"Name: {name}, age: {age}")
+
+tuple_id = (1, 2, 3)
+log.debug(f"tuple_id {tuple_id}")
+log.debug(f"tuple_id {tuple_id[0]} {tuple_id[1]} {tuple_id[2]}")
