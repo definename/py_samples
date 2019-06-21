@@ -181,7 +181,7 @@ Create `*.ipynb` file and share it via `nbviewer` service
 - Вещественные числа `1.1, 123.003`
 - Числа фиксированной точности, see [decimal](https://docs.python.org/3/library/decimal.html) module
 - Рациональные числа `1/2, 1/4 etc.` see [fractions](https://docs.python.org/3/library/decimal.html) module
-- Множества `set([1, 2, 3])`
+- Множества `set([1, 2, 3])`, see [set](https://docs.python.org/3/library/stdtypes.html#set)
 - Логические значения `True(1), False(0)`
 - Целые числа неограниченной точности `9999999999999999999999999999999999999999999999`
 
