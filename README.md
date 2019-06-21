@@ -16,6 +16,7 @@ Different [sorting](https://github.com/gwtw/py-sorting) algorithms implementatio
     - [CTags](#ctags)
 - [Anaconda](#anaconda)
 ## Language references
+- [Numbers](#numbers)
 - [Containers](#containers)
 - [Concepts](#concepts)
 - [Module](#module)
@@ -171,6 +172,18 @@ On `Windows` remove `anaconda` with `Control Panel`. On `Linux` with command `rm
 # [jupyter nbviewer](https://nbviewer.jupyter.org/)
 
 Create `*.ipynb` file and share it via `nbviewer` service
+
+---
+
+# Numbers
+
+- Целые числа `1, 23, 3`
+- Вещественные числа `1.1, 123.003`
+- Числа фиксированной точности, see [decimal](https://docs.python.org/3/library/decimal.html) module
+- Рациональные числа `1/2, 1/4 etc.` see [fractions](https://docs.python.org/3/library/decimal.html) module
+- Множества `set([1, 2, 3])`
+- Логические значения `True(1), False(0)`
+- Целые числа неограниченной точности `9999999999999999999999999999999999999999999999`
 
 ---
 
