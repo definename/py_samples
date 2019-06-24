@@ -197,7 +197,9 @@ Create `*.ipynb` file and share it via `nbviewer` service
 
 ---
 
-# Numbers
+# Language references
+
+## Numbers
 
 - Целые числа `1, 23, 3`
 - Вещественные числа `1.1, 123.003`
@@ -207,9 +209,7 @@ Create `*.ipynb` file and share it via `nbviewer` service
 - Логические значения `True(1), False(0)`
 - Целые числа неограниченной точности `9999999999999999999999999999999999999999999999`
 
----
-
-# Containers
+## Containers
 
 List(Список) - `[1, 2, 3, "one", "two", "three"]`
 - Изменяемый контейнер
@@ -223,9 +223,7 @@ Dictionary(Словарь) - `{ "seconds": "1", "minutes": "2", "hour": "3", "da
 Set(Множество) - `{1, 2, 3, 4, 5, 6, 0}`
 - Решение задачи получения уникальных элементов
 
----
-
-# Concepts
+## Concepts
 
 :point_up: `Включение` — это компактный способ создать структуру данных из одного или более итераторов.
 
@@ -249,9 +247,7 @@ set - { выражение for выражение in итерабельный о
 
 :point_up: В Python используются `исключения`: код, который выполняется, когда происходит связанная с ним ошибка.
 
----
-
-# Module
+## Module
 
 :point_up: `Модуль` — это всего лишь файл, содержащий код Python
 
@@ -284,17 +280,13 @@ def add(x, y):
 - Generate documentation with `pydoc` module: `pydoc -w .\report.py`. `report.html` file will be generated.
 - Invoke test with `doctest` module: `python -m doctest .\report.py -v`
 
----
-
-# Package
+## Package
 
 :point_up: Модули организованные в иерархии файлов называются `пакетами`
 
 In order to create `python` package we need to create directory and put all `*.py` files into that folder. Also `__init__.py` file should be created inside that folder to tell python is it should interpret that folder as package.
 
----
-
-# Class
+## Class
 
 :point_up: `наследование` - создание нового класса из уже существующего, который при этом содержит какие-то дополнения и изменения
 
@@ -310,15 +302,11 @@ In order to make class attributes private we need to decorate their names with `
 
 :point_up: `динамическая типизация` - типы данных определяются автоматически и их не требуется объявлять в программном коде.
 
----
-
-# Namespace
+## Namespace
 
 It works according to the given rule - `LEGB`
 
----
-
-# Data
+## Data
 
 :point_up: `cтроки` — последовательности символов в кодировке Unicode, используемые для представления текстовых данных.
 
@@ -328,9 +316,7 @@ It works according to the given rule - `LEGB`
 
 :point_up: `UTF-8` — динамическую схему кодирования, oна использует для символа Unicode от одного до четырех байтов.
 
----
-
-# Format
+## Format
 
 Python предлагает два способа форматирования строк, их часто называют `старым` стилем и `новым` стилем.
 
@@ -338,9 +324,7 @@ Python предлагает два способа форматирования �
 
 :point_up: Новый стиль форматирования имеет формат `'{} {} {}'.format(a, b, c)`
 
----
-
-# Regex
+## Regex
 
 `.` - любой символ
 
@@ -352,9 +336,7 @@ Python предлагает два способа форматирования �
 
 `\b` - граница слова: `<граница слова>fish<граница слова>` -> `\bfish\b`
 
----
-
-# Serialization
+## Serialization
 
 Сохранение структур данных в файл называется `сериализацией`
 
@@ -369,28 +351,26 @@ Library to serialize data as binary:
 
 [HDF5](http://www.hdfgroup.org/why_hdf) — это бинарный формат данных, предназначенный для хранения многомерных или иерархических числовых данных.
 
----
+## Databases
 
-# Databases
-
-## Relational Database
+### Relational Database
 
 > Relational Databases (pеляционная база данных) представляет собой множество взаимосвязанных таблиц, каждая из которых содержит информацию об объектах определенного вида.
 
-### SQL
+#### SQL
 > SQL (Structured Query Language, структурированный язык запросов) не является API или протоколом. Это декларативный язык: вы говорите, что вам нужно, вместо того, как это сделать. Это универсальный язык реляционных баз данных.
 
-### DDL
+#### DDL
 > DDL (Data Definition Language, язык определения данных) который обрабатывает создание, удаление,
 ограничения и разрешения для таблиц, баз данных.
 
-### DML
+#### DML
 > DML (Data Manipulation Language, язык манипулирования данными), который обрабатывает
 добавление данных, их выборку, обновление и удаление.
 
 Основные операции DML реляционной базы данных можно запомнить с помощью акронима `CRUD` - Create, Read, Update, Delete.
 
-### DB-API
+#### DB-API
 [DB-API](https://legacy.python.org/dev/peps/pep-0249/) - это стандартный API в Python, предназначенный для получения доступа к реляционным базам данных. 
 
 Примеры реляционный баз данных:
@@ -408,9 +388,7 @@ Library to serialize data as binary:
 - [SQLAlchemy](http://www.sqlalchemy.org/) - самая популярная библиотека для работы с разными базами данных.
 - [dataset](https://dataset.readthedocs.org/) - database for lazy people.
 
----
-
-## NoSQL database
+### NoSQL database
 
 > Они были созданы для работы с очень крупными наборами данных, позволяют более гибко определять данные и поддерживают пользовательские операции с данными.
 
@@ -428,7 +406,7 @@ NoSQL database example:
 - MongoDB
 - Riak
   
-#### Redis How to
+##### Redis How to
 Windows:
 
 - First of all in order to deploy `redis` on Windows we need enable `WSL` (Windows Subsystem for Linux), follow the instructions on [Microsoft Docs](https://docs.microsoft.com/en-us/windows/wsl/install-win10#install-the-windows-subsystem-for-linux)
@@ -446,9 +424,7 @@ sudo service redis-server restart
 
 PS: Follow this guide to clarify more details: [Windows Subsystem for Linux (WSL)](https://redislabs.com/blog/redis-on-windows-10/)
 
----
-
-## Fulltext databases
+### Fulltext databases
 
 - Lucene
 - Solr
@@ -457,17 +433,15 @@ PS: Follow this guide to clarify more details: [Windows Subsystem for Linux (WSL
 - Xapian
 - Whoosh
 
----
+## WWW
 
-# WWW
-
-## Web clients
+### Web clients
 
 - http
 - urllib
 - [requests](http://docs.python-requests.org/en/master/)
 
-## Web frameworks
+### Web frameworks
 
 > Общий интерфейс шлюза (Common Gateway Interface, CGI) был разработан для того, чтобы веб-серверы могли запускать внешние программы и возвращать результаты.
 
@@ -486,7 +460,7 @@ pip install flask
 
 Full-Stack [Web Frameworks](https://wiki.python.org/moin/WebFrameworks) for Python
 
-## HTTP
+### HTTP
 
 "Передача состояния представления" (Representational State Transfer, `REST`)
 
@@ -506,34 +480,30 @@ Full-Stack [Web Frameworks](https://wiki.python.org/moin/WebFrameworks) for Pyth
 
 [Beautiful Soup](https://www.crummy.com/software/BeautifulSoup/) - Beautiful Soup is a Python library for pulling data out of HTML and XML files.
 
----
+## System
 
-# System
-
-## Datetime
+### Datetime
 
 Одним из способов представления абсолютного времени является подсчет количества секунд, прошедших с некоторой стартовой точки. В Unix используется количество секунд, прошедших с полуночи 1 января 1970 года (примерно в это время появилась система Unix). Это значение часто называют `epoch`
 
 :point_up: Не забывайте: `UTC` для времени, `UTF-8` для строк
 
-## Alternative datetime modules:
+### Alternative datetime modules:
 
 - [arrow](https://arrow.readthedocs.io/en/latest/) - содержит множество функций для работы с датой и временем и имеет простой API.
 - [dateutil](https://dateutil.readthedocs.io/en/stable/) - может проанализировать любой формат даты и хорошо работает с относительными датами и временем.
 - [iso8601](https://pypi.org/project/iso8601/) - заполняет пробелы, связанные с работой модулей стандартной библиотеки, когда речь идет о формате ISO 8601.
 - [fleming](https://fleming.readthedocs.io/en/develop/) - содержит множество функций для работы с часовыми поясами.
 
---- 
-
-# Concurrency
+## Concurrency
 
 :point_up: В Python потоки не ускоряют задачи, связанные с ограничениями процессора, из-за одной детали реализации стандартной системы Python, которая называется Global Interpreter Lock (GIL). Она предназначена для того, чтобы избежать потоковых проблем в интерпретаторе Python, и действительно может замедлить многопоточную программу по сравнению с однопоточной или даже многопроцессорной версией.
 
-## Synchronization:
+### Synchronization:
 
 :point_up: In general different python locks supports [context management protocol](https://docs.python.org/3/library/threading.html#with-locks).
 
-## Networking frameworks
+### Networking frameworks
 
 - [gevent](http://www.gevent.org/) - gevent is a coroutine -based Python networking library that uses greenlet to provide a high-level synchronous API on top of the libev or libuv event loop;
 - [tornado](https://www.tornadoweb.org/en/stable/) - Tornado is a Python web framework and asynchronous networking library;
@@ -546,21 +516,19 @@ Full-Stack [Web Frameworks](https://wiki.python.org/moin/WebFrameworks) for Pyth
     
 Python socket [how to](https://docs.python.org/3/howto/sockets.html)
 
-## Python queue packages:
+### Python queue packages:
 
 - [Celery](http://www.celeryproject.org/) - Celery is an asynchronous task queue/job queue based on distributed message passing.
 - [thoonk](https://pypi.org/project/thoonk/) - hoonk is a clusterable, Redis based, Publish-Subscribe, Queue, and Job Distrubtion system based on the philosophies of XMPP Pubsub
 - [RQ (Redis Queue)](http://python-rq.org/) - simple Python library for queueing jobs and processing them in the background with workers.
 - [Queues](https://python-scripts.com/queues) - этот сайт предлагает поучаствовать в дискуссии о программном обеспечении для создания очередей, как написанном на Python, так и ином.
 
-## Message brokers
+### Message brokers
 
 - [RabbitMQ](https://www.rabbitmq.com/) - the most widely deployed open source message broker;
 - [PubSubHubbub](https://github.com/pubsubhubbub/) - an open, simple, web-scale and decentralized pubsub protocol;
 
----
-
-## RPC
+### RPC
 
 - [xmlrpc](https://docs.python.org/3/library/xmlrpc.html)
 - [fabric](http://docs.fabfile.org/en/2.4/)
