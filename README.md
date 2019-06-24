@@ -32,6 +32,8 @@ Different [sorting](https://github.com/gwtw/py-sorting) algorithms implementatio
 - [System](#system)
 - [Concurrency](#concurrency)
 - [RPC](#rpc)
+## Library references
+- [Random](#random)
 ## GUI
 - [tkinter](#tkinter)
 ## Cloud
@@ -563,6 +565,12 @@ Python socket [how to](https://docs.python.org/3/howto/sockets.html)
 - [xmlrpc](https://docs.python.org/3/library/xmlrpc.html)
 - [fabric](http://docs.fabfile.org/en/2.4/)
 - [msgpack-rpc](https://github.com/msgpack-rpc/msgpack-rpc-python)
+
+---
+
+## Random
+
+[Random choices](https://docs.python.org/3/library/random.html#random.choices) with/without [replacement](https://www.statisticshowto.datasciencecentral.com/sampling-with-replacement-without/) meaning
 
 ---
 
