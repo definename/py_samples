@@ -122,7 +122,7 @@ With `Ctrl+T` you will be able to use `ctags` functionality.
 
 ### Log Viewer
 
-Extention to monitor text log files.
+[Log viewer](https://gitlab.com/berublan/vscode-log-viewer) is extention to monitor text log files.
 
 ```
     "logViewer.watch": [
