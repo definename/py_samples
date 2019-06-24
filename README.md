@@ -32,7 +32,7 @@ Different [sorting](https://github.com/gwtw/py-sorting) algorithms implementatio
 - [System](#system)
 - [Concurrency](#concurrency)
 - [RPC](#rpc)
-## [Library references](#Library references)
+## [Library references](#library-references)
 - [Random](#random)
 ## GUI
 - [tkinter](#tkinter)
