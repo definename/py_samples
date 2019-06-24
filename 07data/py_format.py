@@ -32,7 +32,7 @@ print("{r:20s} {g:20s}".format(r="Richard", g="Gere"))
 print("{r:>20.1s}. {g:<20s}".format(r="Richard", g="Gere"))
 print("{r:^20s} {g:^20s}".format(r="Richard", g="Gere"))
 
-print("{one:^20.1s} {two:^20.2s} {three:^20.3s}".format(one="!!!maxstringlenght", two="!!!maxstringlenght", three="!!!maxstringlenght"))
+print("{one:^20.1s} {two:^20.2s} {three:^20.3s}".format(one="!!!maxstringlength", two="!!!maxstringlength", three="!!!maxstringlength"))
 
 try:
     print("{r:20s} {g:^20s} {n:^20.1d}".format(r="Richard", g="Gere", n=100))
