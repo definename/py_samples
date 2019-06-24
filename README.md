@@ -14,6 +14,7 @@ Different [sorting](https://github.com/gwtw/py-sorting) algorithms implementatio
     - [Linting](#linting)
     - [Unit testing](#unit-testing)
     - [CTags](#ctags)
+    - [Log Viewer](#log-viewer)
 - [Anaconda](#anaconda)
 ## Language references
 - [Numbers](#numbers)
