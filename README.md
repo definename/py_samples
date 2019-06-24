@@ -43,7 +43,7 @@ Different [sorting](https://github.com/gwtw/py-sorting) algorithms implementatio
 
 # [Visual Studio Code](https://code.visualstudio.com/docs/python/python-tutorial#_prerequisites)
 
-### Configure interpreter
+## Configure interpreter
 
 - Install `python` extention
 - Select `python` interpreter
@@ -53,14 +53,14 @@ Different [sorting](https://github.com/gwtw/py-sorting) algorithms implementatio
 
 As result `.vscode` folder will be created with `settings.json` file.  Inside of `setting.json` file `python.pythonPath` variable will point to the `python` interpreter.
 
-### Configure and run debugger
+## Configure and run debugger
 
 - Set breakpoint
 - ctrl+shift+d (go to debugging tab)
 - Select `python: current file`
 - Run debugging by pressing `F5`
 
-### General settings
+## General settings
 
 Disable minimap, render white spaces etc.:
 ```
@@ -73,7 +73,7 @@ Disable minimap, render white spaces etc.:
     "editor.renderWhitespace": "all"
 ```
 
-### Formatting
+## Formatting
 
 [autopep8](https://pypi.org/project/autopep8/) - autopep8 automatically formats Python code to conform to the PEP 8 style guide.
 
@@ -95,11 +95,11 @@ Autoformatting workspace settings:
     ]
 ```
 
-### Linting
+## Linting
 
 By default `VS Code` uses [pylint](https://www.pylint.org/) to provide linting support.
 
-### Unit testing
+## Unit testing
 
 The Python extension supports unit testing with Python's built-in `unittest` framework as well as `pytest` and `Nose`.
 
@@ -118,13 +118,13 @@ The Python extension supports unit testing with Python's built-in `unittest` fra
     "python.testing.promptToConfigure": false
 ```
 
-### CTags
+## CTags
 
 Install [ctags](http://ctags.sourceforge.net/) and run: `ctags -R  --verbose=yes --append=yes --totals=yes .`
 
 With `Ctrl+T` you will be able to use `ctags` functionality.
 
-### Log Viewer
+## Log Viewer
 
 [Log viewer](https://gitlab.com/berublan/vscode-log-viewer) is extention to monitor text log files.
 
