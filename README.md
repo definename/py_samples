@@ -16,7 +16,7 @@ Different [sorting](https://github.com/gwtw/py-sorting) algorithms implementatio
     - [CTags](#ctags)
     - [Log Viewer](#log-viewer)
 - [Anaconda](#anaconda)
-## [Language references](#language-references)
+## Language references
 - [Numbers](#numbers)
 - [Containers](#containers)
 - [Concepts](#concepts)
@@ -32,7 +32,7 @@ Different [sorting](https://github.com/gwtw/py-sorting) algorithms implementatio
 - [System](#system)
 - [Concurrency](#concurrency)
 - [RPC](#rpc)
-## [Library references](#library-references)
+## Library references
 - [Random](#random)
 - [pydoc](#pydoc)
 ## GUI
