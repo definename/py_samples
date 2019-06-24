@@ -32,7 +32,7 @@ Different [sorting](https://github.com/gwtw/py-sorting) algorithms implementatio
 - [System](#system)
 - [Concurrency](#concurrency)
 - [RPC](#rpc)
-## Library references
+## [Library references](#Library references)
 - [Random](#random)
 ## GUI
 - [tkinter](#tkinter)
@@ -567,6 +567,8 @@ Python socket [how to](https://docs.python.org/3/howto/sockets.html)
 - [msgpack-rpc](https://github.com/msgpack-rpc/msgpack-rpc-python)
 
 ---
+
+# Library references
 
 ## Random
 
