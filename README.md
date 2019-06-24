@@ -522,7 +522,7 @@ Python socket [how to](https://docs.python.org/3/howto/sockets.html)
 
 ## Random
 
-[Random choices](https://docs.python.org/3/library/random.html#random.choices) with/without [replacement](https://www.statisticshowto.datasciencecentral.com/sampling-with-replacement-without/) meaning
+[Random choices](https://docs.python.org/3/library/random.html#random.choices) with/without replacement [meaning](https://www.statisticshowto.datasciencecentral.com/sampling-with-replacement-without/)
 
 ## pydoc
 
