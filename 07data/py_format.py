@@ -32,6 +32,8 @@ print("{r:20s} {g:20s}".format(r="Richard", g="Gere"))
 print("{r:>20.1s}. {g:<20s}".format(r="Richard", g="Gere"))
 print("{r:^20s} {g:^20s}".format(r="Richard", g="Gere"))
 
+print("{one:^20.1s} {two:^20.2s} {three:^20.3s}".format(one="!!!precision", two="!!!precision", three="!!!precision"))
+
 try:
     print("{r:20s} {g:^20s} {n:^20.1d}".format(r="Richard", g="Gere", n=100))
 except Exception as e:
