@@ -40,6 +40,7 @@ Different [sorting](https://github.com/gwtw/py-sorting) algorithms implementatio
 ## Cloud
 - [AWS IoT](#aws-iot)
 
+---
 
 # [Visual Studio Code](https://code.visualstudio.com/docs/python/python-tutorial#_prerequisites)
 
