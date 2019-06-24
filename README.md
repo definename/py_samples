@@ -17,6 +17,7 @@ Different [sorting](https://github.com/gwtw/py-sorting) algorithms implementatio
     - [Log Viewer](#log-viewer)
 - [Anaconda](#anaconda)
 ## Language references
+- [Operations](#operations)
 - [Numbers](#numbers)
 - [Containers](#containers)
 - [Concepts](#concepts)
@@ -200,6 +201,11 @@ Create `*.ipynb` file and share it via `nbviewer` service
 ---
 
 # Language references
+
+## Operations
+
+- `==` проверяет, равны ли значения объектов. 
+- `is` проверяет идентичность объектов. Он возвращает значение True, только если оба имени ссылаются на один и тот же объект.
 
 ## Numbers
 
