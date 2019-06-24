@@ -34,6 +34,7 @@ Different [sorting](https://github.com/gwtw/py-sorting) algorithms implementatio
 - [RPC](#rpc)
 ## [Library references](#library-references)
 - [Random](#random)
+- [pydoc](#pydoc)
 ## GUI
 - [tkinter](#tkinter)
 ## Cloud
@@ -260,25 +261,6 @@ It is also possible to import module and create alias for it in this way: `impor
 
 To be able to import only specific function from python module we need to do the following: `from modulename import functionname`
 To do the same with alias: `from modulename import functionname as fn`
-
-## Generate documentation and tests
-
-```
-**********************************************************************
-    report.py
-**********************************************************************
-
-def add(x, y):
-    """
-    Add x and y
-    >>> add(2, 3)
-    5
-    """
-    return x + y
-```
-
-- Generate documentation with `pydoc` module: `pydoc -w .\report.py`. `report.html` file will be generated.
-- Invoke test with `doctest` module: `python -m doctest .\report.py -v`
 
 ## Package
 
@@ -541,6 +523,25 @@ Python socket [how to](https://docs.python.org/3/howto/sockets.html)
 ## Random
 
 [Random choices](https://docs.python.org/3/library/random.html#random.choices) with/without [replacement](https://www.statisticshowto.datasciencecentral.com/sampling-with-replacement-without/) meaning
+
+## pydoc
+
+```
+**********************************************************************
+    report.py
+**********************************************************************
+
+def add(x, y):
+    """
+    Add x and y
+    >>> add(2, 3)
+    5
+    """
+    return x + y
+```
+
+- Generate documentation with [pydoc](https://docs.python.org/3/library/pydoc.html) module: `pydoc -w .\report.py`. `report.html` file will be generated.
+- Invoke test with [doctest](https://docs.python.org/3/library/doctest.html) module: `python -m doctest .\report.py -v`
 
 ---
 
