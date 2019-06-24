@@ -110,7 +110,8 @@ The Python extension supports unit testing with Python's built-in `unittest` fra
     ],
     "python.testing.pyTestEnabled": false,
     "python.testing.nosetestsEnabled": false,
-    "python.testing.autoTestDiscoverOnSaveEnabled": true
+    "python.testing.autoTestDiscoverOnSaveEnabled": true,
+    "python.testing.promptToConfigure": false
 ```
 
 ### CTags
@@ -118,6 +119,24 @@ The Python extension supports unit testing with Python's built-in `unittest` fra
 Install [ctags](http://ctags.sourceforge.net/) and run: `ctags -R  --verbose=yes --append=yes --totals=yes .`
 
 With `Ctrl+T` you will be able to use `ctags` functionality.
+
+### Log Viewer
+
+Extention to monitor text log files.
+
+```
+    "logViewer.watch": [
+        {
+            "title": "TextLog",
+            "pattern": "/home/x/text.log"
+        }
+    ],
+    "logViewer.options":
+    {
+        "fileCheckInterval":100,
+        "encoding":"utf8"
+    }
+```
 
 ---
 
