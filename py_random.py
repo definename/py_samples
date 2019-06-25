@@ -18,7 +18,10 @@ for index in range(3):
 
 log.debug("{:=^100s}".format("getrandbits"))
 for index in range(3):
-    log.debug("{:08b}".format(random.getrandbits(8)))
+    random_bits = random.getrandbits(16)
+    log.debug("{:016b}".format(random_bits))
+    log.debug("{}".format(hex(random_bits)))
+    log.debug(format(random_bits, "x"))
 
 log.debug("{:=^100s}{}".format("two digits with replacement", string.digits))
 while True:
@@ -68,3 +71,17 @@ log.debug("{:=^100s}".format("choose from custom generated range"))
 nbytes = 10
 for i in range(10):
     log.debug(random.choices(population=range(1, nbytes + 1), k=1))
+
+log.debug("{:=^100s}".format("randrange"))
+randrange_list = []
+for i in range(10):
+    randrange_list.append(random.randrange(1, 10))
+
+log.debug(randrange_list)
+
+log.debug("{:=^100s}".format("choice"))
+choice_list = []
+for i in range(1):
+    choice_list.append(random.choice(list(Corruption_t)))
+
+log.debug(choice_list)
