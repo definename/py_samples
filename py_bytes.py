@@ -53,3 +53,7 @@ for each, key in zip(raw_chunk, raw_block):
 
 log.debug(f"chunk_xored: {chunk_xored.hex()}")
 log.debug(b"".join([raw_test[0:pos], chunk_xored, raw_test[pos+block_size:]]).hex())
+
+byte_list = list(raw_test)
+byte_list[pos:pos+block_size] = list(chunk_xored)
+log.debug(bytes(byte_list).hex())
