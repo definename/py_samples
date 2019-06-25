@@ -19,6 +19,7 @@ Different [sorting](https://github.com/gwtw/py-sorting) algorithms implementatio
 ## Language references
 - [Operations](#operations)
 - [Numbers](#numbers)
+- [Strings](#strings)
 - [Containers](#containers)
 - [Concepts](#concepts)
 - [Module](#module)
@@ -216,6 +217,22 @@ Create `*.ipynb` file and share it via `nbviewer` service
 - Множества `set([1, 2, 3])`, see [set](https://docs.python.org/3/library/stdtypes.html#set)
 - Логические значения `True(1), False(0)`
 - Целые числа неограниченной точности `9999999999999999999999999999999999999999999999`
+
+## Strings
+
+- Неформатированные строки
+```
+open(r"C:\new\text.dat", "w")
+```
+
+- Блочная строка
+```
+"""
+Always look
+on the bright
+side of life.
+"""
+```
 
 ## Containers
 
