@@ -64,3 +64,7 @@ for choice in choice_gen:
 for choise, count in choice_res.items():
     log.debug(f"{choise}: {count}")
 
+log.debug("{:=^100s}".format("choose from custom generated range"))
+nbytes = 10
+for i in range(10):
+    log.debug(random.choices(population=range(1, nbytes + 1), k=1))
