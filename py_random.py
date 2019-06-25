@@ -28,24 +28,21 @@ while True:
         break
 
 log.debug("{:=^100s}".format("corruption probability"))
-class CorruptionType(enum.Enum):
+class Corruption_t(enum.Enum):
     INSERT = 1
     DELETE = 2
     XOR = 3
     COMBINE = 4
     NO_CORRUPTION = 5
 
-class InsertType(enum.Enum):
+class Insert_t(enum.Enum):
     BEFORE = 1
     AFTER = 2
     INSIDE = 3
 
-corruption_actions = [CorruptionType.INSERT, CorruptionType.DELETE, CorruptionType.XOR, CorruptionType.COMBINE, CorruptionType.NO_CORRUPTION]
-insert_actions = [InsertType.BEFORE, InsertType.AFTER, InsertType.INSIDE]
-
 def make_choice(insert=10, delete=10, xor=10, combine=10):
     no_corruption = 100 - (insert + delete + xor + combine)
-    return random.choices(corruption_actions, [insert, delete, xor, combine, no_corruption], k=1)
+    return random.choices(list(Corruption_t), [insert, delete, xor, combine, no_corruption], k=1)
 
 def generate_choice(count):
     in_count = 0
@@ -56,8 +53,8 @@ def generate_choice(count):
 choice_gen = generate_choice(count=1000)
 choice_res = {}
 for choice in choice_gen:
-    if choice == CorruptionType.INSERT:
-        choice = random.choices(insert_actions)[0]
+    if choice == Corruption_t.INSERT:
+        choice = random.choices(list(Insert_t))[0]
 
     if choice in choice_res:
         choice_res[choice] += 1
