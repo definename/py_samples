@@ -75,3 +75,15 @@ log.debug("=== pack/unpack bb")
 
 bb_raw = struct.pack("BB", 0, 3)
 log.debug(bb_raw.hex())
+
+log.debug("=== parse invalid format")
+
+try:
+    invalid_format = bytes.fromhex("00110020ffff0005ffff0001000000000007ffff004849")
+    valid_format= bytes.fromhex("00110020ffff0005ffff0001000a000000000007ffff0000")
+    log.debug(f"invalid frame size: {len(invalid_format)}")
+    log.debug(f"valid frame size: {len(valid_format)}")
+    log.debug(list(invalid_format[:1]))
+    struct.unpack(">12H", invalid_format[:24])
+except Exception as e:
+    log.error(f"Error occurred: {e}")
