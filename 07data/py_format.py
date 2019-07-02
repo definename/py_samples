@@ -1,4 +1,5 @@
 import logging
+import sys
 
 logging.basicConfig(level=logging.DEBUG,
                     format="{asctime} {name} {levelname} - {message}", style="{")
@@ -44,6 +45,7 @@ except Exception as e:
     print("Fromatting error occurred: {}".format(e))
 
 print("{0:=^100s}".format("BIG SALE"))
+log.debug("It runs {0.platform}, one: {config[one]}, two: {config[two]}".format(sys, config={"one":1, "two":2}))
 
 # string interpolation
 name = "Oleh"
