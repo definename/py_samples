@@ -46,6 +46,9 @@ except Exception as e:
 
 print("{0:=^100s}".format("BIG SALE"))
 log.debug("It runs {0.platform}, one: {config[one]}, two: {config[two]}".format(sys, config={"one":1, "two":2}))
+for i in range(1, 4):
+    log.debug("New dynamic precision: {0:.{1}f}".format(1/3.0, i))
+    log.debug("Old dynamic precision: %.*f", i, 1 / 3.0)
 
 # string interpolation
 name = "Oleh"
