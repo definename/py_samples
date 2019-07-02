@@ -14,6 +14,10 @@ print("%20s %-20s" % ("Richard", "Gere"))
 print("%20.1s. %-20s" % ("Richard", "Gere"))
 
 print("%*.*s. %-*.*s" % (20, 1, "Richard", 20, 4, "Gere"))
+name = "SomeName"
+surname = "SomeSurname"
+log.debug("Name: %(name)s Surname: %(surname)s", {"name":"SomeName", "surname": "SomeSurname"})
+log.debug("Name: %(name)s Surname: %(surname)s", vars())
 
 # new style
 print("New style:")
