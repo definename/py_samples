@@ -1,4 +1,5 @@
 import logging
+import time
 
 logging.basicConfig(level=logging.DEBUG)
 log = logging.getLogger()
@@ -19,3 +20,13 @@ log.debug("{}".format(int(data_bool)))
 line("")
 data_bool = None
 log.debug("{}".format(data_bool))
+
+line("")
+def get_data():
+    return False
+
+count = 5
+while count > 0 and not get_data():
+    log.debug("Data")
+    time.sleep(1)
+    count -= 1
