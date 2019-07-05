@@ -1,3 +1,9 @@
+import logging
+
+logging.basicConfig(level=logging.DEBUG,
+                    format="{asctime} {name} {levelname} - {message}", style="{")
+log = logging.getLogger()
+
 class Person():
     def __init__(self, name):
         print("__init__ Person")
@@ -95,3 +101,28 @@ circle = Circle(10)
 # print("Failed to retrieve radius:", circle.__radius)
 print("Radius lifehack:", circle._Circle__radius)
 print("Diameter:", circle.diameter)
+
+
+log.debug("{:=^100s}".format("Constructor params"))
+
+class Base():
+    def __init__(self, param1, param2, param3):
+        self.__param1 = param1
+        log.debug(f"Base: {self.__param1}")
+        self.__param2 = param2
+        log.debug(f"Base: {self.__param2}")
+        self.__param3 = param3
+        log.debug(f"Base: {self.__param3}")
+
+class Derived(Base):
+    def __init__(self, param0, *args, **kwargs):
+        super().__init__(*args, **kwargs)
+        self.__param0 = param0
+        log.debug(f"Base: {self.__param0}")
+
+def main():
+    Derived(param0=0, param1=1, param2=2, param3=3)
+
+if __name__ == "__main__":
+    main()
+
