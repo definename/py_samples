@@ -260,8 +260,12 @@ side of life.
 
 > Генераторы - это способ построить контейнер, применяя выражение к каждому элементу последовательности.
 
-- List generator:
-`res = [c * 2 for c in "SPAM"]`
+- `list` generator:
+`l = [c * 2 for c in "SPAM"]`
+
+- `dict` generator:
+`d = {k: k*2 for k in "SPAM"}`
+
 
 ## Concepts
 
