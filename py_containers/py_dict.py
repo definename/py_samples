@@ -1,10 +1,12 @@
+#! /usr/bin/python3
+
 import logging
 logging.basicConfig(level=logging.DEBUG,
                     format="{asctime} {name} {levelname} - {message}", style="{")
 log = logging.getLogger()
 
 empty_dict = {}
-print(empty_dict)
+log.debug(empty_dict)
 
 dict_origin = {
     "seconds": "1",
@@ -55,12 +57,12 @@ print("Origin:", dict_origin)
 print("Copy:", dictCopy, end="\n\n")
 
 def iteration():
-    test = dict(aa=1, bb=2)
-    for k in test:
-        log.debug(f"key11: {k} value: {test[k]}")
+    test_dict = dict(a=1, c=3, b=2)
+    for k in test_dict:
+        log.debug(f"key: {k} {test_dict[k]}")
 
-    for k, v in test.items():
-        log.debug(f"key22: {k} value: {v}")
+    for k in sorted(test_dict):
+        log.debug(f"sorted key: {k} {test_dict[k]}")
 
 def main():
     iteration()
