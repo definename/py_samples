@@ -14,11 +14,12 @@ class Tiny():
 tiny1 = Tiny()
 print("tiny1 object: {}".format(str(tiny1)), end="\n\n")
 
-# serialize/deserialize python object
+# Serialize/Deserialize python class object.
 pickled = pickle.dumps(tiny1)
 tiny2 = pickle.loads(pickled)
 print("tiny2 object: {}".format(str(tiny2)))
 
+# Pickle/Unpickle python dict.
 fname = "pickled.dat"
 with open(file=fname, mode="wb") as f:
     obj = dict(a=1, b=2, c=3)
