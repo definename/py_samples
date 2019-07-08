@@ -3,6 +3,7 @@ import string
 import struct
 import random
 import enum
+import time
 
 logging.basicConfig(level=logging.DEBUG,
                     format="{asctime} {name} {levelname} - {message}", style="{")
@@ -85,3 +86,7 @@ for i in range(1):
     choice_list.append(random.choice(list(Corruption_t)))
 
 log.debug(choice_list)
+
+log.debug("{:=^100s}".format("random float"))
+rand = random.uniform(a=0, b=1)
+log.debug(f"{rand} {round(rand, 2)}")
