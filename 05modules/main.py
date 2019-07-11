@@ -18,6 +18,8 @@ def main():
 
     # Python packages
     log.debug("Daily forecast: {}".format(daily.forecast()))
+    log.debug("Daily _hidden: {}".format(daily._hidden()))
+    log.debug("Daily _hidden_var: {}".format(daily._hidden_var_does_not_work))
     log.debug("Weekly forecast: {}".format(weekly.forecast()))
 
     mod.do()
