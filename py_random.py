@@ -90,3 +90,9 @@ log.debug(choice_list)
 log.debug("{:=^100s}".format("random float"))
 rand = random.uniform(a=0, b=1)
 log.debug(f"{rand} {round(rand, 2)}")
+
+log.debug("{:=^100s}".format("random except"))
+except_num = 100
+seq = list(range(0, except_num)) + list(range(except_num+1, int("64", 16)+1))
+log.debug(seq)
+log.debug(f"Chose: {random.choice(seq)}")
