@@ -56,3 +56,9 @@ log.debug("{:=^50s}".format("XOR with bytearray"))
 byte_array = bytearray(raw_test)
 byte_array[pos:pos+block_size] = chunk_xored
 log.debug(byte_array.hex())
+
+log.debug("{:=^50s}".format("chunk"))
+chunk = raw_test
+raw_test = b""
+log.debug(raw_test)
+log.debug(chunk)
