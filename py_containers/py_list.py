@@ -1,4 +1,10 @@
 import copy
+import logging
+
+logging.basicConfig(level=logging.DEBUG,
+                    format="{asctime} {name} {levelname} - {message}", style="{")
+log = logging.getLogger()
+
 empty_list = []
 print(empty_list)
 
@@ -82,3 +88,6 @@ args[1:] = [1, 2, 3]
 print(args)
 args[1:] = [0, 1, 2, 3]
 print(args)
+
+ll = [1, 2, 3, 4, 5]
+log.debug(ll[:-2])
