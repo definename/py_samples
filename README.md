@@ -24,6 +24,7 @@ Different [sorting](https://github.com/gwtw/py-sorting) algorithms implementatio
 - [Strings](#strings)
 - [Containers](#containers)
     - [Generators](#generators)
+- [Function](#function)
 - [Concepts](#concepts)
 - [Module](#module)
 - [Package](#package)
@@ -270,6 +271,9 @@ side of life.
 - `dict` generator:
 `d = {k: k*2 for k in "SPAM"}`
 
+## Function
+
+`def` - Это инструкция. Когда интерпретатор достигает инструкции `def` и выполняет её, он создает новый обьект функции, в который упакует програмный код функции и свяжет объект с именем.
 
 ## Concepts
 
