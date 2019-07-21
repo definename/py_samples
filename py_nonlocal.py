@@ -12,7 +12,14 @@ def globan_or_nonlocal():
         log.debug(f"!!!: {x}")
     foo()
 
-def counter(start):
+def counter0(start):
+    def nested(fruit):
+        log.debug(f"{fruit}: {nested.state}")
+        nested.state += 1
+    nested.state = start
+    return nested
+
+def counter1(start):
     state = start
     def nested(fruit):
         nonlocal state
@@ -35,10 +42,16 @@ def main():
     foo0()
 
     # Nonlocal counter
-    apple = counter(0)
+    apple = counter0(0)
     apple("apple")
     apple("apple")
     apple("apple")
+
+    # Function attribute counter.
+    pineapple = counter1(0)
+    pineapple("pineapple")
+    pineapple("pineapple")
+    pineapple("pineapple")
 
 if __name__ == "__main__":
     main()
