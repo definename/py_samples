@@ -16,6 +16,9 @@ class Config():
 
     def __bool__(self):
         return False
+    
+    def __call__(self, value):
+        log.debug(f"{value}!!")
 
 
 
@@ -33,6 +36,9 @@ def main():
 
     # __bool__
     log.debug("__bool__: {}".format(True if cfg else False))
+
+    # __call__
+    cfg("Boom")
 
     # dir
     log.debug(dir(cfg))
