@@ -1,3 +1,9 @@
+import logging
+
+logging.basicConfig(level=logging.DEBUG,
+                    format="{asctime} {name} {levelname} - {message}", style="{")
+log = logging.getLogger()
+
 # lambda
 words = ["word1", "word2", "word3"]
 
@@ -20,3 +26,18 @@ print("x[0] by default {}".format(ls1))
 
 ls1.sort(key=lambda x: x[1])
 print("x[1]: {}".format(ls1))
+
+def init_action():
+    action = []
+    for i in range(3):
+        action.append(lambda x, i=i: i ** x)
+    return action
+
+def main():
+    # Namespace and default params in cycles
+    action = init_action()
+    for i in range(len(action)):
+        log.debug(action[i](2))
+
+if __name__ == "__main__":
+    main()
