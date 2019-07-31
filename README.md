@@ -271,6 +271,9 @@ side of life.
 - `dict` generator:
 `d = {k: k*2 for k in "SPAM"}`
 
+- `set` generator:
+`s = {num * 2 for num in range(1, 5)}`
+
 ## Function
 
 > `Функция` - это именованый фрагмент кода, отделенный от других.
