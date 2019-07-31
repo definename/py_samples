@@ -7,9 +7,8 @@ logging.basicConfig(level=logging.DEBUG,
 log = logging.getLogger()
 
 def main():
-    l = ["a", "b", "c"]
-    ll = [a*4 for a in l]
-    log.debug(ll)
+    s = { num for num in range(1, 5) if num % 2 > 0 }
+    log.debug(f"{type(s)} {s}")
 
 if __name__ == "__main__":
     main()
