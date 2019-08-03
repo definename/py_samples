@@ -263,18 +263,18 @@ side of life.
 
 ### Generators
 
-> Генераторы - это способ построить контейнер, применяя выражение к каждому элементу последовательности.
+> Генераторы - это объекты, поддерживающие итерационный протокол, - они обладают методом `__next__`, который выполняет переход к следующему элементу в последовательности результатов и возбуждает исключение по достижении конца последовательности.
 
-- `list` generator:
+- `list` generator, returns list:
 `l = [c * 2 for c in "SPAM"]`
 
-- `dict` generator:
+- `dict` generator, returns dict:
 `d = {k: k*2 for k in "SPAM"}`
 
-- `set` generator:
+- `set` generator, returns set:
 `s = {num * 2 for num in range(1, 5)}`
 
-- generator `expression`, returns generator object:
+- generator `expression`, returns generator:
 `ge = (e * 2 for e in "SPAM")`
 
 ## Function
