@@ -274,6 +274,9 @@ side of life.
 - `set` generator:
 `s = {num * 2 for num in range(1, 5)}`
 
+- generator `expression`, returns generator object:
+`ge = (e * 2 for e in "SPAM")`
+
 ## Function
 
 > `Функция` - это именованый фрагмент кода, отделенный от других.
