@@ -1,3 +1,5 @@
+#! /usr/bin/python3
+
 origin_set = set([1, 2, 3, 4])
 print(origin_set)
 
