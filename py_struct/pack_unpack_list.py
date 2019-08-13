@@ -21,3 +21,15 @@ if __name__ == "__main__":
     log.debug(f"Packed data: {packed.hex()}")
     unpacked = struct.unpack(data_fmt, packed)
     log.debug("Unpacked: {}".format(unpacked))
+
+    aa ="100082"
+    a = aa.encode()
+    log.debug(bytes(a).hex())
+    log.debug(f"Decoded: {a.decode()}")
+    bb = "SAU16369"
+    b = bb.encode()
+    log.debug(bytes(b).hex())
+    log.debug(f"Decoded: {b.decode()}")
+    log.debug(b.decode())
+    # 1313030303832
+    # 5341553136333639
