@@ -14,6 +14,7 @@ class Cmd_t(enum.Enum):
 
 if __name__ == "__main__":
     log.debug(f"{Cmd_t(1)}")
+    log.debug(Cmd_t.CMD_ONE)
     try:
         log.debug(f"{Cmd_t(3)}")
     except ValueError as e:
