@@ -1,10 +1,11 @@
 #! /usr/bin/python3
 
 import logging
+
 log = logging.getLogger(__name__)
 log.setLevel(logging.DEBUG)
 
-fmt = logging.Formatter("%(levelname)s %(asctime)s:%(message)s")
+fmt = logging.Formatter("%(name) - s%(levelname)s %(asctime)s:%(message)s")
 
 ch = logging.StreamHandler()
 ch.setLevel(logging.DEBUG)
@@ -16,6 +17,7 @@ fh.setFormatter(fmt)
 
 log.addHandler(fh)
 log.addHandler(ch)
+
 
 def main():
     # logging.basicConfig(filename="logfile.log", level=logging.DEBUG, filemode="w", format="%(levelname)s %(asctime)s:%(message)s")
