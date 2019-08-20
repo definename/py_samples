@@ -1,4 +1,7 @@
+#! /usr/bin/python3
+
 import logging
+from py_enum import *
 
 logging.basicConfig(level=logging.DEBUG,
                     format="{asctime} {name} {levelname} - {message}", style="{")
@@ -10,6 +13,7 @@ def main():
     # In order not to generate number more that 7fff(32767)
     num = num & 0x7fff
     log.debug(num)
+    log.debug(Cmd_t(1).name)
 
 if __name__ == "__main__":
     main()
