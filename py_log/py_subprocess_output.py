@@ -54,8 +54,8 @@ def work_with_for_stdout():
 
 if __name__ == "__main__":
     try:
-        # work_with_communicate_after_proc_terminate()
-        work_with_for_stdout()
+        work_with_communicate_after_proc_terminate()
+        # work_with_for_stdout()
     except KeyboardInterrupt:
         log.debug("Exit...")
     except Exception as e:
