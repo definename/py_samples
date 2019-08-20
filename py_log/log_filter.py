@@ -5,22 +5,23 @@ import logging
 log = logging.getLogger(__name__)
 log.setLevel(logging.DEBUG)
 
-fmt = logging.Formatter("%(name) - s%(levelname)s %(asctime)s:%(message)s")
-
+fmt = logging.Formatter("%(extra)s:%(message)s")
 ch = logging.StreamHandler()
 ch.setLevel(logging.DEBUG)
 ch.setFormatter(fmt)
 
 log.addHandler(ch)
 
-class CustomAdapter(logging.LoggerAdapter):
-    def process(self, msg, kwargs):
-        return '[%s] %s' % (self.extra["extra_param"], msg), kwargs
+class ContextFilter(logging.Filter):
+    def filter(self, record):
+        record.extra = "999"
+        return True
 
 
 def main():
-    adapter = CustomAdapter(log, {"extra_param":999})
-    adapter.debug("msg")
+    cf = ContextFilter()
+    log.addFilter(cf)
+    log.debug("Filter")
 
 if __name__ == "__main__":
     try:
