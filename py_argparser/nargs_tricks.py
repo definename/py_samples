@@ -8,9 +8,9 @@ log = logging.getLogger()
 
 def main():
     parser = argparse.ArgumentParser()
-    parser.add_argument("integers", type=int, nargs="+", help="Positional args")
-    parser.add_argument("--strings", type=str, nargs="*", help="Optional args")
-    parser.add_argument("--foo", help="Optional arg")
+    parser.add_argument("integers", type=int, nargs="+", help="%(prog)s positional args %(type)s")
+    parser.add_argument("--strings", type=str, nargs="*", help="%(prog)s optional args %(type)s")
+    parser.add_argument("--foo", help="%(prog)s optional arg %(type)s")
 
     args_str = "1 2 3 --strings 11 22 33 --foo fff"
     args = parser.parse_args(args_str.split())
