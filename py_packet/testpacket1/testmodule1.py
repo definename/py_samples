@@ -1,0 +1,1 @@
+module_name = "name " + __name__
