@@ -38,6 +38,8 @@ Different [sorting](https://github.com/gwtw/py-sorting) algorithms implementatio
 - [System](#system)
 - [Concurrency](#concurrency)
 - [RPC](#rpc)
+## Difference between python2 and python3
+- [Import](#import)
 ## Library references
 - [Random](#random)
 - [pydoc](#pydoc)
@@ -588,6 +590,11 @@ Python socket [how to](https://docs.python.org/3/howto/sockets.html)
 - [msgpack-rpc](https://github.com/msgpack-rpc/msgpack-rpc-python)
 
 ---
+
+# Difference between python2 and python3
+
+## Import
+blablabla...
 
 # Library references
 
