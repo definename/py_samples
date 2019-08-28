@@ -594,7 +594,8 @@ Python socket [how to](https://docs.python.org/3/howto/sockets.html)
 # Difference between python2 and python3
 
 ## Import
-blablabla...
+
+В `Python 2.6` операция импортирования неявно выполняет поиск в каталогах пакета, тогда как в версии `3.0` необходимо явно использовать синтаксис относительного импортирования. 
 
 # Library references
 
