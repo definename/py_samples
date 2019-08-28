@@ -39,7 +39,7 @@ Different [sorting](https://github.com/gwtw/py-sorting) algorithms implementatio
 - [Concurrency](#concurrency)
 - [RPC](#rpc)
 ## Difference between python2 and python3
-- [Import](#import)
+- [Import/from](#import/from)
 ## Library references
 - [Random](#random)
 - [pydoc](#pydoc)
