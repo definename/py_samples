@@ -1,3 +1,5 @@
+#!/usr/bin/python3
+
 from packet import daily, weekly
 import sys
 import logging
