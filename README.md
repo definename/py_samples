@@ -39,7 +39,7 @@ Different [sorting](https://github.com/gwtw/py-sorting) algorithms implementatio
 - [Concurrency](#concurrency)
 - [RPC](#rpc)
 ## Difference between python2 and python3
-- [Import/from](#import/from)
+- [Import/from](#import-and-from)
 ## Library references
 - [Random](#random)
 - [pydoc](#pydoc)
@@ -593,7 +593,7 @@ Python socket [how to](https://docs.python.org/3/howto/sockets.html)
 
 # Difference between python2 and python3
 
-## import/from
+## import and from
 
 > Изменения коснулись лишь импортирования файлов пакета из файлов, находящихся в каталогах этого же пакета, - операция импортирования других файлов действует, как и прежде.
 
