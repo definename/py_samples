@@ -1,1 +1,2 @@
-module_name = "name " + __name__
+def test_module2_func():
+    return test_module2_func.__name__
