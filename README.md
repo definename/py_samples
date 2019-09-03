@@ -43,6 +43,7 @@ Different [sorting](https://github.com/gwtw/py-sorting) algorithms implementatio
 ## Library references
 - [Random](#random)
 - [pydoc](#pydoc)
+- [Protocol Buffers](#protocol-Buffers)
 ## GUI
 - [tkinter](#tkinter)
 ## Cloud
@@ -623,6 +624,11 @@ def add(x, y):
 
 - Generate documentation with [pydoc](https://docs.python.org/3/library/pydoc.html) module: `pydoc -w .\report.py`. `report.html` file will be generated.
 - Invoke test with [doctest](https://docs.python.org/3/library/doctest.html) module: `python -m doctest .\report.py -v`
+
+## Protocol Buffers
+
+Compiling `С` protocol buffers: `./protoc --plugin=./protoc-gen-c --c_out=. ./*.proto`
+Compiling `Python` protocol buffers: `./protoc --python_out=. ./*.proto`
 
 ---
 
