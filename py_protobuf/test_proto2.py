@@ -20,12 +20,13 @@ if __name__ == "__main__":
         item_int.key = tp2.Item.DATA2
         item_int.i32 = 123
 
-        log.debug(f"Test:{test}")
+        log.debug(f"Test origin:{test}")
         raw_data = test.SerializeToString()
         log.debug(f"Serialized test:{raw_data.hex()}")
 
         test.Clear()
         test.ParseFromString(raw_data)
+        log.debug(f"Test deserialized:{test}")
 
         for item in test.items:
             log.debug(f"key:{item.key}")
