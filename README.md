@@ -628,6 +628,7 @@ def add(x, y):
 ## Protocol Buffers
 
 Compiling `С` protocol buffers: `./protoc --plugin=./protoc-gen-c --c_out=. ./*.proto`
+
 Compiling `Python` protocol buffers: `./protoc --python_out=. ./*.proto`
 
 ---
