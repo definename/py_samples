@@ -1,0 +1,22 @@
+syntax = "proto2";
+
+message Test
+{
+    repeated Item items = 1;
+}
+
+message Item
+{
+    enum Key_t
+    {
+        DATA1 = 0;
+        DATA2 = 1;
+    }
+
+    optional Key_t key = 1;
+    oneof Value_t
+    {
+        string str = 2;
+        uint32 i32 = 3;
+    }
+}
