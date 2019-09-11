@@ -19,7 +19,7 @@ DESCRIPTOR = _descriptor.FileDescriptor(
   package='',
   syntax='proto2',
   serialized_options=None,
-  serialized_pb=_b('\n\x11test_proto2.proto\"\x1c\n\x04Test\x12\x14\n\x05items\x18\x01 \x03(\x0b\x32\x05.Item\"h\n\x04Item\x12\x18\n\x03key\x18\x01 \x01(\x0e\x32\x0b.Item.Key_t\x12\r\n\x03str\x18\x02 \x01(\tH\x00\x12\r\n\x03i32\x18\x03 \x01(\rH\x00\"\x1d\n\x05Key_t\x12\t\n\x05\x44\x41TA1\x10\x00\x12\t\n\x05\x44\x41TA2\x10\x01\x42\t\n\x07Value_t')
+  serialized_pb=_b('\n\x11test_proto2.proto\"\x14\n\x07Test_m1\x12\t\n\x01i\x18\x01 \x01(\r\"2\n\x04Test\x12\x14\n\x05items\x18\x01 \x03(\x0b\x32\x05.Item\x12\x14\n\x02m1\x18\x02 \x01(\x0b\x32\x08.Test_m1\"h\n\x04Item\x12\x18\n\x03key\x18\x01 \x01(\x0e\x32\x0b.Item.Key_t\x12\r\n\x03str\x18\x02 \x01(\tH\x00\x12\r\n\x03i32\x18\x03 \x01(\rH\x00\"\x1d\n\x05Key_t\x12\t\n\x05\x44\x41TA1\x10\x00\x12\t\n\x05\x44\x41TA2\x10\x01\x42\t\n\x07Value_t')
 )
 
 
@@ -41,23 +41,23 @@ _ITEM_KEY_T = _descriptor.EnumDescriptor(
   ],
   containing_type=None,
   serialized_options=None,
-  serialized_start=115,
-  serialized_end=144,
+  serialized_start=159,
+  serialized_end=188,
 )
 _sym_db.RegisterEnumDescriptor(_ITEM_KEY_T)
 
 
-_TEST = _descriptor.Descriptor(
-  name='Test',
-  full_name='Test',
+_TEST_M1 = _descriptor.Descriptor(
+  name='Test_m1',
+  full_name='Test_m1',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='items', full_name='Test.items', index=0,
-      number=1, type=11, cpp_type=10, label=3,
-      has_default_value=False, default_value=[],
+      name='i', full_name='Test_m1.i', index=0,
+      number=1, type=13, cpp_type=3, label=1,
+      has_default_value=False, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR),
@@ -74,7 +74,45 @@ _TEST = _descriptor.Descriptor(
   oneofs=[
   ],
   serialized_start=21,
-  serialized_end=49,
+  serialized_end=41,
+)
+
+
+_TEST = _descriptor.Descriptor(
+  name='Test',
+  full_name='Test',
+  filename=None,
+  file=DESCRIPTOR,
+  containing_type=None,
+  fields=[
+    _descriptor.FieldDescriptor(
+      name='items', full_name='Test.items', index=0,
+      number=1, type=11, cpp_type=10, label=3,
+      has_default_value=False, default_value=[],
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR),
+    _descriptor.FieldDescriptor(
+      name='m1', full_name='Test.m1', index=1,
+      number=2, type=11, cpp_type=10, label=1,
+      has_default_value=False, default_value=None,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR),
+  ],
+  extensions=[
+  ],
+  nested_types=[],
+  enum_types=[
+  ],
+  serialized_options=None,
+  is_extendable=False,
+  syntax='proto2',
+  extension_ranges=[],
+  oneofs=[
+  ],
+  serialized_start=43,
+  serialized_end=93,
 )
 
 
@@ -122,11 +160,12 @@ _ITEM = _descriptor.Descriptor(
       name='Value_t', full_name='Item.Value_t',
       index=0, containing_type=None, fields=[]),
   ],
-  serialized_start=51,
-  serialized_end=155,
+  serialized_start=95,
+  serialized_end=199,
 )
 
 _TEST.fields_by_name['items'].message_type = _ITEM
+_TEST.fields_by_name['m1'].message_type = _TEST_M1
 _ITEM.fields_by_name['key'].enum_type = _ITEM_KEY_T
 _ITEM_KEY_T.containing_type = _ITEM
 _ITEM.oneofs_by_name['Value_t'].fields.append(
@@ -135,9 +174,17 @@ _ITEM.fields_by_name['str'].containing_oneof = _ITEM.oneofs_by_name['Value_t']
 _ITEM.oneofs_by_name['Value_t'].fields.append(
   _ITEM.fields_by_name['i32'])
 _ITEM.fields_by_name['i32'].containing_oneof = _ITEM.oneofs_by_name['Value_t']
+DESCRIPTOR.message_types_by_name['Test_m1'] = _TEST_M1
 DESCRIPTOR.message_types_by_name['Test'] = _TEST
 DESCRIPTOR.message_types_by_name['Item'] = _ITEM
 _sym_db.RegisterFileDescriptor(DESCRIPTOR)
+
+Test_m1 = _reflection.GeneratedProtocolMessageType('Test_m1', (_message.Message,), dict(
+  DESCRIPTOR = _TEST_M1,
+  __module__ = 'test_proto2_pb2'
+  # @@protoc_insertion_point(class_scope:Test_m1)
+  ))
+_sym_db.RegisterMessage(Test_m1)
 
 Test = _reflection.GeneratedProtocolMessageType('Test', (_message.Message,), dict(
   DESCRIPTOR = _TEST,

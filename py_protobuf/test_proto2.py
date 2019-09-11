@@ -12,6 +12,10 @@ if __name__ == "__main__":
         log.debug("Serialize...")
         test = tp2.Test()
 
+        tm1 = tp2.Test_m1()
+        tm1.i = 99
+        test.m1.CopyFrom(tm1)
+
         item_str = test.items.add()
         item_str.key = tp2.Item.DATA1
         item_str.str = "stringpayload"
