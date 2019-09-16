@@ -35,3 +35,7 @@ except TypeError as e:
 
 originTuple[3][0] = "changed"
 log.debug("But we can change list which was passed to the tuple: {}".format(originTuple))
+
+# Test unpack tuple automaticaly.
+cmd, = (1,)
+log.debug(cmd)
