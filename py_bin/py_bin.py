@@ -6,6 +6,7 @@ logging.basicConfig(level=logging.DEBUG)
 log = logging.getLogger("test")
 
 def main():
+    # ------------------------------------------------------------- #
     ioseq = int("11101111", 2)
     log.debug("ioseq:{} {:08b}".format(ioseq, ioseq))
 
@@ -16,6 +17,24 @@ def main():
 
     ioseq = iseq | oseq
     log.debug("ioseq:{} {:08b}".format(ioseq, ioseq))
+
+    # ------------------------------------------------------------- #
+    flags = build_flags(nak=True, dup=False, busy=False, control=True)
+    log.debug(bin(flags))
+
+def build_flags(*, nak=False, dup=False, busy=False, control=False):
+    flags = 0
+    flags = int(nak)
+    flags = flags << 1
+
+    flags = flags | int(dup)
+    flags = flags << 1
+
+    flags = flags | int(busy)
+    flags = flags << 1
+
+    flags = flags | int(control)
+    return flags
 
 if __name__ == "__main__":
     main()
