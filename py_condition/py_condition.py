@@ -1,4 +1,5 @@
-#! /usr/bin/python3
+#!/usr/bin/python3
+
 import threading
 import logging
 import time
@@ -10,39 +11,38 @@ log = logging.getLogger()
 cv =  threading.Condition()
 done_list = {}
 
-def do(done_id):
-    log.debug("Do... {}".format(done_id))
+def wait_done(done_id):
+    log.debug(f"Do... {done_id}")
     with cv:
         while done_list[done_id] != True:
             if cv.wait(timeout=2.0) == False:
-                log.debug("Timeout expired...")
+                log.debug(f"Timeout expired...{done_id}")
+    log.debug(f"Done... {done_id}")
 
-        log.debug("Done... {}".format(done_id))
+def set_done():
+    with cv:
+        for key in done_list.keys():
+            done_list[key] = True
+            cv.notify_all()
 
 def main():
-    t_list = []
+    thread_list = []
     for index in range(2):
         done_list[index] = False
-        t = threading.Thread(target=do, args=(index,))
+        thread_list.append(threading.Thread(target=wait_done, args=(index,)))
+
+    for t in thread_list:
         t.start()
-        t_list.append(t)
-        time.sleep(1)
-    
+        time.sleep(1.0)
+
     while True:
         time.sleep(0.5)
-
-    # for t in t_list:
-    #     t.join()
 
 if __name__ == "__main__":
     try:
         main()
     except KeyboardInterrupt:
         log.debug("Stop...")
-        with cv:
-            for key in done_list.keys():
-                done_list[key] = True
-                cv.notify_all()
-
+        set_done()
     except Exception as e:
-        log.error("Error occurred: {}".format(e))
+        log.exception(f"Error occurred:{e}")
