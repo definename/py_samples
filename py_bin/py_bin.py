@@ -7,10 +7,15 @@ log = logging.getLogger("test")
 
 def main():
     ioseq = int("11101111", 2)
-    oseq = ioseq & int("f", 16)
+    log.debug("ioseq:{} {:08b}".format(ioseq, ioseq))
+
     iseq = ioseq & int("f0", 16)
-    log.debug("{} {:08b} {}".format(oseq, oseq, bool(oseq)))
-    log.debug("{} {:08b} {}".format(iseq, iseq, bool(oseq)))
+    oseq = ioseq & int("f", 16)
+    log.debug("iseq:{} {:08b} {}".format(iseq, iseq, bool(iseq)))
+    log.debug("oseq:{} {:08b} {}".format(oseq, oseq, bool(oseq)))
+
+    ioseq = iseq | oseq
+    log.debug("ioseq:{} {:08b}".format(ioseq, ioseq))
 
 if __name__ == "__main__":
     main()
