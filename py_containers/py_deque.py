@@ -19,7 +19,8 @@ def main():
     for item in dq:
         log.debug(item)
 
-    dq.clear()
+    while dq:
+        log.debug(f"pop:{dq.popleft()}")
 
 
 if __name__ == "__main__":
