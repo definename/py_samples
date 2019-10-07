@@ -224,6 +224,10 @@ Create `*.ipynb` file and share it via `nbviewer` service
 - Множества `set([1, 2, 3])`, see [set](https://docs.python.org/3/library/stdtypes.html#set)
 - Логические значения `True(1), False(0)`
 - Целые числа неограниченной точности `9999999999999999999999999999999999999999999999`
+- binary (base2): 0b1010
+- octal (base8): 0o10
+- hexadecimal (base16): 0xff
+
 
 ## Strings
 
