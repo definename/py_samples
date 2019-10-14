@@ -13,7 +13,6 @@ Different [sorting](https://github.com/gwtw/py-sorting) algorithms implementatio
 
 ## Conda
 > [Conda](https://conda.io/en/latest/) is both (Pip + Virtualenv)
-# Conda:
 
 Update `anaconda` from older version:
 ```
