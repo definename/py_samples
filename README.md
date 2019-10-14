@@ -12,7 +12,7 @@ Different [sorting](https://github.com/gwtw/py-sorting) algorithms implementatio
 > [Pip](https://the-hitchhikers-guide-to-packaging.readthedocs.io/en/latest/pip.html) is a package manager
 
 ## Virtualenv
-[Virtualenv](https://www.dabapps.com/blog/introduction-to-pip-and-virtualenv-python/) is an environment manager
+> [Virtualenv](https://www.dabapps.com/blog/introduction-to-pip-and-virtualenv-python/) is an environment manager
 
 ## IDE and tools
 - [Visual Studio Code](#visual-studio-code)
