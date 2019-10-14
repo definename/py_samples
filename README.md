@@ -5,12 +5,6 @@ Different [sorting](https://github.com/gwtw/py-sorting) algorithms implementatio
 
 # Table of contents
 
-## Pip
-> [Pip](https://the-hitchhikers-guide-to-packaging.readthedocs.io/en/latest/pip.html) is a package manager
-
-## Virtualenv
-> [Virtualenv](https://www.dabapps.com/blog/introduction-to-pip-and-virtualenv-python/) is an environment manager
-
 ## Tools
 - [Pip](#pip)
 - [Virtualenv](#virtualenv)
@@ -55,6 +49,18 @@ Different [sorting](https://github.com/gwtw/py-sorting) algorithms implementatio
 - [tkinter](#tkinter)
 ## Cloud
 - [AWS IoT](#aws-iot)
+
+---
+
+## Pip
+> [Pip](https://the-hitchhikers-guide-to-packaging.readthedocs.io/en/latest/pip.html) is a package manager
+
+---
+
+## Virtualenv
+> [Virtualenv](https://www.dabapps.com/blog/introduction-to-pip-and-virtualenv-python/) is an environment manager
+
+---
 
 ## Conda
 > [Conda](https://conda.io/en/latest/) is both (Pip + Virtualenv)
@@ -102,8 +108,6 @@ anaconda-clean --yes
 ```
 
 On `Windows` remove `anaconda` with `Control Panel`. On `Linux` with command `rm -rf ~/anaconda`
-
----
 
 ---
 
