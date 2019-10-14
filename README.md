@@ -8,6 +8,12 @@ Different [sorting](https://github.com/gwtw/py-sorting) algorithms implementatio
 
 # Table of contents
 
+## Pip
+- ffff
+
+## Virtualenv
+- ffff
+
 ## IDE and tools
 - [Visual Studio Code](#visual-studio-code)
     - [Configure interpreter](#configure-interpreter)
