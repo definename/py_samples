@@ -1,9 +1,6 @@
 Python [Workshop](https://legacy.python.org/doc/essays/ppt/acm-ws/tsld001.htm) by Guido Van Rossum
 
 Different [sorting](https://github.com/gwtw/py-sorting) algorithms implementation with python
-
-> [Pip](https://the-hitchhikers-guide-to-packaging.readthedocs.io/en/latest/pip.html) is a package manager + [Virtualenv](https://www.dabapps.com/blog/introduction-to-pip-and-virtualenv-python/) is an environment manager = [Conda](https://conda.io/en/latest/) is both
-
 > Linting analyzes how the code runs and detects errors whereas formatting simply restructures how code appears.
 
 # Table of contents
@@ -13,6 +10,9 @@ Different [sorting](https://github.com/gwtw/py-sorting) algorithms implementatio
 
 ## Virtualenv
 > [Virtualenv](https://www.dabapps.com/blog/introduction-to-pip-and-virtualenv-python/) is an environment manager
+
+## Anaconda
+> [Conda](https://conda.io/en/latest/) is both (Pip + Virtualenv)
 
 ## IDE and tools
 - [Visual Studio Code](#visual-studio-code)
