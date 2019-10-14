@@ -56,6 +56,54 @@ Different [sorting](https://github.com/gwtw/py-sorting) algorithms implementatio
 
 ---
 
+# Conda:
+
+Update `anaconda` from older version:
+```
+conda update conda
+conda update anaconda
+```
+
+Lists available environments:
+
+```
+conda info --envs
+```
+
+Switch to particular environment:
+
+```
+conda activate custom
+```
+
+Search for particular package
+
+```
+conda search spyder
+```
+
+Install specific package into specific environment (by default package is installed into active environment):
+
+```
+conda install --name custom spyder=3.3.3
+```
+
+[Uninstall](https://docs.anaconda.com/anaconda/install/uninstall/) `anaconda`:
+
+Install clean up tool:
+```
+conda install anaconda-clean
+```
+
+Remove all Anaconda-related files and directories without being prompted to delete each one
+```
+anaconda-clean --yes
+```
+
+On `Windows` remove `anaconda` with `Control Panel`. On `Linux` with command `rm -rf ~/anaconda`
+
+---
+
 # [Visual Studio Code](https://code.visualstudio.com/docs/python/python-tutorial#_prerequisites)
 
 ## Configure interpreter
@@ -156,54 +204,6 @@ With `Ctrl+T` you will be able to use `ctags` functionality.
         "encoding":"utf8"
     }
 ```
-
----
-
-# [Anaconda](https://www.anaconda.com/):
-
-Update `anaconda` from older version:
-```
-conda update conda
-conda update anaconda
-```
-
-Lists available environments:
-
-```
-conda info --envs
-```
-
-Switch to particular environment:
-
-```
-conda activate custom
-```
-
-Search for particular package
-
-```
-conda search spyder
-```
-
-Install specific package into specific environment (by default package is installed into active environment):
-
-```
-conda install --name custom spyder=3.3.3
-```
-
-[Uninstall](https://docs.anaconda.com/anaconda/install/uninstall/) `anaconda`:
-
-Install clean up tool:
-```
-conda install anaconda-clean
-```
-
-Remove all Anaconda-related files and directories without being prompted to delete each one
-```
-anaconda-clean --yes
-```
-
-On `Windows` remove `anaconda` with `Control Panel`. On `Linux` with command `rm -rf ~/anaconda`
 
 ---
 
