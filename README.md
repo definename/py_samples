@@ -9,10 +9,10 @@ Different [sorting](https://github.com/gwtw/py-sorting) algorithms implementatio
 # Table of contents
 
 ## Pip
-- ffff
+> [Pip](https://the-hitchhikers-guide-to-packaging.readthedocs.io/en/latest/pip.html) is a package manager
 
 ## Virtualenv
-- ffff
+[Virtualenv](https://www.dabapps.com/blog/introduction-to-pip-and-virtualenv-python/) is an environment manager
 
 ## IDE and tools
 - [Visual Studio Code](#visual-studio-code)
