@@ -11,6 +11,51 @@ Different [sorting](https://github.com/gwtw/py-sorting) algorithms implementatio
 ## Virtualenv
 > [Virtualenv](https://www.dabapps.com/blog/introduction-to-pip-and-virtualenv-python/) is an environment manager
 
+## Tools
+- [Pip](#pip)
+- [Virtualenv](#virtualenv)
+- [Conda](#conda)
+
+## IDE and tools
+- [Visual Studio Code](#visual-studio-code)
+    - [Configure interpreter](#configure-interpreter)
+    - [Configure and run debugger](#configure-and-run-debugger)
+    - [Formatting](#formatting)
+    - [Linting](#linting)
+    - [Unit testing](#unit-testing)
+    - [CTags](#ctags)
+    - [Log Viewer](#log-viewer)
+## Language references
+- [Operations](#operations)
+- [Numbers](#numbers)
+- [Strings](#strings)
+- [Containers](#containers)
+    - [Generators](#generators)
+- [Function](#function)
+- [Namespace](#namespace)
+- [Concepts](#concepts)
+- [Module](#module)
+- [Package](#package)
+- [Class](#class)
+- [Format](#format)
+- [Regex](#regex)
+- [Serialization](#serialization)
+- [Databases](#databases)
+- [WWW](#www)
+- [System](#system)
+- [Concurrency](#concurrency)
+- [RPC](#rpc)
+## Difference between python2 and python3
+- [Import and from](#import-and-from)
+## Library references
+- [Random](#random)
+- [pydoc](#pydoc)
+- [Protocol Buffers](#protocol-Buffers)
+## GUI
+- [tkinter](#tkinter)
+## Cloud
+- [AWS IoT](#aws-iot)
+
 ## Conda
 > [Conda](https://conda.io/en/latest/) is both (Pip + Virtualenv)
 
@@ -59,46 +104,6 @@ anaconda-clean --yes
 On `Windows` remove `anaconda` with `Control Panel`. On `Linux` with command `rm -rf ~/anaconda`
 
 ---
-
-## IDE and tools
-- [Visual Studio Code](#visual-studio-code)
-    - [Configure interpreter](#configure-interpreter)
-    - [Configure and run debugger](#configure-and-run-debugger)
-    - [Formatting](#formatting)
-    - [Linting](#linting)
-    - [Unit testing](#unit-testing)
-    - [CTags](#ctags)
-    - [Log Viewer](#log-viewer)
-## Language references
-- [Operations](#operations)
-- [Numbers](#numbers)
-- [Strings](#strings)
-- [Containers](#containers)
-    - [Generators](#generators)
-- [Function](#function)
-- [Namespace](#namespace)
-- [Concepts](#concepts)
-- [Module](#module)
-- [Package](#package)
-- [Class](#class)
-- [Format](#format)
-- [Regex](#regex)
-- [Serialization](#serialization)
-- [Databases](#databases)
-- [WWW](#www)
-- [System](#system)
-- [Concurrency](#concurrency)
-- [RPC](#rpc)
-## Difference between python2 and python3
-- [Import and from](#import-and-from)
-## Library references
-- [Random](#random)
-- [pydoc](#pydoc)
-- [Protocol Buffers](#protocol-Buffers)
-## GUI
-- [tkinter](#tkinter)
-## Cloud
-- [AWS IoT](#aws-iot)
 
 ---
 
