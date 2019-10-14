@@ -11,7 +11,7 @@ Different [sorting](https://github.com/gwtw/py-sorting) algorithms implementatio
 ## Virtualenv
 > [Virtualenv](https://www.dabapps.com/blog/introduction-to-pip-and-virtualenv-python/) is an environment manager
 
-## Anaconda
+## Anaconda(#anaconda)
 > [Conda](https://conda.io/en/latest/) is both (Pip + Virtualenv)
 
 ## IDE and tools
@@ -23,7 +23,6 @@ Different [sorting](https://github.com/gwtw/py-sorting) algorithms implementatio
     - [Unit testing](#unit-testing)
     - [CTags](#ctags)
     - [Log Viewer](#log-viewer)
-- [Anaconda](#anaconda)
 ## Language references
 - [Operations](#operations)
 - [Numbers](#numbers)
