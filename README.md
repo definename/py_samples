@@ -84,18 +84,6 @@ Install specific package into specific environment (by default package is instal
 
 `conda install --name custom spyder=3.3.3`
 
-[Uninstall](https://docs.anaconda.com/anaconda/install/uninstall/) `anaconda`:
-
-Install clean up tool:
-
-`conda install anaconda-clean`
-
-Remove all Anaconda-related files and directories without being prompted to delete each one
-
-`anaconda-clean --yes`
-
-On `Windows` remove `anaconda` with `Control Panel`. On `Linux` with command `rm -rf ~/anaconda`
-
 ---
 
 # [Visual Studio Code](https://code.visualstudio.com/docs/python/python-tutorial#_prerequisites)
