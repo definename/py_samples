@@ -51,16 +51,13 @@ Different [sorting](https://github.com/gwtw/py-sorting) algorithms implementatio
 - [AWS IoT](#aws-iot)
 
 ---
+# Tools
 
 ## Pip
 > [Pip](https://the-hitchhikers-guide-to-packaging.readthedocs.io/en/latest/pip.html) is a package manager
 
----
-
 ## Virtualenv
 > [Virtualenv](https://www.dabapps.com/blog/introduction-to-pip-and-virtualenv-python/) is an environment manager
-
----
 
 ## Conda
 > [Conda](https://conda.io/en/latest/) is both (Pip + Virtualenv)
@@ -73,39 +70,27 @@ conda update anaconda
 
 Lists available environments:
 
-```
-conda info --envs
-```
+`conda info --envs`
 
 Switch to particular environment:
 
-```
-conda activate custom
-```
+`conda activate custom`
 
 Search for particular package
 
-```
-conda search spyder
-```
+`conda search spyder`
 
 Install specific package into specific environment (by default package is installed into active environment):
 
-```
-conda install --name custom spyder=3.3.3
-```
+`conda install --name custom spyder=3.3.3`
 
 [Uninstall](https://docs.anaconda.com/anaconda/install/uninstall/) `anaconda`:
 
 Install clean up tool:
-```
-conda install anaconda-clean
-```
+`conda install anaconda-clean`
 
 Remove all Anaconda-related files and directories without being prompted to delete each one
-```
-anaconda-clean --yes
-```
+`anaconda-clean --yes`
 
 On `Windows` remove `anaconda` with `Control Panel`. On `Linux` with command `rm -rf ~/anaconda`
 
