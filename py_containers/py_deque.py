@@ -9,8 +9,14 @@ log = logging.getLogger("test")
 def main():
     dq = collections.deque()
 
+    res = 1 and bool(dq)
+    log.debug(f"Check whether deque is empty:{res}")
+
     if not dq:
         dq.append(1)
+    
+    res = 1 and bool(dq)
+    log.debug(f"Check whether deque is empty:{res}")
 
     if dq:
         l = [2, 3, 4]
