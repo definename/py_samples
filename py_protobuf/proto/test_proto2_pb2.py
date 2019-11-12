@@ -7,6 +7,7 @@ from google.protobuf import descriptor as _descriptor
 from google.protobuf import message as _message
 from google.protobuf import reflection as _reflection
 from google.protobuf import symbol_database as _symbol_database
+from google.protobuf import descriptor_pb2
 # @@protoc_insertion_point(imports)
 
 _sym_db = _symbol_database.Default()
@@ -18,9 +19,9 @@ DESCRIPTOR = _descriptor.FileDescriptor(
   name='test_proto2.proto',
   package='',
   syntax='proto2',
-  serialized_options=None,
   serialized_pb=_b('\n\x11test_proto2.proto\"\x14\n\x07Test_m1\x12\t\n\x01i\x18\x01 \x01(\r\"2\n\x04Test\x12\x14\n\x05items\x18\x01 \x03(\x0b\x32\x05.Item\x12\x14\n\x02m1\x18\x02 \x01(\x0b\x32\x08.Test_m1\"h\n\x04Item\x12\x18\n\x03key\x18\x01 \x01(\x0e\x32\x0b.Item.Key_t\x12\r\n\x03str\x18\x02 \x01(\tH\x00\x12\r\n\x03i32\x18\x03 \x01(\rH\x00\"\x1d\n\x05Key_t\x12\t\n\x05\x44\x41TA1\x10\x00\x12\t\n\x05\x44\x41TA2\x10\x01\x42\t\n\x07Value_t')
 )
+_sym_db.RegisterFileDescriptor(DESCRIPTOR)
 
 
 
@@ -32,15 +33,15 @@ _ITEM_KEY_T = _descriptor.EnumDescriptor(
   values=[
     _descriptor.EnumValueDescriptor(
       name='DATA1', index=0, number=0,
-      serialized_options=None,
+      options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
       name='DATA2', index=1, number=1,
-      serialized_options=None,
+      options=None,
       type=None),
   ],
   containing_type=None,
-  serialized_options=None,
+  options=None,
   serialized_start=159,
   serialized_end=188,
 )
@@ -60,14 +61,14 @@ _TEST_M1 = _descriptor.Descriptor(
       has_default_value=False, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
+      options=None),
   ],
   extensions=[
   ],
   nested_types=[],
   enum_types=[
   ],
-  serialized_options=None,
+  options=None,
   is_extendable=False,
   syntax='proto2',
   extension_ranges=[],
@@ -91,21 +92,21 @@ _TEST = _descriptor.Descriptor(
       has_default_value=False, default_value=[],
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
+      options=None),
     _descriptor.FieldDescriptor(
       name='m1', full_name='Test.m1', index=1,
       number=2, type=11, cpp_type=10, label=1,
       has_default_value=False, default_value=None,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
+      options=None),
   ],
   extensions=[
   ],
   nested_types=[],
   enum_types=[
   ],
-  serialized_options=None,
+  options=None,
   is_extendable=False,
   syntax='proto2',
   extension_ranges=[],
@@ -129,21 +130,21 @@ _ITEM = _descriptor.Descriptor(
       has_default_value=False, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
+      options=None),
     _descriptor.FieldDescriptor(
       name='str', full_name='Item.str', index=1,
       number=2, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
+      options=None),
     _descriptor.FieldDescriptor(
       name='i32', full_name='Item.i32', index=2,
       number=3, type=13, cpp_type=3, label=1,
       has_default_value=False, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
+      options=None),
   ],
   extensions=[
   ],
@@ -151,7 +152,7 @@ _ITEM = _descriptor.Descriptor(
   enum_types=[
     _ITEM_KEY_T,
   ],
-  serialized_options=None,
+  options=None,
   is_extendable=False,
   syntax='proto2',
   extension_ranges=[],
@@ -177,7 +178,6 @@ _ITEM.fields_by_name['i32'].containing_oneof = _ITEM.oneofs_by_name['Value_t']
 DESCRIPTOR.message_types_by_name['Test_m1'] = _TEST_M1
 DESCRIPTOR.message_types_by_name['Test'] = _TEST
 DESCRIPTOR.message_types_by_name['Item'] = _ITEM
-_sym_db.RegisterFileDescriptor(DESCRIPTOR)
 
 Test_m1 = _reflection.GeneratedProtocolMessageType('Test_m1', (_message.Message,), dict(
   DESCRIPTOR = _TEST_M1,
