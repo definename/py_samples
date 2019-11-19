@@ -64,8 +64,14 @@ def iteration():
     for k in sorted(test_dict):
         log.debug(f"sorted key: {k} {test_dict[k]}")
 
+def my_dict_assignment():
+    my_dict = {}
+    my_dict["key"] = my_dict.get("key", None) or 10
+    log.debug(f"{my_dict}")
+
 def main():
     iteration()
+    my_dict_assignment()
 
 if __name__ == "__main__":
     main()
