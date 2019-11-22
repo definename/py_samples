@@ -28,7 +28,13 @@ def test_urlparse(test_path):
     log.debug(res)
     res = urllib.parse.parse_qs(res.query)
     log.debug(res)
-    
+    chunk = res.get("chunk", None)
+    log.debug(f"chunk:{chunk}")
+    sleep = res.get("sleep", None)
+    log.debug(f"sleep:{sleep}")
+    disconnect = res.get("disconnect", None)
+    log.debug(f"disconnect:{disconnect}")
+
 
 def test_urlsplit(test_path):
     log.debug("................................")
@@ -41,6 +47,11 @@ def main():
     test_string_split(test_path)
     test_urlparse(test_path)
     test_urlsplit(test_path)
+
+    test_path = "/scripts/run_something.sh?chunk=""&sleep&disconnect=2#fragment"
+    test_urlparse(test_path)
+    test_path = "/scripts/run_something.sh"
+    test_urlparse(test_path)
 
 
 
