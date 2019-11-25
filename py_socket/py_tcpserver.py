@@ -8,7 +8,7 @@ import socketserver
 logging.basicConfig(level=logging.DEBUG)
 log = logging.getLogger(__name__)
 
-class MyTcpServer(socketserver.TCPServer):
+class MyTcpServer(socketserver.ThreadingTCPServer):
 
     allow_reuse_address = True
 
