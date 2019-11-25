@@ -18,7 +18,6 @@ def main():
 
         data = tcp_client.recv(max_size)
         log.debug(f"Server said:{data.decode()}")
-        tcp_client.shutdown(socket.SHUT_RDWR)
         tcp_client.close()
 
     except KeyboardInterrupt:

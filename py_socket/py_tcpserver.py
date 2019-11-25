@@ -5,8 +5,6 @@ import logging
 import threading
 import socketserver
 
-import http.server
-
 logging.basicConfig(level=logging.DEBUG)
 log = logging.getLogger(__name__)
 
@@ -59,7 +57,7 @@ class MyTcpRequestHandler(socketserver.StreamRequestHandler):
         log.debug("Handler has been triggered")
         data = self.rfile.readline()
         if data:
-            log.debug(f"Data received:{data.decode()}")
+            log.debug(f"Client said:{data.decode()}")
             self.wfile.write("Welcome".encode())
 
 
