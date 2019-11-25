@@ -5,6 +5,8 @@ import logging
 import threading
 import socketserver
 
+import http.server
+
 logging.basicConfig(level=logging.DEBUG)
 log = logging.getLogger(__name__)
 
@@ -15,6 +17,10 @@ class MyTcpServer(socketserver.TCPServer):
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
         self.__server_thread = None
+    
+    def server_activate(self):
+        log.debug(f"Server is being listened on:{self.server_address}")
+        super().server_activate()
     
     def verify_request(self, request, client_address):
         log.debug(f"Client:{client_address} has just connected")
@@ -52,7 +58,9 @@ class MyTcpRequestHandler(socketserver.StreamRequestHandler):
     def handle(self):
         log.debug("Handler has been triggered")
         data = self.rfile.readline()
-        log.debug(f"Data received:{data}")
+        if data:
+            log.debug(f"Data received:{data.decode()}")
+            self.wfile.write("Welcome".encode())
 
 
 def main():

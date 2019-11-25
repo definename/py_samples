@@ -14,10 +14,11 @@ def main():
         tcp_client = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
         log.debug(f"TCP client is being connected to:{server_address}")
         tcp_client.connect(server_address)
-        tcp_client.sendall(b"Hey")
+        tcp_client.sendall(b"Hello")
 
         data = tcp_client.recv(max_size)
-        log.debug(f"Server said:{data}")
+        log.debug(f"Server said:{data.decode()}")
+        tcp_client.shutdown(socket.SHUT_RDWR)
         tcp_client.close()
 
     except KeyboardInterrupt:
