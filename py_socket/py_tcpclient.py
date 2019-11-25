@@ -1,24 +1,30 @@
-from datetime import datetime
+#!/usr/bin/python3
+
 import socket
 import logging
 
-streamHandler = logging.StreamHandler()
-streamHandler.setFormatter(logging.Formatter('%(asctime)s %(name)s %(levelname)s - %(message)s'))
-logger = logging.getLogger("TCP")
-logger.setLevel(logging.DEBUG)
-logger.addHandler(streamHandler)
+logging.basicConfig(level=logging.DEBUG)
+log = logging.getLogger(__name__)
 
-max_size = 4096
-addr = ("localhost", 6789)
+def main():
+    try:
+        max_size = 1024
+        server_address = ("localhost", 6789)
 
-try:
-    logger.debug("TCP client is being started at: {}".format(addr))
-    client = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-    client.connect(addr)
-    client.sendall(b"Hey")
+        tcp_client = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+        log.debug(f"TCP client is being connected to:{server_address}")
+        tcp_client.connect(server_address)
+        tcp_client.sendall(b"Hey")
 
-    data = client.recv(max_size)
-    logger.debug("At: {} server said: {}".format(datetime.now(), data))
-    client.close()
-except Exception as e:
-    logger.error("TCP client error: {}".format(e))
+        data = tcp_client.recv(max_size)
+        log.debug(f"Server said:{data}")
+        tcp_client.close()
+
+    except KeyboardInterrupt:
+        log.error("Keyboard interrupted...")
+    except Exception as e:
+        log.error("TCP client error: {}".format(e))
+    
+
+if __name__ == "__main__":
+    main()

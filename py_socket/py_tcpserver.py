@@ -1,58 +1,77 @@
-from datetime import datetime
+#!/usr/bin/python3
+
 import socket
 import logging
 import threading
+import socketserver
 
-streamHandler = logging.StreamHandler()
-streamHandler.setFormatter(logging.Formatter('%(asctime)s %(name)s %(levelname)s - %(message)s'))
-logger = logging.getLogger("TCP")
-logger.setLevel(logging.DEBUG)
-logger.addHandler(streamHandler)
+logging.basicConfig(level=logging.DEBUG)
+log = logging.getLogger(__name__)
 
-max_size = 4096
-addr = ("localhost", 6789)
+class MyTcpServer(socketserver.TCPServer):
 
+    allow_reuse_address = True
 
-def ServerHandler(server):
-    try:
-        server.bind(addr)
-        server.listen(5)
+    def __init__(self, *args, **kwargs):
+        super().__init__(*args, **kwargs)
+        self.__server_thread = None
+    
+    def verify_request(self, request, client_address):
+        log.debug(f"Client:{client_address} has just connected")
+        return True
 
-        while True:
-            client, client_addr = server.accept()
-            data = client.recv(max_size)
-            logger.debug("At {} client: {} said: {}".format(datetime.now(), client_addr, data))
-            client.sendall(b"Are you talking to me?")
-            client.close()
+    def start(self, start_async=True):
+        self.server_bind()
+        self.server_activate()
+        if start_async:
+            self.__server_thread = threading.Thread(target=self.serve_forever)
+            self.__server_thread.start()
+        else:
+            self.serve_forever()
 
-    except Exception as e:
-        logger.error("TCP server handler error: {}".format(e))
+    def stop(self):
+        self.shutdown()
+        self.server_close()
+        if self.__server_thread:
+            self.__server_thread.join()
 
+    def __enter__(self):
+        self.start()
+        return self
 
-desc = """Usage:
-    'q' - exit;
-    '?' - get this help.
-"""
+    def __exit__(self, *args):
+        self.stop()
+
+class MyTcpRequestHandler(socketserver.StreamRequestHandler):
+
+    timeout = 0
+
+    def __init__(self, *args, **kwargs):
+        super().__init__(*args, **kwargs)
+
+    def handle(self):
+        log.debug("Handler has been triggered")
+        data = self.rfile.readline()
+        log.debug(f"Data received:{data}")
 
 
 def main():
-    logger.debug("TCP server is being started at: {}".format(addr))
-    server = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+    try:
+        params = {
+            "server_address" : ("localhost", 6789),
+            "RequestHandlerClass" : MyTcpRequestHandler,
+            "bind_and_activate" : False
+            }
 
-    thread = threading.Thread(target=ServerHandler, args=(server,))
-    thread.start()
+        tcp_server = MyTcpServer(**params)
+        tcp_server.start(False)
 
-    while True:
-        val = input(desc)
-        if val == "q":
-            server.close()
-            break
-        elif val == "?":
-            logging.debug(desc)
+    except KeyboardInterrupt:
+        tcp_server.stop()
+        log.debug("Keyboard interrupted...")
+    except Exception as e:
+        log.error(f"Error occurred:{e}")
 
 
 if __name__ == "__main__":
-    try:
-        main()
-    except Exception as e:
-        logger.error("TCP server error: {}".format(e))
+    main()
