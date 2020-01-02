@@ -6,7 +6,7 @@ log = logging.getLogger(__name__)
 
 def main():
     parser = argparse.ArgumentParser()
-    parser.add_argument("-n", type=int, help="Fibonacci number", required=True)
+    parser.add_argument("-n", type=int, help="Number", required=True)
     args = parser.parse_args()
 
     first = 0
