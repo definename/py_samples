@@ -12,7 +12,7 @@ class TestClass1:
         ret = connection
         log.debug(ret)
         assert 1 == 1
-    
+
     def test_two(self, connection):
         ret = connection
         log.debug(ret)

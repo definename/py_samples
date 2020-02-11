@@ -8,7 +8,7 @@ class TestClass1:
         ret = connection
         log.debug(ret)
         assert 3 == 3
-    
+
     def test_four(self, connection):
         ret = connection
         log.debug(ret)
