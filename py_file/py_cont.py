@@ -6,20 +6,24 @@ logging.basicConfig(level=logging.DEBUG,
                     format="{asctime} {name} {levelname} - {message}", style="{")
 log = logging.getLogger()
 
-d = {"a":1, "b":2, "c":3}
-l = [1, 2, 3]
+ddict = {"a":1, "b":2, "c":3}
+llist = [1, 2, 3]
 
 fname = "obj.dat"
 with open(file=fname, mode="wt") as f:
-    f.write(f"{d}${l}")
+    f.write(f"{ddict}${llist}")
 
 with open(file=fname, mode="r") as f:
     line = f.readline()
+    log.debug(f"line read:{line}")
     parts = line.split("$")
     obj = [eval(p) for p in parts]
-    d = obj[0]
-    d[111] = 4
-    log.debug(f"{type(d)}: {d}")
-    l = obj[1]
-    l.append(111)
-    log.debug(f"{type(l)}: {l}")
+    log.debug(f"obj type:{type(obj)} obj len:{len(obj)}")
+
+    dd = obj[0]
+    dd[111] = 4
+    log.debug(f"{type(dd)}: {dd}")
+
+    ll = obj[1]
+    ll.append(111)
+    log.debug(f"{type(ll)}: {ll}")
