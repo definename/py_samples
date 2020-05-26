@@ -11,9 +11,9 @@ import numpy as np
 def main():
     filename = 'smarties.png'
     src = cv.imread(filename, cv.IMREAD_COLOR)
-    cv.imshow('origin image', src)
     if src is None:
         raise Exception("Failed to open source file")
+    cv.imshow('origin image', src)
 
     gray = cv.cvtColor(src, cv.COLOR_BGR2GRAY)
     gray = cv.medianBlur(gray, 5)
