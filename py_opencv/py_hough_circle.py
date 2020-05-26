@@ -1,5 +1,12 @@
 #! /usr/bin/python3
 
+"""
+@file hough_lines.py
+@brief This program demonstrates circle finding with the Hough transform
+"""
+
+# Source url: https://docs.opencv.org/4.2.0/d4/d70/tutorial_hough_circle.html
+
 import logging
 logging.basicConfig(level=logging.DEBUG)
 log = logging.getLogger()
@@ -13,7 +20,7 @@ def main():
     src = cv.imread(filename, cv.IMREAD_COLOR)
     if src is None:
         raise Exception("Failed to open source file")
-    cv.imshow('origin image', src)
+    cv.imshow('Origin image', src)
 
     gray = cv.cvtColor(src, cv.COLOR_BGR2GRAY)
     gray = cv.medianBlur(gray, 5)
