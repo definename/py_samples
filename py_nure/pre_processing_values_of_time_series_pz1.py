@@ -155,8 +155,40 @@ def exponential_smoothing(data_list):
 
     t = Texttable()
     t.add_rows([["index", "input data ", "exponential smoothing"], *result_list[1:]])
+    print(t.draw())
 
-    print(result_list)
+    return pack_result_and_return(result_list)
+
+def chronological_average(data_list):
+    print(5*"=", "exponential smoothing", 5*"=")
+    result_list = []
+    n = 12
+    print(data_list)
+
+    for i, data in enumerate(data_list):
+        if i < (n // 2) or i > ((len(data_list) - 1) - (n // 2)):
+            result_list.append((i, data, None))
+        else:
+            result = data_list[i - (n // 2)] / 2
+            it = 1
+            while it < (n // 2):
+                result += data_list[i - it]
+                it += 1
+
+            result += data_list[i]
+
+            it = 1
+            while it < (n // 2):
+                result += data_list[i + it]
+                it += 1
+            result += data_list[i + (n // 2)] / 2
+
+            result /= 12
+            result_list.append((i, data, round(result, 2)))
+
+    t = Texttable()
+    t.add_rows([["index", "input data ", "chronological average"], *result_list])
+    print(t.draw())
 
     return pack_result_and_return(result_list)
 
@@ -166,38 +198,44 @@ def main():
     ax.set_ylabel("y - calculated data")
 
     # Student1 ####################################################
-    # data1 = [115, 112, 118, 122, 115, 121, 126, 132, 134, 131, 135, 134]
-    # irvin_method(data1)
+    data1 = [115, 112, 118, 122, 115, 121, 126, 132, 134, 131, 135, 134, 138, 135, 137, 139, 140, 136, 138, 140]
+    irvin_method(data1)
 
-    # x, y = moving_average(data1, 5)
-    # ax.plot(x, data1, label="исходные данные")
-    # ax.plot(x, y, label="среднеарифметическая по 5 точкам")
-
-    # x, y = weighted_average5(data1)
-    # ax.plot(x, y, label="средневзвешенная по 5 точкам")
-    
-    # x, y = weighted_average7(data1)
-    # ax.plot(x, y, label="средневзвешенная по 7 точкам")
-
-    # x, y = exponential_smoothing(data1)
-    # ax.plot(x, y, label="экспоненциальное сглаживание")
-
-    # Student2 ####################################################
-    data2 = [799, 864, 990, 1163, 1140, 1173, 1290, 1302, 1295, 1355, 1464, 1559]
-    irvin_method(data2)
-
-    x, y = moving_average(data2, 5)
-    ax.plot(x, data2, label="исходные данные")
+    x, y = moving_average(data1, 5)
+    ax.plot(x, data1, label="исходные данные")
     ax.plot(x, y, label="среднеарифметическая по 5 точкам")
 
-    x, y = weighted_average5(data2)
+    x, y = weighted_average5(data1)
     ax.plot(x, y, label="средневзвешенная по 5 точкам")
     
-    x, y = weighted_average7(data2)
+    x, y = weighted_average7(data1)
     ax.plot(x, y, label="средневзвешенная по 7 точкам")
 
-    x, y = exponential_smoothing(data2)
+    x, y = chronological_average(data1)
+    ax.plot(x, y, label="среднехронологическая по 12 точкам")
+
+    x, y = exponential_smoothing(data1)
     ax.plot(x, y, label="экспоненциальное сглаживание")
+
+    # Student2 ####################################################
+    # data2 = [799, 864, 990, 1163, 1140, 1173, 1290, 1302, 1295, 1355, 1464, 1559, 1581, 1931, 2032, 2260, 2093, 2123, 2210, 2130]
+    # irvin_method(data2)
+
+    # x, y = moving_average(data2, 5)
+    # ax.plot(x, data2, label="исходные данные")
+    # ax.plot(x, y, label="среднеарифметическая по 5 точкам")
+
+    # x, y = weighted_average5(data2)
+    # ax.plot(x, y, label="средневзвешенная по 5 точкам")
+    
+    # x, y = weighted_average7(data2)
+    # ax.plot(x, y, label="средневзвешенная по 7 точкам")
+
+    # x, y = chronological_average(data2)
+    # ax.plot(x, y, label="среднехронологическая по 12 точкам")
+
+    # x, y = exponential_smoothing(data2)
+    # ax.plot(x, y, label="экспоненциальное сглаживание")
     ##############################################################
 
     ax.legend()
