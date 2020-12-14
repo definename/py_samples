@@ -1,4 +1,6 @@
 import math
+# pip install texttable
+from texttable import Texttable
 
 def dispersion(data_list, average):
     s = 0
@@ -14,7 +16,6 @@ def student_t_criterion(average1, average2, dispersion1_pow2, dispersion2_pow2, 
     return t
 
 def main():
-
     # Метод проверки разностей средних уровней
     print(5*"=", "average difference", 5*"=")
 
@@ -88,7 +89,9 @@ def main():
             d_val = k_val - l_val
             result_list.append((k_val, l_val, s_val, d_val))
 
-    print(*result_list, sep="\n")
+    t = Texttable()
+    t.add_rows([["k", "l ", "s", "d"], *result_list])
+    print(t.draw())
     
     s_sum = 0
     d_sum = 0
@@ -107,7 +110,7 @@ def main():
     print("t_d", t_d)
 
     assert(len(data) - 1 == 9)
-    t_tabl = 2.26 # because len(data) - 1 == 9
+    t_tabl = 2.26 # because  P <= 0.05 and len(data) - 1 == 9
     print("t_tabl", t_tabl)
     print("row trend exist:", t_s > t_tabl)
     print("dispersion trend exist:", t_d > t_tabl)
