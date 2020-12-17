@@ -46,27 +46,36 @@ def standard_deviation(data_list):
 def print_trend_equation(a0, a1):
     print("Yx = ", round(a0, 4), "+", round(a1, 4), "*x")
 
+def correlation_coefficient(sum_list):
+    t_sum = sum_list[0]
+    y_sum = sum_list[1]
+    t2_sum = sum_list[2]
+    y2_sum = sum_list[3]
+    ty_sum = sum_list[4]
+    r = (5 * ty_sum - t_sum * y_sum) / math.pow((5*t2_sum - math.pow(t_sum, 2)) * (5*y2_sum - math.pow(y_sum, 2)), 0.5)
+    return correlation_coefficient.__name__, r
+
 def main():
     print(5*"=", "profit", 5*"=")
     profit_list = [[1,3093], [2,3150], [3,3170], [4,3210], [5,3220]]
     print(standard_deviation([y for t,y in profit_list]))
     a0a1 = calculate_coefficients(profit_list)
-    print(a0a1)
     print_trend_equation(*a0a1)
+    print(correlation_coefficient(profit_list[len(profit_list) -1 :][0]))
 
     print(5*"=", "costs", 5*"=")
     costs_list = [[1,0.76], [2,0.78], [3,0.64], [4,0.71], [5,0.68]]
     print(standard_deviation([y for t,y in costs_list]))
     a0a1 = calculate_coefficients(costs_list)
     print_trend_equation(*a0a1)
-    print(a0a1)
+    print(correlation_coefficient(costs_list[len(costs_list) -1 :][0]))
 
     print(5*"=", "capital", 5*"=")
     capital_list = [[1,26300], [2,26500], [3,28200], [4,29600], [5,31100]]
     print(standard_deviation([y for t,y in capital_list]))
     a0a1 = calculate_coefficients(capital_list)
-    print(a0a1)
     print_trend_equation(*a0a1)
+    print(correlation_coefficient(capital_list[len(capital_list) -1 :][0]))
 
 if __name__ == "__main__":
     main()
