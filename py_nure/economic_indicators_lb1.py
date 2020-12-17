@@ -44,7 +44,7 @@ def standard_deviation(data_list):
     return standard_deviation.__name__, math.sqrt(d_dispersion)
 
 def print_trend_equation(a0, a1):
-    print("Yx = ", round(a0, 4), "+", round(a1, 4), "*x")
+    print("Yx = ", round(a0, 4), "+", round(a1, 4), "* x")
 
 def correlation_coefficient(sum_list):
     t_sum = sum_list[0]
