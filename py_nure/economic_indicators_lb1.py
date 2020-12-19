@@ -2,6 +2,7 @@
 import matplotlib.pyplot as plt
 import math
 import numpy
+# pip install texttable
 from texttable import Texttable
 
 def calculate_coefficients(data):
@@ -46,6 +47,7 @@ def standard_deviation(data_list):
     return standard_deviation.__name__, math.sqrt(d_dispersion)
 
 def print_trend_equation(a0, a1):
+    print("a0:", a0, "a1:", a1)
     print("Yx = ", round(a0, 4), "+", round(a1, 4), "* x")
 
 def correlation_coefficient(sum_list):
@@ -64,9 +66,12 @@ def retrospection_period(t_list, a0, a1):
     return result_list
 
 def do_main(data_list, title):
-    print(standard_deviation([y for t,y in data_list]))
+    print(10*"=",title, 10*"=")
     a0a1 = calculate_coefficients(data_list)
     print_trend_equation(*a0a1)
+    y_list = [y for t,y,*x in data_list[:len(data_list) - 1]]
+    print(standard_deviation(y_list))
+
     print(correlation_coefficient(data_list[len(data_list) - 1 :][0]))
 
     t_list = [t for t,*x in data_list[:len(data_list) - 1]]
@@ -80,7 +85,6 @@ def do_main(data_list, title):
     t.add_rows([["t", "forecast_linear_regression"], *forecast_linear_regression])
     print(t.draw())
 
-    y_list = [y for t,y,*x in data_list[:len(data_list) - 1]]
     growth_rate = math.pow(y_list[len(y_list) - 1]/y_list[0],0.25)
     print("growth_rate:", growth_rate)
 
@@ -94,42 +98,48 @@ def do_main(data_list, title):
     t.add_rows([["t", "forecast_rates_of_growth"], *forecast_rates_of_growth])
     print(t.draw())
 
-    # Build chart
+    print(10*"=","chart data",10*"=")
     linear_result = linear_regression + forecast_linear_regression
     rates_of_growth_result = forecast_rates_of_growth
+
+    t = Texttable()
+    t.add_rows([["t", "chart data linear_regression"], *linear_result])
+    print(t.draw())
+
+    t = Texttable()
+    t.add_rows([["t", "chart data rates_of_growth"], *rates_of_growth_result])
+    print(t.draw())
 
     fig, ax = plt.subplots()
     ax.set_xlabel("t")
     ax.set_ylabel("y")
     ax.set_title(title)
 
-    t_list = [t for t,y in rates_of_growth_result]
-    print("rates_of_growth t:", t_list)
-    y_list = [y for t,y in rates_of_growth_result]
-    print("rates_of_growth y:", y_list)
-    ax.plot(t_list, y_list, label="по темпам роста")
+    ax.plot([t for t,y in rates_of_growth_result],
+            [y for t,y in rates_of_growth_result], label="за темпами зростяння")
 
-    t_list = [t for t,y in linear_result]
-    print("linear t:", t_list)
-    y_list = [y for t,y in linear_result]
-    print("linear y:", y_list)
-    ax.plot(t_list, y_list, label="линейный")
+    ax.plot([t for t,y in linear_result],
+            [y for t,y in linear_result], label="лінійний")
 
     ax.legend()
     plt.show()
 
 def main():
-    print(5*"=", "profit", 5*"=")
-    profit_list = [[1,3093], [2,3150], [3,3170], [4,3210], [5,3220]]
-    do_main(profit_list, "прибыль")
+    profit_list_14 = [[1,2354], [2,2390], [3,2420], [4,2500], [5,2560]]
+    # profit_list_1 = [[1,3093], [2,3150], [3,3170], [4,3210], [5,3220]]
+    profit_list = profit_list_14
 
-    print(5*"=", "costs", 5*"=")
-    costs_list = [[1,0.76], [2,0.78], [3,0.64], [4,0.71], [5,0.68]]
-    do_main(costs_list, "затраты")
+    costs_list_14 = [[1,0.65], [2,0.60], [3,0.76], [4,0.68], [5,0.70]]
+    # costs_list_1 = [[1,0.76], [2,0.78], [3,0.64], [4,0.71], [5,0.68]]
+    costs_list = costs_list_14
 
-    print(5*"=", "capital", 5*"=")
-    capital_list = [[1,26300], [2,26500], [3,28200], [4,29600], [5,31100]]
-    do_main(capital_list, "капитал")
+    capital_list_14 = [[1,22870], [2,24200], [3,26100], [4,28200], [5,29800]]
+    # capital_list_1 = [[1,26300], [2,26500], [3,28200], [4,29600], [5,31100]]
+    capital_list = capital_list_14
+
+    do_main(profit_list, "прибуток")
+    do_main(costs_list, "витрати")
+    do_main(capital_list, "капітал")
 
 if __name__ == "__main__":
     main()
