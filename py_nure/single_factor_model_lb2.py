@@ -9,7 +9,6 @@ from texttable import Texttable
 def a0a1_linear(data):
     t_sum = y_sum = t2_sum = y2_sum = ty_sum = 0
     data_list_result = [[] for i in range(len(data))]
-
     for i,d in enumerate(data):
         t = d[0]
         data_list_result[i].append(t)
@@ -52,7 +51,6 @@ def a0a1_linear(data):
 def a0a1_hyperbola(data):
     t_sum = y_sum = one_div_t_sum = y_div_t_sum = one_div_t2_sum = 0
     data_list_result = [[] for i in range(len(data))]
-
     for i,d in enumerate(data):
         t = d[0]
         data_list_result[i].append(t)
@@ -75,10 +73,16 @@ def a0a1_hyperbola(data):
         one_div_t2_sum += one_div_t2
 
     t = Texttable()
+    t.set_cols_dtype(["f", "f", "f", "f", "f",])
+    t.set_cols_width([15, 15, 15, 15, 15,])
+    t.set_precision(10)
     t.add_rows([["t", "y", "one_div_t", "y_div_t", "one_div_t2"], *data_list_result])
     print(t.draw())
 
     t = Texttable()
+    t.set_cols_dtype(["f", "f", "f", "f", "f",])
+    t.set_cols_width([15, 15, 15, 15, 15,])
+    t.set_precision(10)
     t.add_rows([["t_sum", "y_sum", "one_div_t_sum", "y_div_t_sum", "one_div_t2_sum"],
                 [t_sum, y_sum, one_div_t_sum, y_div_t_sum, one_div_t2_sum]])
     print(t.draw())
@@ -92,6 +96,60 @@ def a0a1_hyperbola(data):
     r = numpy.linalg.solve(m4,v4)
     return r
 
+def a0a1a3_parabola(data):
+    t_sum = y_sum = t2_sum = t3_sum = t4_sum = ty_sum = t2y_sum = 0
+    data_list_result = [[] for i in range(len(data))]
+    for i,d in enumerate(data):
+        t = d[0]
+        data_list_result[i].append(t)
+        t_sum += t
+
+        y = d[1]
+        data_list_result[i].append(y)
+        y_sum += y
+
+        t2 = t * t
+        data_list_result[i].append(t2)
+        t2_sum += t2
+
+        t3 = t * t * t
+        data_list_result[i].append(t3)
+        t3_sum += t3
+
+        t4 = t * t * t * t
+        data_list_result[i].append(t4)
+        t4_sum += t4
+
+        ty = t * y
+        data_list_result[i].append(ty)
+        ty_sum += ty
+
+        t2y = (t * t) * y
+        data_list_result[i].append(t2y)
+        t2y_sum += t2y
+
+    t = Texttable()
+    t.set_cols_dtype(["f", "f", "f", "f", "f", "f", "f"])
+    t.set_cols_width([15, 15, 15, 15, 15, 15, 15,])
+    t.add_rows([["t", "y", "t2", "t3", "t4", "ty", "t2y"], *data_list_result])
+    print(t.draw())
+
+    t = Texttable()
+    t.set_cols_dtype(["f", "f", "f", "f", "f", "f", "f"])
+    t.set_cols_width([15, 15, 15, 15, 15, 15, 15,])
+    t.add_rows([["t_sum", "y_sum", "t2_sum", "t3_sum", "t4_sum", "ty_sum", "t2y_sum"],
+                [t_sum, y_sum, t2_sum, t3_sum, t4_sum, ty_sum, t2y_sum]])
+    print(t.draw())
+
+    n = len(data_list_result)
+    m4 = numpy.array([
+        [n,t_sum,t2_sum],
+        [t_sum,t2_sum,t3_sum],
+        [t2_sum,t3_sum,t4_sum]
+        ])
+    v4 = numpy.array([y_sum,ty_sum,t2y_sum])
+    r = numpy.linalg.solve(m4,v4)
+    return r
 
 def standard_deviation(data_list):
     y_average = sum(data_list) / len(data_list)
@@ -103,11 +161,15 @@ def standard_deviation(data_list):
 
 def trend_equation_linear(a0, a1):
     print("a0:", a0, "a1:", a1)
-    print("Yx = ", round(a0, 4), "+", round(a1, 4), "* x")
+    print(trend_equation_linear.__name__, ": Yx = ", round(a0, 4), "+", round(a1, 4), "* x")
 
 def trend_equation_hyperbola(a0, a1):
     print("a0:", a0, "a1:", a1)
-    print("Yx = ", round(a0, 4), "+", round(a1, 4), "/ x")
+    print(trend_equation_hyperbola.__name__, ": Yx = ", round(a0, 4), "+", round(a1, 4), "/ x")
+
+def trend_equation_parabola(a0, a1, a2):
+    print("a0:", a0, "a1:", a1, "a2", a2)
+    print(trend_equation_parabola.__name__, ": Yx = ", round(a0, 4), "+", round(a1, 4), "* x +", round(a2, 4), " x2")
 
 def correlation_coefficient(sum_list):
     t_sum = sum_list[0]
@@ -126,11 +188,15 @@ def retrospection_period(t_list, a0, a1):
 
 def do_main(data_list, title):
     print(10*"=",title, 10*"=")
+
     a0a1 = a0a1_linear(copy.deepcopy(data_list))
     trend_equation_linear(*a0a1)
 
     a0a1 = a0a1_hyperbola(copy.deepcopy(data_list))
     trend_equation_hyperbola(*a0a1)
+
+    a0a1 = a0a1a3_parabola(copy.deepcopy(data_list))
+    trend_equation_parabola(*a0a1)
     # y_list = [y for t,y,*x in data_list[:len(data_list) - 1]]
     # print(standard_deviation(y_list))
 
