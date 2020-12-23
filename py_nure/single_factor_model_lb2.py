@@ -192,11 +192,16 @@ def do_main(data_list, title):
     a0a1 = a0a1_linear(copy.deepcopy(data_list))
     trend_equation_linear(*a0a1)
 
+    y_list = [y for t,y in data_list]
+    print(y_list, sep="\n")
+    print(standard_deviation(y_list))
+
     a0a1 = a0a1_hyperbola(copy.deepcopy(data_list))
     trend_equation_hyperbola(*a0a1)
 
     a0a1 = a0a1a3_parabola(copy.deepcopy(data_list))
     trend_equation_parabola(*a0a1)
+
     # y_list = [y for t,y,*x in data_list[:len(data_list) - 1]]
     # print(standard_deviation(y_list))
 
@@ -253,11 +258,12 @@ def do_main(data_list, title):
     # plt.show()
 
 def main():
-    # p ot z
+    # ==== P(Z) ====
     # profit_list_14 = [[1,2354], [2,2390], [3,2420], [4,2500], [5,2560]]
     # profit_list_5 = [[0.81,1955],[0.74,2170],[0.86,2210],[0.80,2280],[0.82,2400]]
+
     profit_list_p_ot_z_lb = [[337.2, 428.2],[356.3, 451],[367.1, 456.8],[390.7, 495.8],[409.4, 515.3]]
-    test = [[100,70], [105,79], [108,85], [113,84], [118,85], [118,85], [110,96], [115,99], [119,100], [118,98], [120,99], [124,102], [129,105], [132,112]]
+    # test = [[100,70], [105,79], [108,85], [113,84], [118,85], [118,85], [110,96], [115,99], [119,100], [118,98], [120,99], [124,102], [129,105], [132,112]]
     profit_list = profit_list_p_ot_z_lb
 
     # costs_list_14 = [[1,0.65], [2,0.60], [3,0.76], [4,0.68], [5,0.70]]
@@ -268,14 +274,14 @@ def main():
     # capital_list_5 = [[1,34052], [2,34800], [3,35600], [4,36200], [5,38100]]
     # capital_list = capital_list_14
 
-    do_main(profit_list, "прибуток")
+    do_main(profit_list, "прибуток P(Z)")
     # do_main(costs_list, "витрати")
     # do_main(capital_list, "капітал")
 
-    # p ot k
+    # ==== P(K) ====
     # profit_list_p_ot_k_lb = [[79.7, 428.2], [87.3, 451], [95.4, 456.8], [97.2, 495.8], [100.6, 515.3]]
     # profit_list = profit_list_p_ot_k_lb
-    # do_main(profit_list, "прибуток")
+    # do_main(profit_list, "прибуток P(K)")
 
 if __name__ == "__main__":
     main()
