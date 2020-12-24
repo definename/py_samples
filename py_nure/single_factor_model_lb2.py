@@ -151,13 +151,12 @@ def a0a1a3_parabola(data):
     r = numpy.linalg.solve(m4,v4)
     return r
 
-def standard_deviation(data_list):
-    y_average = sum(data_list) / len(data_list)
+def standard_deviation_y_theory(y_list):
     s = 0
-    for i in data_list:
-        s += math.pow(i - y_average, 2)
-    d_dispersion = s / (len(data_list) - 1)
-    return standard_deviation.__name__, math.sqrt(d_dispersion)
+    for y,y_theory in y_list:
+        s += math.pow(y - y_theory, 2)
+    d_dispersion = s / (len(y_list))
+    return math.sqrt(d_dispersion)
 
 def trend_equation_linear(a0, a1):
     print("a0:", a0, "a1:", a1)
@@ -169,7 +168,7 @@ def trend_equation_hyperbola(a0, a1):
 
 def trend_equation_parabola(a0, a1, a2):
     print("a0:", a0, "a1:", a1, "a2", a2)
-    print(trend_equation_parabola.__name__, ": Yx = ", round(a0, 4), "+", round(a1, 4), "* x +", round(a2, 4), " x2")
+    print(trend_equation_parabola.__name__, ": Yx = ", round(a0, 4), "+", round(a1, 4), "* x +", round(a2, 4), "* x2")
 
 def correlation_coefficient(sum_list):
     t_sum = sum_list[0]
@@ -191,16 +190,33 @@ def do_main(data_list, title):
 
     a0a1 = a0a1_linear(copy.deepcopy(data_list))
     trend_equation_linear(*a0a1)
-
-    y_list = [y for t,y in data_list]
-    print(y_list, sep="\n")
-    print(standard_deviation(y_list))
+    # deviation ###############################################
+    y_list = []
+    for i,xy in enumerate(data_list):
+        x,y = xy
+        y_theory = a0a1[0] + a0a1[1] * x
+        y_list.append([y,y_theory])
+    print("standard_deviation_y_theory:", standard_deviation_y_theory(y_list))
 
     a0a1 = a0a1_hyperbola(copy.deepcopy(data_list))
     trend_equation_hyperbola(*a0a1)
+    # deviation ###############################################
+    y_list = []
+    for i,xy in enumerate(data_list):
+        x,y = xy
+        y_theory = a0a1[0] + a0a1[1] / x
+        y_list.append([y,y_theory])
+    print("standard_deviation_y_theory:", standard_deviation_y_theory(y_list))
 
-    a0a1 = a0a1a3_parabola(copy.deepcopy(data_list))
-    trend_equation_parabola(*a0a1)
+    a0a1a2 = a0a1a3_parabola(copy.deepcopy(data_list))
+    trend_equation_parabola(*a0a1a2)
+    # deviation ###############################################
+    y_list = []
+    for i,xy in enumerate(data_list):
+        x,y = xy
+        y_theory = a0a1a2[0] + (a0a1a2[1] * x) + (a0a1a2[2] * (x * x))
+        y_list.append([y,y_theory])
+    print("standard_deviation_y_theory:", standard_deviation_y_theory(y_list))
 
     # y_list = [y for t,y,*x in data_list[:len(data_list) - 1]]
     # print(standard_deviation(y_list))
@@ -263,7 +279,6 @@ def main():
     # profit_list_5 = [[0.81,1955],[0.74,2170],[0.86,2210],[0.80,2280],[0.82,2400]]
 
     profit_list_p_ot_z_lb = [[337.2, 428.2],[356.3, 451],[367.1, 456.8],[390.7, 495.8],[409.4, 515.3]]
-    # test = [[100,70], [105,79], [108,85], [113,84], [118,85], [118,85], [110,96], [115,99], [119,100], [118,98], [120,99], [124,102], [129,105], [132,112]]
     profit_list = profit_list_p_ot_z_lb
 
     # costs_list_14 = [[1,0.65], [2,0.60], [3,0.76], [4,0.68], [5,0.70]]
@@ -279,9 +294,9 @@ def main():
     # do_main(capital_list, "капітал")
 
     # ==== P(K) ====
-    # profit_list_p_ot_k_lb = [[79.7, 428.2], [87.3, 451], [95.4, 456.8], [97.2, 495.8], [100.6, 515.3]]
-    # profit_list = profit_list_p_ot_k_lb
-    # do_main(profit_list, "прибуток P(K)")
+    profit_list_p_ot_k_lb = [[79.7, 428.2], [87.3, 451], [95.4, 456.8], [97.2, 495.8], [100.6, 515.3]]
+    profit_list = profit_list_p_ot_k_lb
+    do_main(profit_list, "прибуток P(K)")
 
 if __name__ == "__main__":
     main()
