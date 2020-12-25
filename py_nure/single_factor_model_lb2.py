@@ -186,8 +186,7 @@ def retrospection_period(t_list, a0, a1):
     return result_list
 
 def do_main(data_list, title):
-    print(10*"=",title, 10*"=")
-
+    print(10*"=",title,"лінійна", 10*"=")
     a0a1 = a0a1_linear(copy.deepcopy(data_list))
     trend_equation_linear(*a0a1)
     # deviation ###############################################
@@ -198,6 +197,7 @@ def do_main(data_list, title):
         y_list.append([y,y_theory])
     print("standard_deviation_y_theory:", standard_deviation_y_theory(y_list))
 
+    print(10*"=",title,"гіпербола", 10*"=")
     a0a1 = a0a1_hyperbola(copy.deepcopy(data_list))
     trend_equation_hyperbola(*a0a1)
     # deviation ###############################################
@@ -208,6 +208,7 @@ def do_main(data_list, title):
         y_list.append([y,y_theory])
     print("standard_deviation_y_theory:", standard_deviation_y_theory(y_list))
 
+    print(10*"=",title,"парабола", 10*"=")
     a0a1a2 = a0a1a3_parabola(copy.deepcopy(data_list))
     trend_equation_parabola(*a0a1a2)
     # deviation ###############################################
@@ -218,10 +219,7 @@ def do_main(data_list, title):
         y_list.append([y,y_theory])
     print("standard_deviation_y_theory:", standard_deviation_y_theory(y_list))
 
-    # y_list = [y for t,y,*x in data_list[:len(data_list) - 1]]
-    # print(standard_deviation(y_list))
-
-    # print(correlation_coefficient(data_list[len(data_list) - 1 :][0]))
+    print(correlation_coefficient(data_list[len(data_list) - 1 :][0]))
 
     # t_list = [t for t,*x in data_list[:len(data_list) - 1]]
     # linear_regression = retrospection_period(t_list, *a0a1)
@@ -289,14 +287,14 @@ def main():
     # capital_list_5 = [[1,34052], [2,34800], [3,35600], [4,36200], [5,38100]]
     # capital_list = capital_list_14
 
-    do_main(profit_list, "прибуток P(Z)")
+    do_main(profit_list, "П(З)")
     # do_main(costs_list, "витрати")
     # do_main(capital_list, "капітал")
 
     # ==== P(K) ====
     profit_list_p_ot_k_lb = [[79.7, 428.2], [87.3, 451], [95.4, 456.8], [97.2, 495.8], [100.6, 515.3]]
     profit_list = profit_list_p_ot_k_lb
-    do_main(profit_list, "прибуток P(K)")
+    do_main(profit_list, "П(К)")
 
 if __name__ == "__main__":
     main()
