@@ -1,12 +1,12 @@
 # pip install matplotlib
-# import matplotlib.pyplot as plt
+import matplotlib.pyplot as plt
 import math
 import numpy
 import copy
 # pip install texttable
 from texttable import Texttable
 
-def a0a1_linear(data):
+def a0a1_linear_func(data):
     t_sum = y_sum = t2_sum = y2_sum = ty_sum = 0
     data_list_result = [[] for i in range(len(data))]
     for i,d in enumerate(data):
@@ -48,7 +48,7 @@ def a0a1_linear(data):
     r = numpy.linalg.solve(m4, v4)
     return r
 
-def a0a1_hyperbola(data):
+def a0a1_hyperbola_func(data):
     t_sum = y_sum = one_div_t_sum = y_div_t_sum = one_div_t2_sum = 0
     data_list_result = [[] for i in range(len(data))]
     for i,d in enumerate(data):
@@ -96,7 +96,7 @@ def a0a1_hyperbola(data):
     r = numpy.linalg.solve(m4,v4)
     return r
 
-def a0a1a3_parabola(data):
+def a0a1a3_parabola_func(data):
     t_sum = y_sum = t2_sum = t3_sum = t4_sum = ty_sum = t2y_sum = 0
     data_list_result = [[] for i in range(len(data))]
     for i,d in enumerate(data):
@@ -158,143 +158,173 @@ def standard_deviation_y_theory(y_list):
     d_dispersion = s / (len(y_list))
     return math.sqrt(d_dispersion)
 
-def trend_equation_linear(a0, a1):
-    print("a0:", a0, "a1:", a1)
-    print(trend_equation_linear.__name__, ": Yx = ", round(a0, 4), "+", round(a1, 4), "* x")
+def trend_equation_linear(a0,a1,x=None):
+    ret = None
+    if x == None:
+        print("a0:", a0, "a1:", a1)
+        print(trend_equation_linear.__name__, ": Yx = ", round(a0, 4), "+", round(a1, 4), "* x")
+    else:
+        ret = a0+a1*x
+    return ret
 
-def trend_equation_hyperbola(a0, a1):
-    print("a0:", a0, "a1:", a1)
-    print(trend_equation_hyperbola.__name__, ": Yx = ", round(a0, 4), "+", round(a1, 4), "/ x")
+def trend_equation_hyperbola(a0,a1,x=None):
+    ret = None
+    if x == None:
+        print("a0:", a0, "a1:", a1)
+        print(trend_equation_hyperbola.__name__, ": Yx = ", round(a0, 4), "+", round(a1, 4), "/ x")
+    else:
+        ret = a0+a1/x
+    return ret
 
-def trend_equation_parabola(a0, a1, a2):
-    print("a0:", a0, "a1:", a1, "a2", a2)
-    print(trend_equation_parabola.__name__, ": Yx = ", round(a0, 4), "+", round(a1, 4), "* x +", round(a2, 4), "* x2")
+def trend_equation_parabola(a0,a1,a2,x=None):
+    ret = None
+    if x == None:
+        print("a0:", a0, "a1:", a1, "a2", a2)
+        print(trend_equation_parabola.__name__, ": Yx = ", round(a0, 4), "+", round(a1, 4), "* x +", round(a2, 4), "* x2")
+    else:
+        ret = a0+a1*x+(a2*(x*x))
+    return ret
 
-def correlation_coefficient(sum_list):
-    t_sum = sum_list[0]
-    y_sum = sum_list[1]
-    t2_sum = sum_list[2]
-    y2_sum = sum_list[3]
-    ty_sum = sum_list[4]
+def correlation_coefficient(data_list):
+    t_sum = y_sum = t2_sum = y2_sum = ty_sum = 0
+    for d in data_list:
+        t = d[0]
+        t_sum += t
+        y = d[1]
+        y_sum += y
+        t2_sum += (t*t)
+        y2_sum += (y*y)
+        ty_sum += (t*y)
     r = (5 * ty_sum - t_sum * y_sum) / math.pow((5*t2_sum - math.pow(t_sum, 2)) * (5*y2_sum - math.pow(y_sum, 2)), 0.5)
-    return correlation_coefficient.__name__, r
-
-def retrospection_period(t_list, a0, a1):
-    result_list = []
-    for t in t_list:
-        result_list.append([t, a0 + a1*t])
-    return result_list
+    return r
 
 def do_main(data_list, title):
-    print(10*"=",title,"лінійна", 10*"=")
-    a0a1 = a0a1_linear(copy.deepcopy(data_list))
-    trend_equation_linear(*a0a1)
+    print(10*"=",title,"лінійна",10*"=")
+    a0a1_linear = a0a1_linear_func(copy.deepcopy(data_list))
+    trend_equation_linear(*a0a1_linear)
     # deviation ###############################################
-    y_list = []
+    y_list_linear = []
     for i,xy in enumerate(data_list):
         x,y = xy
-        y_theory = a0a1[0] + a0a1[1] * x
-        y_list.append([y,y_theory])
-    print("standard_deviation_y_theory:", standard_deviation_y_theory(y_list))
+        y_theory = trend_equation_linear(*a0a1_linear,x)
+        y_list_linear.append([y,y_theory])
+    standard_deviation_linear = standard_deviation_y_theory(y_list_linear)
+    print("standard_deviation_y_theory linear:", standard_deviation_linear)
 
     print(10*"=",title,"гіпербола", 10*"=")
-    a0a1 = a0a1_hyperbola(copy.deepcopy(data_list))
-    trend_equation_hyperbola(*a0a1)
+    a0a1_hyperbola = a0a1_hyperbola_func(copy.deepcopy(data_list))
+    trend_equation_hyperbola(*a0a1_hyperbola)
     # deviation ###############################################
-    y_list = []
+    y_list_hyperbola = []
     for i,xy in enumerate(data_list):
         x,y = xy
-        y_theory = a0a1[0] + a0a1[1] / x
-        y_list.append([y,y_theory])
-    print("standard_deviation_y_theory:", standard_deviation_y_theory(y_list))
+        y_theory = trend_equation_hyperbola(*a0a1_hyperbola,x)
+        y_list_hyperbola.append([y,y_theory])
+    standard_deviation_hyperbola = standard_deviation_y_theory(y_list_hyperbola)
+    print("standard_deviation_y_theory hyperbola:", standard_deviation_hyperbola)
 
     print(10*"=",title,"парабола", 10*"=")
-    a0a1a2 = a0a1a3_parabola(copy.deepcopy(data_list))
-    trend_equation_parabola(*a0a1a2)
+    a0a1a2_parabola = a0a1a3_parabola_func(copy.deepcopy(data_list))
+    trend_equation_parabola(*a0a1a2_parabola)
     # deviation ###############################################
-    y_list = []
+    y_list_parabola = []
     for i,xy in enumerate(data_list):
         x,y = xy
-        y_theory = a0a1a2[0] + (a0a1a2[1] * x) + (a0a1a2[2] * (x * x))
-        y_list.append([y,y_theory])
-    print("standard_deviation_y_theory:", standard_deviation_y_theory(y_list))
+        y_theory = trend_equation_parabola(*a0a1a2_parabola,x)
+        y_list_parabola.append([y,y_theory])
+    standard_deviation_parabola = standard_deviation_y_theory(y_list_parabola)
+    print("standard_deviation_y_theory parabola:", standard_deviation_parabola)
 
-    print(correlation_coefficient(data_list[len(data_list) - 1 :][0]))
+    # correlation_coefficient ##################################
+    print(title, "correlation_coefficient:", correlation_coefficient(data_list))
 
-    # t_list = [t for t,*x in data_list[:len(data_list) - 1]]
-    # linear_regression = retrospection_period(t_list, *a0a1)
-    # t = Texttable()
-    # t.add_rows([["t", "linear_regression"], *linear_regression])
-    # print(t.draw())
+    # y_theory #################################################
+    y_theory_list = []
+    for i in range(len(y_list_linear)):
+        y_theory_list.append([
+            i+1,
+            data_list[i][1],
+            data_list[i][0],
+            y_list_linear[i][1],
+            y_list_hyperbola[i][1],
+            y_list_parabola[i][1]
+            ])
+    t = Texttable()
+    t.add_rows([["index","Y","X "+title,"y теор. лінійна","y теор. гіпербола","y теор. парабола"], *y_theory_list])
+    print(t.draw())
 
-    # forecast_linear_regression = retrospection_period([6, 7, 8, 9, 10], *a0a1)
-    # t = Texttable()
-    # t.add_rows([["t", "forecast_linear_regression"], *forecast_linear_regression])
-    # print(t.draw())
+    # chart theory ###############################################
+    fig, ax = plt.subplots()
+    ax.set_xlabel("t")
+    ax.set_ylabel("прибуток")
+    ax.set_title("теоретичні однофакторні регресії "+title)
 
-    # growth_rate = math.pow(y_list[len(y_list) - 1]/y_list[0],0.25)
-    # print("growth_rate:", growth_rate)
+    t_list = [t for i,y,t,y_linear,y_hyperbola,y_parabola in y_theory_list]
+    ax.plot(t_list, [y for i,y,x,y_linear,y_hyperbola,y_parabola in y_theory_list], label="вихідні дані "+title)
+    ax.plot(t_list, [y_linear for i,y,x,y_linear,y_hyperbola,y_parabola in y_theory_list], label="лінійний "+title)
+    ax.plot(t_list, [y_hyperbola for i,y,x,y_linear,y_hyperbola,y_parabola in y_theory_list], label="гіпербола "+title)
+    ax.plot(t_list, [y_parabola for i,y,x,y_linear,y_hyperbola,y_parabola in y_theory_list], label="парабола "+title)
 
-    # forecast_rates_of_growth = []
-    # y_last = y_list[0]
-    # forecast_rates_of_growth.append([1, y_last])
-    # for i in range(2,11):
-    #     y_last = y_last * growth_rate
-    #     forecast_rates_of_growth.append([i, y_last])
-    # t = Texttable()
-    # t.add_rows([["t", "forecast_rates_of_growth"], *forecast_rates_of_growth])
-    # print(t.draw())
+    ax.legend()
+    plt.show()
 
-    # print(10*"=","chart data",10*"=")
-    # linear_result = linear_regression + forecast_linear_regression
-    # rates_of_growth_result = forecast_rates_of_growth
+    # forecast ##################################################
+    print(10*"=",title,"прогнозування", 10*"=")
+    list_factor_forecast = [[i+1,ty[0]] for i,ty in enumerate(data_list)]
+    a0a1_factor_forecast = a0a1_linear_func(list_factor_forecast)
+    list_profit_forecast = [[i+1,ty[1]] for i,ty in enumerate(data_list)]
+    a0a1_profit_forecast = a0a1_linear_func(list_profit_forecast)
+    forecast_list = []
+    for factor_index in range(6,11):
+        factor_forecast = trend_equation_linear(*a0a1_factor_forecast, factor_index)
+        profit_forecast = trend_equation_linear(*a0a1_profit_forecast, factor_index)
+        profit_forecast_linear = trend_equation_linear(*a0a1_linear, factor_forecast)
+        profit_forecast_hyperbola = trend_equation_hyperbola(*a0a1_hyperbola, factor_forecast)
+        profit_forecast_parabola = trend_equation_parabola(*a0a1a2_parabola, factor_forecast)
 
-    # t = Texttable()
-    # t.add_rows([["t", "chart data linear_regression"], *linear_result])
-    # print(t.draw())
+        forecast_list.append([factor_index,
+                              factor_forecast,
+                              profit_forecast,
+                              profit_forecast_linear,
+                              profit_forecast_hyperbola,
+                              profit_forecast_parabola])
 
-    # t = Texttable()
-    # t.add_rows([["t", "chart data rates_of_growth"], *rates_of_growth_result])
-    # print(t.draw())
+    t = Texttable()
+    t.add_rows([["index",
+                "factor_forecast "+title,
+                "profit_forecast",
+                "profit_forecast_linear",
+                "profit_forecast_hyperbola",
+                "profit_forecast_parabola"], *forecast_list])
+    print(t.draw())
 
-    # fig, ax = plt.subplots()
-    # ax.set_xlabel("t")
-    # ax.set_ylabel("y")
-    # ax.set_title(title)
+    # chart forecast #############################################
+    fig, ax = plt.subplots()
+    ax.set_xlabel("t")
+    ax.set_ylabel("прибуток")
+    ax.set_title("прогноз "+title)
 
-    # ax.plot([t for t,y in rates_of_growth_result],
-    #         [y for t,y in rates_of_growth_result], label="за темпами зростяння")
+    f_list = [f for i,f,p,p_linear,p_hyperbola,p_parabola in forecast_list]
+    ax.plot(f_list, [p for i,f,p,p_linear,p_hyperbola,p_parabola in forecast_list], label="прогноз вихідні дані "+title)
+    ax.plot(f_list, [p_linear for i,f,p,p_linear,p_hyperbola,p_parabola in forecast_list], label="прозноз лінійний "+title)
+    ax.plot(f_list, [p_hyperbola for i,f,p,p_linear,p_hyperbola,p_parabola in forecast_list], label="прогноз гіпербола "+title)
+    ax.plot(f_list, [p_parabola for i,f,p,p_linear,p_hyperbola,p_parabola in forecast_list], label="прогноз парабола "+title)
 
-    # ax.plot([t for t,y in linear_result],
-    #         [y for t,y in linear_result], label="лінійний")
-
-    # ax.legend()
-    # plt.show()
+    ax.legend()
+    plt.show()
 
 def main():
-    # ==== P(Z) ====
-    # profit_list_14 = [[1,2354], [2,2390], [3,2420], [4,2500], [5,2560]]
-    # profit_list_5 = [[0.81,1955],[0.74,2170],[0.86,2210],[0.80,2280],[0.82,2400]]
+    # ==== P(Costs) ====
+    costs_profit_lb = [[337.2, 428.2],[356.3, 451],[367.1, 456.8],[390.7, 495.8],[409.4, 515.3]]
+    costs_profit_14 = [[0.65,2354],[0.6,2390],[0.76,2420],[0.68,2500],[0.7,2560]]
+    costs_profit = costs_profit_14
+    do_main(costs_profit, "прибуток від затрат")
 
-    profit_list_p_ot_z_lb = [[337.2, 428.2],[356.3, 451],[367.1, 456.8],[390.7, 495.8],[409.4, 515.3]]
-    profit_list = profit_list_p_ot_z_lb
-
-    # costs_list_14 = [[1,0.65], [2,0.60], [3,0.76], [4,0.68], [5,0.70]]
-    # costs_list_5 = [[1,0.81], [2,0.74], [3,0.86], [4,0.80], [5,0.82]]
-    # costs_list = costs_list_14
-
-    # capital_list_14 = [[1,22870], [2,24200], [3,26100], [4,28200], [5,29800]]
-    # capital_list_5 = [[1,34052], [2,34800], [3,35600], [4,36200], [5,38100]]
-    # capital_list = capital_list_14
-
-    do_main(profit_list, "П(З)")
-    # do_main(costs_list, "витрати")
-    # do_main(capital_list, "капітал")
-
-    # ==== P(K) ====
-    profit_list_p_ot_k_lb = [[79.7, 428.2], [87.3, 451], [95.4, 456.8], [97.2, 495.8], [100.6, 515.3]]
-    profit_list = profit_list_p_ot_k_lb
-    do_main(profit_list, "П(К)")
+    # # ==== P(Capital) ====
+    capital_profit_lb = [[79.7,428.2], [87.3,451], [95.4,456.8], [97.2,495.8], [100.6,515.3]]
+    capital_profit_14 = [[22870,2354],[24200,2390],[26100,2420],[28200,2500],[29800,2560]]
+    capital_profit = capital_profit_14
+    do_main(capital_profit, "прибуток від капіталу")
 
 if __name__ == "__main__":
     main()
