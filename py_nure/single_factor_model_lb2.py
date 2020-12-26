@@ -161,8 +161,8 @@ def standard_deviation_y_theory(y_list):
 def trend_equation_linear(a0,a1,x=None):
     ret = None
     if x == None:
-        print("a0:", a0, "a1:", a1)
-        print(trend_equation_linear.__name__, ": Yx = ", round(a0, 4), "+", round(a1, 4), "* x")
+        print("a0: %.10f a1: %.10f"%(a0,a1))
+        print("trend_equation_linear: Yx = %.6f + %.6f * x"%(a0,a1))
     else:
         ret = a0+a1*x
     return ret
@@ -170,8 +170,8 @@ def trend_equation_linear(a0,a1,x=None):
 def trend_equation_hyperbola(a0,a1,x=None):
     ret = None
     if x == None:
-        print("a0:", a0, "a1:", a1)
-        print(trend_equation_hyperbola.__name__, ": Yx = ", round(a0, 4), "+", round(a1, 4), "/ x")
+        print("a0: %.10f a1: %.10f"%(a0,a1))
+        print("trend_equation_hyperbola: Yx = %.6f + %.6f / x"%(a0,a1))
     else:
         ret = a0+a1/x
     return ret
@@ -179,8 +179,8 @@ def trend_equation_hyperbola(a0,a1,x=None):
 def trend_equation_parabola(a0,a1,a2,x=None):
     ret = None
     if x == None:
-        print("a0:", a0, "a1:", a1, "a2", a2)
-        print(trend_equation_parabola.__name__, ": Yx = ", round(a0, 4), "+", round(a1, 4), "* x +", round(a2, 4), "* x2")
+        print("a0: %.10f a1: %.10f a2: %.10f"%(a0,a1,a2))
+        print("trend_equation_parabola: Yx = %.6f + %.6f * x + %.6f * x2"%(a0,a1,a2))
     else:
         ret = a0+a1*x+(a2*(x*x))
     return ret
@@ -204,39 +204,39 @@ def do_main(data_list, title):
     trend_equation_linear(*a0a1_linear)
     # deviation ###############################################
     y_list_linear = []
-    for i,xy in enumerate(data_list):
+    for xy in data_list:
         x,y = xy
         y_theory = trend_equation_linear(*a0a1_linear,x)
         y_list_linear.append([y,y_theory])
     standard_deviation_linear = standard_deviation_y_theory(y_list_linear)
-    print("standard_deviation_y_theory linear:", standard_deviation_linear)
+    print("standard_deviation_y_theory linear: %.6f"%(standard_deviation_linear))
 
     print(10*"=",title,"гіпербола", 10*"=")
     a0a1_hyperbola = a0a1_hyperbola_func(copy.deepcopy(data_list))
     trend_equation_hyperbola(*a0a1_hyperbola)
     # deviation ###############################################
     y_list_hyperbola = []
-    for i,xy in enumerate(data_list):
+    for xy in data_list:
         x,y = xy
         y_theory = trend_equation_hyperbola(*a0a1_hyperbola,x)
         y_list_hyperbola.append([y,y_theory])
     standard_deviation_hyperbola = standard_deviation_y_theory(y_list_hyperbola)
-    print("standard_deviation_y_theory hyperbola:", standard_deviation_hyperbola)
+    print("standard_deviation_y_theory hyperbola: %.6f"%(standard_deviation_hyperbola))
 
     print(10*"=",title,"парабола", 10*"=")
     a0a1a2_parabola = a0a1a3_parabola_func(copy.deepcopy(data_list))
     trend_equation_parabola(*a0a1a2_parabola)
     # deviation ###############################################
     y_list_parabola = []
-    for i,xy in enumerate(data_list):
+    for xy in data_list:
         x,y = xy
         y_theory = trend_equation_parabola(*a0a1a2_parabola,x)
         y_list_parabola.append([y,y_theory])
     standard_deviation_parabola = standard_deviation_y_theory(y_list_parabola)
-    print("standard_deviation_y_theory parabola:", standard_deviation_parabola)
+    print("standard_deviation_y_theory parabla: %.6f"%(standard_deviation_parabola))
 
     # correlation_coefficient ##################################
-    print(title, "correlation_coefficient:", correlation_coefficient(data_list))
+    print(title, "correlation_coefficient: %.6f"%(correlation_coefficient(data_list)))
 
     # y_theory #################################################
     y_theory_list = []
@@ -315,16 +315,16 @@ def do_main(data_list, title):
 
 def main():
     # ==== P(Costs) ====
-    costs_profit_lb = [[337.2, 428.2],[356.3, 451],[367.1, 456.8],[390.7, 495.8],[409.4, 515.3]]
+    # costs_profit_lb = [[337.2, 428.2],[356.3, 451],[367.1, 456.8],[390.7, 495.8],[409.4, 515.3]]
     costs_profit_14 = [[0.65*2354,2354],[0.6*2390,2390],[0.76*2420,2420],[0.68*2500,2500],[0.7*2560,2560]]
-    costs_profit_5 = [[0.81*1955,1955],[0.74*2170,2170],[0.86*2210,2210],[0.808*2280,2280],[0.828*2400,2400]]
+    # costs_profit_5 = [[0.81*1955,1955],[0.74*2170,2170],[0.86*2210,2210],[0.808*2280,2280],[0.828*2400,2400]]
     costs_profit = costs_profit_14
     do_main(costs_profit, "прибуток від затрат")
 
     # # ==== P(Capital) ====
-    capital_profit_lb = [[79.7,428.2], [87.3,451], [95.4,456.8], [97.2,495.8], [100.6,515.3]]
+    # capital_profit_lb = [[79.7,428.2], [87.3,451], [95.4,456.8], [97.2,495.8], [100.6,515.3]]
     capital_profit_14 = [[22870,2354],[24200,2390],[26100,2420],[28200,2500],[29800,2560]]
-    costs_profit_5 = [[34052,1955],[34800,2170],[35600,2210],[36200,2280],[38100,2400]]
+    # costs_profit_5 = [[34052,1955],[34800,2170],[35600,2210],[36200,2280],[38100,2400]]
     capital_profit = capital_profit_14
     do_main(capital_profit, "прибуток від капіталу")
 
