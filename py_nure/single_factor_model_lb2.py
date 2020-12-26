@@ -259,11 +259,12 @@ def do_main(data_list, title):
     ax.set_ylabel("прибуток")
     ax.set_title("теоретичні однофакторні регресії "+title)
 
-    t_list = [t for i,y,t,y_linear,y_hyperbola,y_parabola in y_theory_list]
-    ax.plot(t_list, [y for i,y,x,y_linear,y_hyperbola,y_parabola in y_theory_list], label="вихідні дані "+title)
-    ax.plot(t_list, [y_linear for i,y,x,y_linear,y_hyperbola,y_parabola in y_theory_list], label="лінійний "+title)
-    ax.plot(t_list, [y_hyperbola for i,y,x,y_linear,y_hyperbola,y_parabola in y_theory_list], label="гіпербола "+title)
-    ax.plot(t_list, [y_parabola for i,y,x,y_linear,y_hyperbola,y_parabola in y_theory_list], label="парабола "+title)
+    # t_list_chart = [t for i,y,t,y_linear,y_hyperbola,y_parabola in y_theory_list]
+    t_list_chart = [1, 2, 3, 4, 5]
+    ax.plot(t_list_chart, [y for i,y,x,y_linear,y_hyperbola,y_parabola in y_theory_list], label="вихідні дані "+title)
+    ax.plot(t_list_chart, [y_linear for i,y,x,y_linear,y_hyperbola,y_parabola in y_theory_list], label="лінійний "+title)
+    ax.plot(t_list_chart, [y_hyperbola for i,y,x,y_linear,y_hyperbola,y_parabola in y_theory_list], label="гіпербола "+title)
+    ax.plot(t_list_chart, [y_parabola for i,y,x,y_linear,y_hyperbola,y_parabola in y_theory_list], label="парабола "+title)
 
     ax.legend()
     plt.show()
@@ -275,14 +276,13 @@ def do_main(data_list, title):
     list_profit_forecast = [[i+1,ty[1]] for i,ty in enumerate(data_list)]
     a0a1_profit_forecast = a0a1_linear_func(list_profit_forecast)
     forecast_list = []
-    for factor_index in range(6,11):
-        factor_forecast = trend_equation_linear(*a0a1_factor_forecast, factor_index)
-        profit_forecast = trend_equation_linear(*a0a1_profit_forecast, factor_index)
+    for i in range(6,11):
+        factor_forecast = trend_equation_linear(*a0a1_factor_forecast, i)
+        profit_forecast = trend_equation_linear(*a0a1_profit_forecast, i)
         profit_forecast_linear = trend_equation_linear(*a0a1_linear, factor_forecast)
         profit_forecast_hyperbola = trend_equation_hyperbola(*a0a1_hyperbola, factor_forecast)
         profit_forecast_parabola = trend_equation_parabola(*a0a1a2_parabola, factor_forecast)
-
-        forecast_list.append([factor_index,
+        forecast_list.append([i,
                               factor_forecast,
                               profit_forecast,
                               profit_forecast_linear,
@@ -304,11 +304,11 @@ def do_main(data_list, title):
     ax.set_ylabel("прибуток")
     ax.set_title("прогноз "+title)
 
-    f_list = [f for i,f,p,p_linear,p_hyperbola,p_parabola in forecast_list]
-    ax.plot(f_list, [p for i,f,p,p_linear,p_hyperbola,p_parabola in forecast_list], label="прогноз вихідні дані "+title)
-    ax.plot(f_list, [p_linear for i,f,p,p_linear,p_hyperbola,p_parabola in forecast_list], label="прозноз лінійний "+title)
-    ax.plot(f_list, [p_hyperbola for i,f,p,p_linear,p_hyperbola,p_parabola in forecast_list], label="прогноз гіпербола "+title)
-    ax.plot(f_list, [p_parabola for i,f,p,p_linear,p_hyperbola,p_parabola in forecast_list], label="прогноз парабола "+title)
+    f_list_chart = [f for i,f,p,p_linear,p_hyperbola,p_parabola in forecast_list]
+    ax.plot(f_list_chart, [p for i,f,p,p_linear,p_hyperbola,p_parabola in forecast_list], label="прогноз вихідні дані "+title)
+    ax.plot(f_list_chart, [p_linear for i,f,p,p_linear,p_hyperbola,p_parabola in forecast_list], label="прозноз лінійний "+title)
+    ax.plot(f_list_chart, [p_hyperbola for i,f,p,p_linear,p_hyperbola,p_parabola in forecast_list], label="прогноз гіпербола "+title)
+    ax.plot(f_list_chart, [p_parabola for i,f,p,p_linear,p_hyperbola,p_parabola in forecast_list], label="прогноз парабола "+title)
 
     ax.legend()
     plt.show()
@@ -316,13 +316,15 @@ def do_main(data_list, title):
 def main():
     # ==== P(Costs) ====
     costs_profit_lb = [[337.2, 428.2],[356.3, 451],[367.1, 456.8],[390.7, 495.8],[409.4, 515.3]]
-    costs_profit_14 = [[0.65,2354],[0.6,2390],[0.76,2420],[0.68,2500],[0.7,2560]]
+    costs_profit_14 = [[0.65*2354,2354],[0.6*2390,2390],[0.76*2420,2420],[0.68*2500,2500],[0.7*2560,2560]]
+    costs_profit_5 = [[0.81*1955,1955],[0.74*2170,2170],[0.86*2210,2210],[0.808*2280,2280],[0.828*2400,2400]]
     costs_profit = costs_profit_14
     do_main(costs_profit, "прибуток від затрат")
 
     # # ==== P(Capital) ====
     capital_profit_lb = [[79.7,428.2], [87.3,451], [95.4,456.8], [97.2,495.8], [100.6,515.3]]
     capital_profit_14 = [[22870,2354],[24200,2390],[26100,2420],[28200,2500],[29800,2560]]
+    costs_profit_5 = [[34052,1955],[34800,2170],[35600,2210],[36200,2280],[38100,2400]]
     capital_profit = capital_profit_14
     do_main(capital_profit, "прибуток від капіталу")
 
