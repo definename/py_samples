@@ -107,7 +107,7 @@ def do_main(data_list,costs_capital_forecast_lb1):
     fig, ax = plt.subplots()
     ax.set_xlabel("t")
     ax.set_ylabel("прибуток")
-    ax.set_title("теоретичні однофакторні регресії ")
+    ax.set_title("теоретичне значення прибутку від # динамічного ряду")
     t_list_chart = [i for i in range(len(y_theory_list))]
     ax.plot(t_list_chart,y_theory_list,label="теоретичні значення прибутку")
     ax.legend()
@@ -126,7 +126,7 @@ def do_main(data_list,costs_capital_forecast_lb1):
     print("multi_correlation_coefficient Ry_x1x2: %.10f"%Ry_x1x2)
 
     Rx2_yx1 = multi_correlation_coefficient(r_yx1,r_yx2,r_x1x2)
-    print("multi_correlation_coefficient Ry_x1x2: %.10f"%Rx2_yx1)
+    print("multi_correlation_coefficient Rx2_yx1: %.10f"%Rx2_yx1)
 
     Rx1_yx2 = multi_correlation_coefficient(r_yx2,r_yx1,r_x1x2)
     print("multi_correlation_coefficient Rx1_yx2: %.10f"%Rx1_yx2)
