@@ -114,7 +114,7 @@ def do_main(data_list,costs_capital_forecast_lb1):
     plt.show()
 
     r_x1x2 = pair_correlation_coefficient([[x1,x2] for y,x1,x2 in data_list])
-    print("correlation_coefficient x1x2: %.6f"%(r_x1x2))
+    print("pair_correlation_coefficient x1x2: %.6f"%(r_x1x2))
 
     r_yx1 = pair_correlation_coefficient([[y,x1] for y,x1,x2 in data_list])
     print("pair_correlation_coefficient yx1: %.6f"%(r_yx1))
